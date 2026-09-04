@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import { X, Sparkles, CheckCircle2, FileText, Send, Zap, ShieldCheck, AlertTriangle } from 'lucide-react';
@@ -38,7 +38,7 @@ export default function AiReportModal({
         <div className="mb-6">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-50 text-[#3182F6] text-xs font-bold mb-2">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Gemini AI 심층 서류 합격 분석기</span>
+            <span>굿잡 AI 심층 서류 합격 분석기</span>
           </div>
           <h3 className="text-xl font-extrabold text-slate-900 tracking-tight">
             {job.companyName} 지원 맞춤형 AI 리포트

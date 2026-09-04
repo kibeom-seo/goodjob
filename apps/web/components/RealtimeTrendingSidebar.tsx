@@ -79,11 +79,12 @@ export default function RealtimeTrendingSidebar({
     <>
       {/* 1. 모바일 전용: 상단 1줄 롤링 네이버 티커 */}
       <div className="lg:hidden w-full mb-4 bg-white rounded-2xl border border-slate-200/90 shadow-xs p-3">
-        <div 
-          onClick={() => setIsMobileExpanded(!isMobileExpanded)}
-          className="flex items-center justify-between cursor-pointer select-none"
-        >
-          <div className="flex items-center gap-2 overflow-hidden flex-1">
+        <div className="flex items-center justify-between select-none">
+          <div 
+            onClick={() => onSelectKeyword(currentRollingItem.keyword)}
+            className="flex items-center gap-2 overflow-hidden flex-1 cursor-pointer hover:opacity-80 active:scale-[0.99] transition-all"
+            title="클릭 시 해당 검색어로 바로 검색합니다"
+          >
             <span className="flex items-center gap-1 text-[11px] font-black text-rose-600 bg-rose-50 px-2 py-0.5 rounded-md shrink-0">
               <TrendingUp className="w-3 h-3" />
               <span>실시간 1~10위</span>
@@ -113,7 +114,11 @@ export default function RealtimeTrendingSidebar({
             </div>
           </div>
 
-          <div className="flex items-center gap-1 text-slate-400 pl-2">
+          <div 
+            onClick={() => setIsMobileExpanded(!isMobileExpanded)}
+            className="flex items-center gap-1 text-slate-400 pl-2 cursor-pointer hover:text-slate-600 p-1"
+            title="전체 순위 펼치기"
+          >
             <span className="text-[10px] font-mono">{lastUpdatedTime}</span>
             {isMobileExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
           </div>

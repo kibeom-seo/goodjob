@@ -1,4 +1,5 @@
-import httpx
+import urllib.request
+import urllib.parse
 from bs4 import BeautifulSoup
 from typing import List
 from .base_scraper import BaseScraper, RawJobDto
@@ -16,51 +17,61 @@ class SaraminScraper(BaseScraper):
         }
 
     def fetch_job_list(self, page: int = 1) -> List[RawJobDto]:
-        target_url = f"https://www.saramin.co.kr/zf_user/jobs/list/job-category?cat_kcls=2&recruitPage={page}&recruitSort=relation&recruitPageCount=50"
+        keywords = ["개발자", "프론트엔드", "백엔드"]
+        keyword = keywords[(page - 1) % len(keywords)]
+        encoded_kw = urllib.parse.quote(keyword)
+        target_url = f"https://www.saramin.co.kr/zf_user/search/recruit?searchType=search&searchword={encoded_kw}&recruitPage={page}&recruitSort=relation&recruitPageCount=40"
         self.sleep_delay()
 
         try:
-            with httpx.Client(timeout=12.0, follow_redirects=True) as client:
-                response = client.get(target_url, headers=self.headers)
-                if response.status_code != 200:
-                    return []
-                html = response.text
-        except Exception:
+            req = urllib.request.Request(target_url, headers=self.headers)
+            html = urllib.request.urlopen(req, timeout=12).read().decode("utf-8", errors="ignore")
+        except Exception as e:
             return []
 
         soup = BeautifulSoup(html, "html.parser")
-        links = soup.find_all("a", href=lambda h: h and "/zf_user/jobs/relay/view" in h)
+        items = soup.find_all("div", class_=lambda c: c and "item_recruit" in c)
 
         results: List[RawJobDto] = []
         seen_urls = set()
 
-        for link in links:
+        for it in items:
             try:
-                href = link.get("href", "")
-                if href in seen_urls:
+                area_corp = it.find("div", class_="area_corp")
+                corp_a = area_corp.find("a") if area_corp else None
+                company_name = corp_a.get_text(strip=True) if corp_a else ""
+
+                area_job = it.find("div", class_="area_job")
+                job_tit_h2 = area_job.find("h2", class_="job_tit") if area_job else None
+                job_tit_a = job_tit_h2.find("a") if job_tit_h2 else None
+                if not job_tit_a or not company_name:
                     continue
-                seen_urls.add(href)
 
-                full_url = f"https://www.saramin.co.kr{href}" if href.startswith("/") else href
-                title = link.get_text(strip=True)
+                title = job_tit_a.get_text(strip=True)
+                raw_href = job_tit_a.get("href", "")
+                full_url = f"https://www.saramin.co.kr{raw_href}" if raw_href.startswith("/") else raw_href
+                url_clean = full_url.split("&paid_fl")[0]
 
-                container = link.find_parent("div") or link.parent
-                container_text = container.get_text(" ", strip=True) if container else ""
+                if url_clean in seen_urls:
+                    continue
+                seen_urls.add(url_clean)
 
-                company_match = re.search(r"([가-힣A-Za-z0-9㈜(주)]+(?:주식회사|회사|그룹|기업|랩스|페이|뱅크|솔루션|시스템|테크))", container_text)
-                company_name = company_match.group(1) if company_match else "사람인 등록기업"
+                conditions = area_job.find("div", class_="job_condition") if area_job else None
+                cond_text = conditions.get_text(" ", strip=True) if conditions else "서울/수도권"
+                job_date = area_job.find("span", class_="date") if area_job else None
+                date_text = job_date.get_text(strip=True) if job_date else "상시채용"
 
-                if title and len(title) > 3:
-                    results.append(RawJobDto(
-                        source_platform="saramin",
-                        source_url=full_url,
-                        company_name_raw=company_name,
-                        title_raw=title,
-                        location_raw="서울/수도권",
-                        experience_raw="경력무관",
-                        deadline_raw="상시채용",
-                    ))
+                results.append(RawJobDto(
+                    source_platform="saramin",
+                    source_url=url_clean,
+                    company_name_raw=company_name,
+                    title_raw=title,
+                    location_raw=cond_text,
+                    experience_raw="신입/경력무관",
+                    deadline_raw=date_text,
+                ))
             except Exception:
                 continue
 
         return results
+

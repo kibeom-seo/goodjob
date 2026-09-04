@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect } from 'react';
 import { 
@@ -305,11 +305,11 @@ export default function MonitoringModal({ isOpen, onClose }: MonitoringModalProp
                     Q. {q.title}
                   </h4>
 
-                  {/* Gemini AI 추천 멘토 답변 박스 */}
+                  {/* 굿잡 AI 추천 멘토 답변 박스 */}
                   <div className="bg-white rounded-xl p-4 border border-blue-200/80 mb-3 text-xs leading-relaxed text-slate-700">
                     <div className="flex items-center gap-1.5 font-bold text-[#3182F6] mb-1.5">
                       <Sparkles className="w-3.5 h-3.5" />
-                      <span>Gemini 3.6 Flash 생성 모범 멘토 답변 초안:</span>
+                      <span>굿잡 AI 생성 모범 멘토 답변 초안:</span>
                     </div>
                     <p className="whitespace-pre-line">{q.aiDraft}</p>
                   </div>

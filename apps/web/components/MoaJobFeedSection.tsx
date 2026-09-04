@@ -169,6 +169,64 @@ export default function MoaJobFeedSection({
     }
   };
 
+  const handleSelectTrendingKeyword = (keyword: string) => {
+    // 1. D-Day / 마감 관련
+    if (keyword.includes('오늘') || keyword.includes('마감') || keyword.includes('23:59')) {
+      setSelectedFilter('today');
+      setSearchQuery('');
+      return;
+    }
+    // 2. 신입 / 인턴 / 포트폴리오
+    if (keyword.includes('신입') || keyword.includes('포트폴리오') || keyword.includes('인턴') || keyword.includes('비전공자')) {
+      setSelectedFilter('newbie');
+      if (keyword.includes('토스')) {
+        setSearchQuery('토스');
+      } else if (keyword.includes('카카오')) {
+        setSearchQuery('카카오');
+      } else {
+        setSearchQuery('');
+      }
+      return;
+    }
+    // 3. 기업명 + 직무 추출
+    if (keyword.includes('토스')) {
+      setSearchQuery('토스');
+      return;
+    }
+    if (keyword.includes('카카오')) {
+      setSearchQuery('카카오');
+      return;
+    }
+    if (keyword.includes('네이버')) {
+      setSearchQuery('네이버');
+      return;
+    }
+    if (keyword.includes('삼성')) {
+      setSearchQuery('삼성');
+      return;
+    }
+    if (keyword.includes('판교') || keyword.includes('5000')) {
+      setSearchQuery('판교');
+      return;
+    }
+    if (keyword.includes('재택')) {
+      setSearchQuery('재택');
+      return;
+    }
+    if (keyword.includes('Spring') || keyword.includes('백엔드')) {
+      setSelectedCategory('backend');
+      setSearchQuery('Spring');
+      return;
+    }
+    if (keyword.includes('Next') || keyword.includes('풀스택') || keyword.includes('프론트')) {
+      setSelectedCategory('frontend');
+      setSearchQuery('Next');
+      return;
+    }
+
+    setSearchQuery(keyword.split(' ')[0]);
+  };
+
   const filteredJobs = jobs.filter(job => {
     const matchesFilter =
       selectedFilter === 'all' ||
@@ -199,15 +257,20 @@ export default function MoaJobFeedSection({
       (selectedCategory === 'direct' && job.sourceType === 'DIRECT_HIRE');
 
     const q = searchQuery.trim().toLowerCase();
-    const matchesSearch =
-      q === '' ||
-      job.companyName.toLowerCase().includes(q) ||
-      job.title.toLowerCase().includes(q) ||
-      job.location.toLowerCase().includes(q) ||
-      job.tags.some(t => t.toLowerCase().includes(q)) ||
-      job.geminiSummary.keywordHighlights.some(k => k.toLowerCase().includes(q)) ||
-      job.geminiSummary.mission.toLowerCase().includes(q) ||
-      job.geminiSummary.requirements.toLowerCase().includes(q);
+    let matchesSearch = true;
+    if (q !== '') {
+      const tokens = q.split(/\s+/).filter(Boolean);
+      // 토큰 중 하나라도 일치하면 검색 결과에 포함 (유연한 스마트 검색)
+      matchesSearch = tokens.some(token =>
+        job.companyName.toLowerCase().includes(token) ||
+        job.title.toLowerCase().includes(token) ||
+        job.location.toLowerCase().includes(token) ||
+        job.tags.some(t => t.toLowerCase().includes(token)) ||
+        (job.geminiSummary?.keywordHighlights || []).some(k => k.toLowerCase().includes(token)) ||
+        (job.geminiSummary?.mission || '').toLowerCase().includes(token) ||
+        (job.geminiSummary?.requirements || '').toLowerCase().includes(token)
+      );
+    }
 
     return matchesFilter && matchesCategory && matchesSearch;
   });
@@ -215,12 +278,17 @@ export default function MoaJobFeedSection({
   // 정렬 순서 계산: 매칭률순, 마감일 임박순(D-Day), 최신순
   const displayedJobs = [...filteredJobs].sort((a, b) => {
     if (sortBy === 'match') {
-      const scoreA = userProfile ? calculateJobMatch(a).score : (a.matchScorePercent || 0);
-      const scoreB = userProfile ? calculateJobMatch(b).score : (b.matchScorePercent || 0);
+      const scoreA = userProfile ? calculateJobMatch(a).score : (a.matchScorePercent || 85);
+      const scoreB = userProfile ? calculateJobMatch(b).score : (b.matchScorePercent || 85);
       return scoreB - scoreA;
     }
     if (sortBy === 'deadline') {
       return a.deadlineDaysLeft - b.deadlineDaysLeft;
+    }
+    if (sortBy === 'recent') {
+      const idA = parseInt(a.id.replace(/[^0-9]/g, '')) || 0;
+      const idB = parseInt(b.id.replace(/[^0-9]/g, '')) || 0;
+      return idB - idA;
     }
     return 0;
   });
@@ -323,7 +391,7 @@ export default function MoaJobFeedSection({
       <div className="flex flex-col lg:flex-row items-start gap-8">
         {/* 좌측 실시간 급상승 검색어 순위 사이드바 */}
         <RealtimeTrendingSidebar 
-          onSelectKeyword={(kw) => setSearchQuery(kw)}
+          onSelectKeyword={handleSelectTrendingKeyword}
           onSelectFilter={(f) => {
             if (f === 'urgent') setSelectedFilter('today');
             if (f === 'matching') onOpenResumeModal?.();
@@ -612,7 +680,7 @@ export default function MoaJobFeedSection({
                       <Sparkles className="w-3.5 h-3.5" />
                     </div>
                     <span className="text-xs sm:text-sm font-extrabold text-slate-900 tracking-tight">
-                      {isDirectHire ? '기업 담당자 작성 핵심 3줄 브리핑' : 'Gemini AI 공고 3줄 요약 (취준생 필수 정보)'}
+                      {isDirectHire ? '기업 담당자 작성 핵심 3줄 브리핑' : '굿잡 AI 공고 3줄 요약 (취준생 필수 정보)'}
                     </span>
                     <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-100 text-[#3182F6]">
                       핵심만 쏙

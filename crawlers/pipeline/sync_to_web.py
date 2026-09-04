@@ -1,7 +1,9 @@
-﻿import json
+import json
 import os
 import sys
 import datetime
+import re
+import base64
 
 unified_file = "crawlers/data/unified_jobs.json"
 web_data_file = "apps/web/data/mockJobs.ts"
@@ -14,31 +16,69 @@ with open(unified_file, "r", encoding="utf-8") as f:
     jobs = json.load(f)
 
 today = datetime.date.today()
-
-logo_urls = [
-    "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
-    "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
-]
-
 weekdays_kr = ["월", "화", "수", "목", "금", "토", "일"]
 
+# 브랜드 컬러 팔레트 (신뢰감 있는 테크 기업 컬러)
+COLOR_PALETTE = [
+    ("3182F6", "FFFFFF"),  # 토스 블루
+    ("10B981", "FFFFFF"),  # 에메랄드
+    ("6366F1", "FFFFFF"),  # 인디고
+    ("8B5CF6", "FFFFFF"),  # 바이올렛
+    ("EC4899", "FFFFFF"),  # 핑크
+    ("F59E0B", "111827"),  # 앰버
+    ("0284C7", "FFFFFF"),  # 스카이블루
+    ("0D9488", "FFFFFF"),  # 틸
+    ("E11D48", "FFFFFF"),  # 로즈
+    ("1E293B", "FFFFFF"),  # 슬레이트 블랙
+    ("2563EB", "FFFFFF"),  # 로얄 블루
+    ("7C3AED", "FFFFFF"),  # 퍼플
+]
+
+def generate_company_logo(company_name: str, idx: int) -> str:
+    """기업명을 기반으로 고화질 인라인 SVG 브랜드 배지 로고를 생성 (외부 URL 깨짐 0%)"""
+    clean = re.sub(r"[\(\)㈜\[\]\s\/]", "", company_name)
+    if not clean:
+        clean = "굿잡"
+    
+    char_display = clean[:2] if len(clean) >= 2 else clean[0]
+    bg_color, text_color = COLOR_PALETTE[idx % len(COLOR_PALETTE)]
+
+    svg = f"""<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="grad_{idx}" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#{bg_color}" />
+      <stop offset="100%" stop-color="#{bg_color}" stop-opacity="0.85" />
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="32" fill="url(#grad_{idx})" />
+  <text x="64" y="66" fill="#{text_color}" font-family="-apple-system, BlinkMacSystemFont, 'Pretendard', 'Segoe UI', sans-serif" font-size="44" font-weight="900" text-anchor="middle" dominant-baseline="central" letter-spacing="-1">{char_display}</text>
+</svg>"""
+
+    b64 = base64.b64encode(svg.encode("utf-8")).decode("utf-8")
+    return f"data:image/svg+xml;base64,{b64}"
+
 formatted_jobs = []
-for idx, j in enumerate(jobs[:250]):
+for idx, j in enumerate(jobs):
     sources = j.get("collectedSources", ["saramin"])
     actual_origin_url = j.get("originUrl") or "https://www.saramin.co.kr"
+    raw_comp_name = j.get("companyRaw") or j.get("companyName") or "채용기업"
+    raw_title = j.get("title") or "소프트웨어 개발자 채용"
 
     # 취준생 관점 마감일정 정밀 산출:
     # 0~1일: 오늘/내일 마감 (초긴급)
     # 2~5일: D-Day 임박 (긴급)
     # 6~20일: 정규 마감일
-    days_left = (idx % 14) + 1  # 1일 ~ 14일 다양하게 분배
+    days_left = (idx % 14) + 1
     target_date = today + datetime.timedelta(days=days_left)
     weekday_str = weekdays_kr[target_date.weekday()]
     deadline_date_str = f"{target_date.year}.{target_date.month:02d}.{target_date.day:02d}({weekday_str}) 23:59"
 
-    if days_left == 1:
+    # 크롤링된 실제 마감 텍스트가 있으면 반영
+    crawled_deadline = j.get("deadlineText", "")
+    if "오늘" in crawled_deadline:
+        days_left = 1
+        deadline_display = "🔥 오늘 23:59 마감!"
+    elif days_left == 1:
         deadline_display = "🔥 오늘 23:59 마감!"
     elif days_left == 2:
         deadline_display = "⏰ 내일 마감 (D-1)"
@@ -47,8 +87,8 @@ for idx, j in enumerate(jobs[:250]):
     else:
         deadline_display = f"📅 ~{target_date.month:02d}/{target_date.day:02d}({weekday_str}) 마감"
 
-    title_lower = (j.get("title") or "").lower()
-    comp_lower = (j.get("companyRaw") or j.get("companyName") or "").lower()
+    title_lower = raw_title.lower()
+    comp_lower = raw_comp_name.lower()
 
     # 기술 태그 자동 추출
     tech_tags = ["정규직"]
@@ -64,12 +104,14 @@ for idx, j in enumerate(jobs[:250]):
     if "신입" in title_lower or "인턴" in title_lower:
         tech_tags.append("신입환영")
 
+    logo_data_uri = generate_company_logo(raw_comp_name, idx)
+
     formatted_jobs.append({
         "id": f"real-job-{idx+1}",
-        "companyName": j.get("companyRaw") or j.get("companyName"),
-        "companyLogo": logo_urls[idx % len(logo_urls)],
+        "companyName": raw_comp_name,
+        "companyLogo": logo_data_uri,
         "companyCategory": "실시간 채용중",
-        "title": j.get("title"),
+        "title": raw_title,
         "originUrl": actual_origin_url,
         "experienceLevel": j.get("experienceLevel", "신입/경력무관"),
         "location": j.get("location", "서울/수도권"),
@@ -85,10 +127,10 @@ for idx, j in enumerate(jobs[:250]):
         "applicantCount": 8 + (idx * 2),
         "viewCount": 180 + (idx * 15),
         "geminiSummary": {
-            "mission": f"'{j.get('title')}' 포지션 핵심 프로젝트 개발 및 실무 역량 발휘",
+            "mission": f"'{raw_title}' 포지션 핵심 비즈니스 로직 설계 및 실무 역량 발휘",
             "requirements": "유관 전공 또는 포트폴리오를 보유한 신입/주니어 지원자",
-            "cultureAndBenefits": "4대보험, 자율 연차, 유연 출퇴근제, 자기계발비 및 장비 지원",
-            "generatedAt": "방금 전 실시간 수집 및 Gemini AI 분석 완료",
+            "cultureAndBenefits": "4대보험, 자율 연차, 유연 출퇴근제, 자기계발비 및 고사양 장비 지원",
+            "generatedAt": "굿잡 AI 실시간 분석 및 정제 완료",
             "keywordHighlights": tech_tags[:3]
         },
         "blindReviews": [
@@ -116,4 +158,5 @@ export const MOCK_JOBS: JobPosting[] = {json.dumps(formatted_jobs, ensure_ascii=
 with open(web_data_file, "w", encoding="utf-8") as f:
     f.write(ts_content)
 
-print(f">>> [완료] {web_data_file}에 취준생 중심 마감일정(D-Day, 마감시각) 및 태그가 전면 보완되었습니다.")
+print(f">>> [동기화 성공] 총 {len(formatted_jobs)}건의 공고와 세련된 기업 전용 브랜드 SVG 배지 로고가 생성되었습니다.")
+
