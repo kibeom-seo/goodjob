@@ -1,0 +1,71 @@
+{
+  "liveUsers": 18,
+  "todayVisitors": 1240,
+  "todayPageViews": 4890,
+  "topSearches": [
+    {
+      "keyword": "신입/인턴",
+      "count": 342
+    },
+    {
+      "keyword": "React",
+      "count": 218
+    },
+    {
+      "keyword": "Spring Boot",
+      "count": 184
+    },
+    {
+      "keyword": "현대오토에버",
+      "count": 142
+    },
+    {
+      "keyword": "판교/강남",
+      "count": 98
+    }
+  ],
+  "popularJobs": [
+    {
+      "title": "Software Engineer (Backend)",
+      "company": "Hopae",
+      "clicks": 189
+    },
+    {
+      "title": "데이터 엔지니어 (실시간 파이프라인)",
+      "company": "잡코리아 인증기업",
+      "clicks": 164
+    },
+    {
+      "title": "[SDx] Robot/Smart Factory Developer",
+      "company": "Hyundai Autoever",
+      "clicks": 145
+    },
+    {
+      "title": "프론트엔드 개발자 (신입/주니어)",
+      "company": "오아시스마켓",
+      "clicks": 112
+    }
+  ],
+  "crawlerStatus": [
+    {
+      "platform": "사람인 (Saramin)",
+      "count": 156,
+      "status": "정상 가동"
+    },
+    {
+      "platform": "잡코리아 (JobKorea)",
+      "count": 119,
+      "status": "정상 가동"
+    },
+    {
+      "platform": "링크드인 (LinkedIn)",
+      "count": 40,
+      "status": "정상 가동"
+    },
+    {
+      "platform": "캐치/리멤버",
+      "count": 0,
+      "status": "대기 중"
+    }
+  ]
+}

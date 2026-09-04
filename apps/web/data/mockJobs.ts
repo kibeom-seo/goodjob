@@ -1,0 +1,27294 @@
+import { JobPosting } from '../types/job';
+
+// 굿잡 (GoodJob) 실시간 마이그레이션 채용 공고 마스터 데이터 (500건)
+export const MOCK_JOBS: JobPosting[] = [
+  {
+    "id": "goodjob-saramin-1",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000000",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 44,
+    "viewCount": 268,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-0-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 1,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-2",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000001",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 58,
+    "viewCount": 1271,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-1-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 3,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-3",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000002",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 56,
+    "viewCount": 1421,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-2-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 5,
+        "commentsCount": 7,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-4",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000003",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 458,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-3-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 0,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-5",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000004",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 65,
+    "viewCount": 1699,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-4-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 8,
+        "commentsCount": 2,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-6",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입/경력무관",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000005",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 1934,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-5-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 0,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-7",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000006",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 82,
+    "viewCount": 960,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-6-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 4,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-8",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000007",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 17,
+    "viewCount": 664,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-7-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 22,
+        "commentsCount": 4,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-9",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000008",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 57,
+    "viewCount": 1957,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-8-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 22,
+        "commentsCount": 3,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-10",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 서초구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000009",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 52,
+    "viewCount": 1919,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-9-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 18,
+        "commentsCount": 4,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-11",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000010",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 5,
+    "viewCount": 133,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-10-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 23,
+        "commentsCount": 7,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-12",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000011",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 3,
+    "viewCount": 658,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-11-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 1,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-13",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000012",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 45,
+    "viewCount": 1109,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-12-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 24,
+        "commentsCount": 4,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-14",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000013",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 70,
+    "viewCount": 764,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-13-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 22,
+        "commentsCount": 2,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-15",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000014",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 7,
+    "viewCount": 1304,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-14-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 2,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-16",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000015",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 9,
+    "viewCount": 1533,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-15-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 23,
+        "commentsCount": 7,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-17",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000016",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 25,
+    "viewCount": 1925,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-16-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 7,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-18",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000017",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 987,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-17-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 25,
+        "commentsCount": 1,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-19",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000018",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 25,
+    "viewCount": 1824,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-18-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 36,
+        "commentsCount": 5,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-20",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000019",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 13,
+    "viewCount": 1176,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-19-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 31,
+        "commentsCount": 5,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-21",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입/경력무관",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000020",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 3,
+    "viewCount": 691,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-20-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 6,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-22",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000021",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 2399,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-21-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 0,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-23",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000022",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 42,
+    "viewCount": 2052,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-22-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 18,
+        "commentsCount": 6,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-24",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000023",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 52,
+    "viewCount": 1481,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-23-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 26,
+        "commentsCount": 1,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-25",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 서초구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000024",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 24,
+    "viewCount": 2353,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-24-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 39,
+        "commentsCount": 6,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-26",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000025",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 60,
+    "viewCount": 1866,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-25-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 0,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-27",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000026",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 12,
+    "viewCount": 2186,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-26-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 6,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-28",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000027",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 52,
+    "viewCount": 2304,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-27-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 4,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-29",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000028",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 71,
+    "viewCount": 959,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-28-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 20,
+        "commentsCount": 3,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-30",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000029",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 69,
+    "viewCount": 382,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-29-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 0,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-31",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000030",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 36,
+    "viewCount": 2115,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-30-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 28,
+        "commentsCount": 6,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-32",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000031",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 52,
+    "viewCount": 578,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-31-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 6,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-33",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000032",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 11,
+    "viewCount": 2021,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-32-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 5,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-34",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000033",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 64,
+    "viewCount": 1758,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-33-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 0,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-35",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000034",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 7,
+    "viewCount": 2200,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-34-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 12,
+        "commentsCount": 3,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-36",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000035",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 50,
+    "viewCount": 560,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-35-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 41,
+        "commentsCount": 8,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-37",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000036",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 48,
+    "viewCount": 710,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-36-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 18,
+        "commentsCount": 4,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-38",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000037",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 54,
+    "viewCount": 962,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-37-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 39,
+        "commentsCount": 1,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-39",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000038",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 43,
+    "viewCount": 1762,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-38-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 2,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-40",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000039",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 26,
+    "viewCount": 1808,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-39-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 31,
+        "commentsCount": 0,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-41",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000040",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 23,
+    "viewCount": 308,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-40-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 8,
+        "commentsCount": 6,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-42",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000041",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 10,
+    "viewCount": 436,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-41-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 22,
+        "commentsCount": 4,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-43",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000042",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 14,
+    "viewCount": 1065,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-42-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 26,
+        "commentsCount": 8,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-44",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000043",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 32,
+    "viewCount": 1689,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-43-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 7,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-45",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000044",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 64,
+    "viewCount": 1994,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-44-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 14,
+        "commentsCount": 0,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-46",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000045",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 45,
+    "viewCount": 2304,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-45-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 12,
+        "commentsCount": 7,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-47",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000046",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 53,
+    "viewCount": 207,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-46-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 23,
+        "commentsCount": 7,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-48",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000047",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 53,
+    "viewCount": 132,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-47-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 22,
+        "commentsCount": 4,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-49",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000048",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 79,
+    "viewCount": 791,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-48-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 1,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-50",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000049",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 58,
+    "viewCount": 1414,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-49-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 2,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-51",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000050",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 15,
+    "viewCount": 2369,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-50-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 1,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-52",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000051",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 44,
+    "viewCount": 1989,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-51-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 8,
+        "commentsCount": 7,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-53",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000052",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 12,
+    "viewCount": 2098,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-52-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 6,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-54",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000053",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 47,
+    "viewCount": 312,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-53-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 25,
+        "commentsCount": 4,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-55",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000054",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 6,
+    "viewCount": 1300,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-54-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 26,
+        "commentsCount": 4,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-56",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000055",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 59,
+    "viewCount": 1272,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-55-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 1,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-57",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000056",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 47,
+    "viewCount": 131,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-56-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 5,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-58",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "1~3년차",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000057",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 11,
+    "viewCount": 708,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-57-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 20,
+        "commentsCount": 5,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-59",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000058",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 58,
+    "viewCount": 1026,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-58-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 7,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-60",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000059",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 9,
+    "viewCount": 1985,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-59-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 8,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-61",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000060",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 29,
+    "viewCount": 1813,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-60-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 1,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-62",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000061",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 61,
+    "viewCount": 760,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-61-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 18,
+        "commentsCount": 1,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-63",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000062",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 55,
+    "viewCount": 909,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-62-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 21,
+        "commentsCount": 1,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-64",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000063",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 4,
+    "viewCount": 772,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-63-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 38,
+        "commentsCount": 8,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-65",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000064",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 29,
+    "viewCount": 607,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-64-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 5,
+        "commentsCount": 5,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-66",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000065",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 80,
+    "viewCount": 1058,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-65-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 6,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-67",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000066",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 2395,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-66-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 5,
+        "commentsCount": 0,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-68",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000067",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 648,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-67-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 38,
+        "commentsCount": 4,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-69",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000068",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 10,
+    "viewCount": 1387,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-68-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 6,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-70",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000069",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 26,
+    "viewCount": 378,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-69-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 1,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-71",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000070",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 14,
+    "viewCount": 1090,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-70-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 6,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-72",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000071",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 54,
+    "viewCount": 849,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-71-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 8,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-73",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "1~3년차",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000072",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 46,
+    "viewCount": 2075,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-72-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 22,
+        "commentsCount": 0,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-74",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000073",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 49,
+    "viewCount": 591,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-73-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 12,
+        "commentsCount": 2,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-75",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000074",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 26,
+    "viewCount": 2058,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-74-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 0,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-76",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000075",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 68,
+    "viewCount": 1019,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-75-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 7,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-77",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000076",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 25,
+    "viewCount": 771,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-76-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 14,
+        "commentsCount": 7,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-78",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000077",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 45,
+    "viewCount": 435,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-77-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 1,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-79",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000078",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 72,
+    "viewCount": 842,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-78-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 18,
+        "commentsCount": 3,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-80",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000079",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 37,
+    "viewCount": 2338,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-79-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 28,
+        "commentsCount": 2,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-81",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000080",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 74,
+    "viewCount": 1100,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-80-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 5,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-82",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000081",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 26,
+    "viewCount": 995,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-81-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 15,
+        "commentsCount": 1,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-83",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000082",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 56,
+    "viewCount": 1468,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-82-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 6,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-84",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000083",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 63,
+    "viewCount": 1314,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-83-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 6,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-85",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000084",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 81,
+    "viewCount": 1198,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-84-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 6,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-86",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000085",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 20,
+    "viewCount": 617,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-85-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 31,
+        "commentsCount": 0,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-87",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000086",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 2174,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-86-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 5,
+        "commentsCount": 1,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-88",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000087",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 1536,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-87-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 31,
+        "commentsCount": 5,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-89",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000088",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 41,
+    "viewCount": 1531,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-88-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 8,
+        "commentsCount": 0,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-90",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000089",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 50,
+    "viewCount": 129,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-89-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 6,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-91",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000090",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 20,
+    "viewCount": 393,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-90-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 25,
+        "commentsCount": 1,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-92",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000091",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 46,
+    "viewCount": 792,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-91-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 4,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-93",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000092",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 12,
+    "viewCount": 1884,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-92-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 6,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-94",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000093",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 33,
+    "viewCount": 236,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-93-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 5,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-95",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000094",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 60,
+    "viewCount": 1943,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-94-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 8,
+        "commentsCount": 1,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-96",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000095",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 80,
+    "viewCount": 1439,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-95-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 23,
+        "commentsCount": 1,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-97",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000096",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 23,
+    "viewCount": 1603,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-96-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 32,
+        "commentsCount": 1,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-98",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000097",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 921,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-97-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 5,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-99",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000098",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 51,
+    "viewCount": 999,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-98-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 3,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-100",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000099",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 49,
+    "viewCount": 366,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-99-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 1,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-101",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000100",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 20,
+    "viewCount": 1161,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-100-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 7,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-102",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000101",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 75,
+    "viewCount": 235,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-101-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 22,
+        "commentsCount": 2,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-103",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000102",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 60,
+    "viewCount": 2271,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-102-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 5,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-104",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000103",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 14,
+    "viewCount": 2266,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-103-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 0,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-105",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000104",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 3,
+    "viewCount": 475,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-104-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 38,
+        "commentsCount": 8,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-106",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입/경력무관",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000105",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 26,
+    "viewCount": 912,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-105-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 4,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-107",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000106",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 1383,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-106-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 4,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-108",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000107",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 7,
+    "viewCount": 810,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-107-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 0,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-109",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000108",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 85,
+    "viewCount": 205,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-108-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 6,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-110",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000109",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 47,
+    "viewCount": 1569,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-109-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 5,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-111",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000110",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 71,
+    "viewCount": 2378,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-110-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 28,
+        "commentsCount": 0,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-112",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000111",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 14,
+    "viewCount": 1081,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-111-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 23,
+        "commentsCount": 8,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-113",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000112",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 84,
+    "viewCount": 1028,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-112-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 6,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-114",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000113",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 9,
+    "viewCount": 1120,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-113-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 14,
+        "commentsCount": 5,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-115",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000114",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 73,
+    "viewCount": 154,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-114-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 6,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-116",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000115",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 16,
+    "viewCount": 815,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-115-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 21,
+        "commentsCount": 5,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-117",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "경기 화성시/수원시",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000116",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 17,
+    "viewCount": 779,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-116-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 26,
+        "commentsCount": 2,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-118",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000117",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 8,
+    "viewCount": 856,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-117-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 1,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-119",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000118",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 9,
+    "viewCount": 758,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-118-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 8,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-120",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000119",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 43,
+    "viewCount": 1084,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-119-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 32,
+        "commentsCount": 6,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-121",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000120",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 50,
+    "viewCount": 1559,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-120-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 25,
+        "commentsCount": 2,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-122",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000121",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 54,
+    "viewCount": 328,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-121-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 14,
+        "commentsCount": 1,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-123",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000122",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 14,
+    "viewCount": 1461,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-122-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 6,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-124",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000123",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 41,
+    "viewCount": 2305,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-123-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 8,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-125",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000124",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 48,
+    "viewCount": 1316,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-124-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 7,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-126",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000125",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 42,
+    "viewCount": 146,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-125-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 4,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-127",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000126",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 55,
+    "viewCount": 135,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-126-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 7,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-128",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000127",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 1922,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-127-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 39,
+        "commentsCount": 5,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-129",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 화성시/수원시",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000128",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 14,
+    "viewCount": 1476,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-128-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 24,
+        "commentsCount": 8,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-130",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 화성시/수원시",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000129",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 21,
+    "viewCount": 1224,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-129-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 6,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-131",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000130",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 39,
+    "viewCount": 357,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-130-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 6,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-132",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000131",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 60,
+    "viewCount": 1214,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-131-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 2,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-133",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000132",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 6,
+    "viewCount": 2119,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-132-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 4,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-134",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000133",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 54,
+    "viewCount": 319,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-133-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 4,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-135",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000134",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 84,
+    "viewCount": 1505,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-134-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 0,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-136",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000135",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 604,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-135-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 7,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-137",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000136",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 25,
+    "viewCount": 1315,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-136-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 7,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-138",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000137",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 55,
+    "viewCount": 771,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-137-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 0,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-139",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000138",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 72,
+    "viewCount": 323,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-138-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 4,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-140",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000139",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 65,
+    "viewCount": 1645,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-139-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 41,
+        "commentsCount": 0,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-141",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000140",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 21,
+    "viewCount": 2266,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-140-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 6,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-142",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000141",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 12,
+    "viewCount": 379,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-141-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 6,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-143",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 화성시/수원시",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000142",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 57,
+    "viewCount": 742,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-142-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 24,
+        "commentsCount": 7,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-144",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000143",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 48,
+    "viewCount": 2348,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-143-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 8,
+        "commentsCount": 5,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-145",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000144",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 58,
+    "viewCount": 738,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-144-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 5,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-146",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000145",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 58,
+    "viewCount": 479,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-145-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 8,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-147",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000146",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 55,
+    "viewCount": 2061,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-146-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 2,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-148",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000147",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 68,
+    "viewCount": 572,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-147-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 31,
+        "commentsCount": 1,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-149",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000148",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 4,
+    "viewCount": 2391,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-148-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 1,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-150",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000149",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 75,
+    "viewCount": 1288,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-149-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 0,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-151",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000150",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 85,
+    "viewCount": 1720,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-150-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 7,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-152",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000151",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 39,
+    "viewCount": 878,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-151-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 41,
+        "commentsCount": 7,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-153",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000152",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 28,
+    "viewCount": 1889,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-152-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 5,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-154",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000153",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 80,
+    "viewCount": 1105,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-153-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 1,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-155",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000154",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 866,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-154-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 0,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-156",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000155",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 53,
+    "viewCount": 2328,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-155-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 23,
+        "commentsCount": 0,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-157",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000156",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 13,
+    "viewCount": 434,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-156-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 2,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-158",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000157",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 48,
+    "viewCount": 786,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-157-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 1,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-159",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000158",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 61,
+    "viewCount": 1308,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-158-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 6,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-160",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000159",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 78,
+    "viewCount": 2335,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-159-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 25,
+        "commentsCount": 3,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-161",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 화성시/수원시",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000160",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 45,
+    "viewCount": 1112,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-160-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 18,
+        "commentsCount": 5,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-162",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000161",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 44,
+    "viewCount": 1116,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-161-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 0,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-163",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000162",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 36,
+    "viewCount": 2224,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-162-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 3,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-164",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000163",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 46,
+    "viewCount": 1415,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-163-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 0,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-165",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000164",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 58,
+    "viewCount": 2376,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-164-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 8,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-166",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000165",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 82,
+    "viewCount": 360,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-165-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 20,
+        "commentsCount": 2,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-167",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000166",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 43,
+    "viewCount": 394,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-166-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 8,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-168",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000167",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 49,
+    "viewCount": 1024,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-167-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 41,
+        "commentsCount": 1,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-169",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000168",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 64,
+    "viewCount": 487,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-168-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 5,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-170",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000169",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 38,
+    "viewCount": 2108,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-169-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 5,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-171",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000170",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 24,
+    "viewCount": 486,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-170-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 15,
+        "commentsCount": 8,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-172",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000171",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 12,
+    "viewCount": 1713,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-171-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 5,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-173",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000172",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 2201,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-172-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 1,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-174",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000173",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 32,
+    "viewCount": 1480,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-173-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 39,
+        "commentsCount": 1,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-175",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000174",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 60,
+    "viewCount": 719,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-174-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 15,
+        "commentsCount": 2,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-176",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000175",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 71,
+    "viewCount": 2187,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-175-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 8,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-177",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000176",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 18,
+    "viewCount": 1251,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-176-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 8,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-178",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000177",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 85,
+    "viewCount": 818,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-177-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 5,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-179",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000178",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 5,
+    "viewCount": 2282,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-178-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 7,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-180",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000179",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 63,
+    "viewCount": 1467,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-179-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 8,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-181",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000180",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 49,
+    "viewCount": 280,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-180-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 5,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-182",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "서울 송파구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000181",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 56,
+    "viewCount": 653,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-181-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 28,
+        "commentsCount": 6,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-183",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000182",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 28,
+    "viewCount": 2216,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-182-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 6,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-184",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000183",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 19,
+    "viewCount": 1831,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-183-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 13,
+        "commentsCount": 0,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-185",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000184",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 41,
+    "viewCount": 513,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-184-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 23,
+        "commentsCount": 8,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-186",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000185",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 63,
+    "viewCount": 758,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-185-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 24,
+        "commentsCount": 5,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-187",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000186",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 58,
+    "viewCount": 248,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-186-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 5,
+        "commentsCount": 8,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-188",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000187",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 38,
+    "viewCount": 2220,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-187-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 3,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-189",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000188",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 51,
+    "viewCount": 1906,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-188-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 2,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-190",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 서초구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000189",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 23,
+    "viewCount": 150,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-189-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 36,
+        "commentsCount": 4,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-191",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000190",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 79,
+    "viewCount": 1675,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-190-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 2,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-192",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000191",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 13,
+    "viewCount": 634,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-191-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 6,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-193",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000192",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 33,
+    "viewCount": 1473,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-192-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 2,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-194",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000193",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 38,
+    "viewCount": 2305,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-193-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 2,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-195",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 서초구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000194",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 57,
+    "viewCount": 2120,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-194-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 7,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-196",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000195",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 67,
+    "viewCount": 1355,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-195-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 13,
+        "commentsCount": 7,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-197",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000196",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 38,
+    "viewCount": 1517,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-196-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 6,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-198",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000197",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 27,
+    "viewCount": 1791,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-197-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 7,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-199",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000198",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 19,
+    "viewCount": 1315,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-198-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 40,
+        "commentsCount": 6,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-200",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000199",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 70,
+    "viewCount": 880,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-199-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 3,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-201",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000200",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 51,
+    "viewCount": 408,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-200-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 15,
+        "commentsCount": 6,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-202",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000201",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 26,
+    "viewCount": 211,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-201-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 7,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-203",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000202",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 20,
+    "viewCount": 1808,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-202-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 4,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-204",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000203",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 21,
+    "viewCount": 2200,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-203-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 8,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-205",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000204",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 43,
+    "viewCount": 1081,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-204-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 7,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-206",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000205",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 61,
+    "viewCount": 728,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-205-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 7,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-207",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000206",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 76,
+    "viewCount": 274,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-206-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 1,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-208",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000207",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 78,
+    "viewCount": 1798,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-207-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 25,
+        "commentsCount": 6,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-209",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000208",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 79,
+    "viewCount": 1515,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-208-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 20,
+        "commentsCount": 8,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-210",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000209",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 13,
+    "viewCount": 161,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-209-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 21,
+        "commentsCount": 5,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-211",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000210",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 83,
+    "viewCount": 1864,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-210-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 26,
+        "commentsCount": 4,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-212",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000211",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 73,
+    "viewCount": 1185,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-211-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 39,
+        "commentsCount": 2,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-213",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000212",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 55,
+    "viewCount": 1462,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-212-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 6,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-214",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000213",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 29,
+    "viewCount": 1486,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-213-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 8,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-215",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000214",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 43,
+    "viewCount": 1826,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-214-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 39,
+        "commentsCount": 7,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-216",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000215",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 4,
+    "viewCount": 1816,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-215-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 4,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-217",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000216",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 24,
+    "viewCount": 1345,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-216-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 36,
+        "commentsCount": 5,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-218",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000217",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 85,
+    "viewCount": 2289,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-217-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 7,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-219",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000218",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 80,
+    "viewCount": 1288,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-218-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 6,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-220",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000219",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 27,
+    "viewCount": 1644,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-219-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 12,
+        "commentsCount": 1,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-221",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000220",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 72,
+    "viewCount": 620,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-220-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 7,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-222",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입",
+    "location": "서울 송파구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000221",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 84,
+    "viewCount": 1020,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-221-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 3,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-223",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000222",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 69,
+    "viewCount": 2258,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-222-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 4,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-224",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000223",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 42,
+    "viewCount": 571,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-223-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 6,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-225",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000224",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 14,
+    "viewCount": 685,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-224-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 13,
+        "commentsCount": 0,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-226",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000225",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 27,
+    "viewCount": 1551,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-225-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 1,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-227",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000226",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 34,
+    "viewCount": 201,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-226-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 13,
+        "commentsCount": 3,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-228",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000227",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 71,
+    "viewCount": 448,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-227-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 4,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-229",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000228",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 83,
+    "viewCount": 666,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-228-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 3,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-230",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000229",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 2369,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-229-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 8,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-231",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000230",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 29,
+    "viewCount": 1109,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-230-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 13,
+        "commentsCount": 7,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-232",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000231",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 77,
+    "viewCount": 441,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-231-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 31,
+        "commentsCount": 4,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-233",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000232",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 3,
+    "viewCount": 2344,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-232-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 32,
+        "commentsCount": 1,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-234",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000233",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 82,
+    "viewCount": 1391,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-233-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 4,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-235",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000234",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 28,
+    "viewCount": 1761,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-234-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 28,
+        "commentsCount": 4,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-236",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000235",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 74,
+    "viewCount": 1174,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-235-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 1,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-237",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000236",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 46,
+    "viewCount": 2169,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-236-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 4,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-238",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000237",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 84,
+    "viewCount": 2326,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-237-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 38,
+        "commentsCount": 5,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-239",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000238",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 62,
+    "viewCount": 907,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-238-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 3,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-240",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000239",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 42,
+    "viewCount": 2181,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-239-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 14,
+        "commentsCount": 4,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-241",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000240",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 62,
+    "viewCount": 1762,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-240-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 7,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-242",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000241",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 41,
+    "viewCount": 534,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-241-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 1,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-243",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000242",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 16,
+    "viewCount": 1863,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-242-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 14,
+        "commentsCount": 2,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-244",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000243",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 49,
+    "viewCount": 1550,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-243-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 8,
+        "commentsCount": 5,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-245",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000244",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 37,
+    "viewCount": 1634,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-244-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 6,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-246",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000245",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 67,
+    "viewCount": 680,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-245-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 1,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-247",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000246",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 54,
+    "viewCount": 1939,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-246-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 3,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-248",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000247",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 82,
+    "viewCount": 1428,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-247-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 18,
+        "commentsCount": 8,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-249",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000248",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 84,
+    "viewCount": 1096,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-248-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 8,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-250",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000249",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 38,
+    "viewCount": 255,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-249-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 21,
+        "commentsCount": 4,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-251",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000250",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 60,
+    "viewCount": 138,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-250-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 5,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-252",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000251",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 63,
+    "viewCount": 1831,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-251-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 3,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-253",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000252",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 41,
+    "viewCount": 1406,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-252-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 8,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-254",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000253",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 3,
+    "viewCount": 1435,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-253-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 4,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-255",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 서초구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000254",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 37,
+    "viewCount": 227,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-254-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 5,
+        "commentsCount": 2,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-256",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000255",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 1623,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-255-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 14,
+        "commentsCount": 2,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-257",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000256",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 33,
+    "viewCount": 2251,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-256-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 21,
+        "commentsCount": 3,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-258",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000257",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 12,
+    "viewCount": 444,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-257-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 8,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-259",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000258",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 27,
+    "viewCount": 694,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-258-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 0,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-260",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000259",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 77,
+    "viewCount": 2177,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-259-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 23,
+        "commentsCount": 2,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-261",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000260",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 74,
+    "viewCount": 1509,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-260-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 21,
+        "commentsCount": 4,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-262",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000261",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 58,
+    "viewCount": 1276,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-261-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 0,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-263",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000262",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 48,
+    "viewCount": 2264,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-262-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 3,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-264",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000263",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 6,
+    "viewCount": 1526,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-263-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 15,
+        "commentsCount": 3,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-265",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000264",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 84,
+    "viewCount": 1413,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-264-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 4,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-266",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000265",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 76,
+    "viewCount": 878,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-265-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 1,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-267",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000266",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 62,
+    "viewCount": 778,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-266-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 28,
+        "commentsCount": 7,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-268",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000267",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 57,
+    "viewCount": 1860,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-267-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 5,
+        "commentsCount": 6,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-269",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000268",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 53,
+    "viewCount": 657,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-268-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 31,
+        "commentsCount": 3,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-270",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000269",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 74,
+    "viewCount": 2010,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-269-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 1,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-271",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000270",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 39,
+    "viewCount": 1987,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-270-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 4,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-272",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000271",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 12,
+    "viewCount": 598,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-271-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 7,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-273",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000272",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 26,
+    "viewCount": 1601,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-272-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 41,
+        "commentsCount": 3,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-274",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000273",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 47,
+    "viewCount": 983,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-273-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 4,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-275",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000274",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 32,
+    "viewCount": 1638,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-274-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 8,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-276",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000275",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 68,
+    "viewCount": 1816,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-275-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 4,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-277",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "경기 화성시/수원시",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000276",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 18,
+    "viewCount": 764,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-276-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 32,
+        "commentsCount": 0,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-278",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000277",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 72,
+    "viewCount": 594,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-277-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 25,
+        "commentsCount": 5,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-279",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000278",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 12,
+    "viewCount": 256,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-278-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 14,
+        "commentsCount": 7,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-280",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000279",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 73,
+    "viewCount": 1483,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-279-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 32,
+        "commentsCount": 3,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-281",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000280",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 82,
+    "viewCount": 372,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-280-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 7,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-282",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000281",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 11,
+    "viewCount": 355,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-281-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 4,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-283",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000282",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 37,
+    "viewCount": 1318,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-282-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 1,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-284",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000283",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 70,
+    "viewCount": 2345,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-283-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 8,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-285",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000284",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 64,
+    "viewCount": 1335,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-284-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 7,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-286",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000285",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 5,
+    "viewCount": 1262,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-285-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 26,
+        "commentsCount": 8,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-287",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000286",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 17,
+    "viewCount": 796,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-286-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 13,
+        "commentsCount": 2,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-288",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000287",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 36,
+    "viewCount": 1248,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-287-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 3,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-289",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000288",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 17,
+    "viewCount": 2295,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-288-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 0,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-290",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000289",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 45,
+    "viewCount": 796,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-289-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 5,
+        "commentsCount": 3,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-291",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000290",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 25,
+    "viewCount": 206,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-290-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 4,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-292",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000291",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 14,
+    "viewCount": 1055,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-291-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 25,
+        "commentsCount": 8,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-293",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000292",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 10,
+    "viewCount": 433,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-292-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 41,
+        "commentsCount": 1,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-294",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000293",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 483,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-293-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 7,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-295",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 화성시/수원시",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000294",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 82,
+    "viewCount": 1272,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-294-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 6,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-296",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000295",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 61,
+    "viewCount": 1743,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-295-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 32,
+        "commentsCount": 5,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-297",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000296",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 59,
+    "viewCount": 1398,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-296-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 38,
+        "commentsCount": 6,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-298",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000297",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 67,
+    "viewCount": 2282,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-297-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 3,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-299",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000298",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 55,
+    "viewCount": 199,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-298-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 21,
+        "commentsCount": 6,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-300",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 서초구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000299",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 20,
+    "viewCount": 1406,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-299-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 1,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-301",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000300",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 6,
+    "viewCount": 2055,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-300-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 31,
+        "commentsCount": 0,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-302",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000301",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 34,
+    "viewCount": 1338,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-301-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 24,
+        "commentsCount": 0,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-303",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000302",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 20,
+    "viewCount": 2395,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-302-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 1,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-304",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000303",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 10,
+    "viewCount": 2096,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-303-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 32,
+        "commentsCount": 1,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-305",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 서초구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000304",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 76,
+    "viewCount": 572,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-304-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 0,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-306",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 화성시/수원시",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000305",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 622,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-305-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 5,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-307",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000306",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 63,
+    "viewCount": 1316,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-306-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 4,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-308",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000307",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 49,
+    "viewCount": 1537,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-307-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 5,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-309",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000308",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 6,
+    "viewCount": 162,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-308-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 41,
+        "commentsCount": 2,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-310",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000309",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 64,
+    "viewCount": 2145,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-309-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 1,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-311",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000310",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 16,
+    "viewCount": 1490,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-310-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 7,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-312",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000311",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 47,
+    "viewCount": 1813,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-311-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 4,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-313",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000312",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 1796,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-312-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 1,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-314",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000313",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 32,
+    "viewCount": 1975,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-313-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 13,
+        "commentsCount": 0,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-315",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000314",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 43,
+    "viewCount": 276,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-314-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 2,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-316",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000315",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 23,
+    "viewCount": 1135,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-315-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 12,
+        "commentsCount": 8,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-317",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000316",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 13,
+    "viewCount": 1164,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-316-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 23,
+        "commentsCount": 2,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-318",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000317",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 7,
+    "viewCount": 1929,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-317-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 21,
+        "commentsCount": 5,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-319",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000318",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 9,
+    "viewCount": 1372,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-318-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 2,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-320",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000319",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 40,
+    "viewCount": 2347,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-319-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 23,
+        "commentsCount": 3,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-321",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000320",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 12,
+    "viewCount": 797,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-320-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 2,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-322",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000321",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 30,
+    "viewCount": 912,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-321-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 1,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-323",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000322",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 51,
+    "viewCount": 492,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-322-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 3,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-324",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 화성시/수원시",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000323",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 47,
+    "viewCount": 1053,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-323-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 8,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-325",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000324",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 16,
+    "viewCount": 400,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-324-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 2,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-326",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000325",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 38,
+    "viewCount": 581,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-325-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 6,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-327",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000326",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 62,
+    "viewCount": 411,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-326-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 2,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-328",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000327",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 57,
+    "viewCount": 1168,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-327-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 7,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-329",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000328",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 77,
+    "viewCount": 366,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-328-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 6,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-330",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000329",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 63,
+    "viewCount": 430,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-329-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 23,
+        "commentsCount": 3,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-331",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000330",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 35,
+    "viewCount": 828,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-330-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 2,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-332",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000331",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 59,
+    "viewCount": 196,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-331-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 8,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-333",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000332",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 674,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-332-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 12,
+        "commentsCount": 3,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-334",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000333",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 199,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-333-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 3,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-335",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000334",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 78,
+    "viewCount": 1538,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-334-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 38,
+        "commentsCount": 2,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-336",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000335",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 42,
+    "viewCount": 1407,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-335-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 6,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-337",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000336",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 73,
+    "viewCount": 1804,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-336-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 7,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-338",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000337",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 83,
+    "viewCount": 1385,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-337-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 24,
+        "commentsCount": 8,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-339",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000338",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 53,
+    "viewCount": 1624,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-338-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 40,
+        "commentsCount": 3,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-340",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000339",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 72,
+    "viewCount": 1029,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-339-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 8,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-341",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000340",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 11,
+    "viewCount": 1655,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-340-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 40,
+        "commentsCount": 3,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-342",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입",
+    "location": "서울 송파구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000341",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 19,
+    "viewCount": 416,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-341-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 7,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-343",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000342",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 69,
+    "viewCount": 2378,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-342-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 41,
+        "commentsCount": 1,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-344",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 화성시/수원시",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000343",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 72,
+    "viewCount": 1507,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-343-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 6,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-345",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000344",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 14,
+    "viewCount": 882,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-344-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 24,
+        "commentsCount": 6,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-346",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000345",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 41,
+    "viewCount": 2216,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-345-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 26,
+        "commentsCount": 1,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-347",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000346",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 3,
+    "viewCount": 501,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-346-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 5,
+        "commentsCount": 1,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-348",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000347",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 23,
+    "viewCount": 432,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-347-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 5,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-349",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000348",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 12,
+    "viewCount": 1675,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-348-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 0,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-350",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000349",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 15,
+    "viewCount": 1317,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-349-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 7,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-351",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000350",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 82,
+    "viewCount": 835,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-350-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 0,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-352",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000351",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 66,
+    "viewCount": 2029,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-351-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 36,
+        "commentsCount": 5,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-353",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000352",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 59,
+    "viewCount": 2383,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-352-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 36,
+        "commentsCount": 7,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-354",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000353",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 55,
+    "viewCount": 1274,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-353-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 21,
+        "commentsCount": 1,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-355",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000354",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 55,
+    "viewCount": 1126,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-354-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 8,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-356",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입/경력무관",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000355",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 70,
+    "viewCount": 502,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-355-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 15,
+        "commentsCount": 3,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-357",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000356",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 20,
+    "viewCount": 362,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-356-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 6,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-358",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000357",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 43,
+    "viewCount": 1362,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-357-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 5,
+        "commentsCount": 3,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-359",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 화성시/수원시",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000358",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 58,
+    "viewCount": 568,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-358-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 22,
+        "commentsCount": 0,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-360",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000359",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 48,
+    "viewCount": 1293,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-359-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 31,
+        "commentsCount": 1,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-361",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 화성시/수원시",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000360",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 70,
+    "viewCount": 466,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-360-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 4,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-362",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000361",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 43,
+    "viewCount": 965,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-361-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 8,
+        "commentsCount": 1,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-363",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000362",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 8,
+    "viewCount": 2276,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-362-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 28,
+        "commentsCount": 8,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-364",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000363",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 81,
+    "viewCount": 1304,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-363-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 3,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-365",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000364",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 70,
+    "viewCount": 2147,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-364-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 6,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-366",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000365",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 26,
+    "viewCount": 625,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-365-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 4,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-367",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000366",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 63,
+    "viewCount": 150,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-366-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 5,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-368",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 화성시/수원시",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000367",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 85,
+    "viewCount": 170,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-367-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 38,
+        "commentsCount": 4,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-369",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 화성시/수원시",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000368",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 62,
+    "viewCount": 2275,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-368-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 4,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-370",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000369",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 58,
+    "viewCount": 857,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-369-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 5,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-371",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000370",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 47,
+    "viewCount": 416,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-370-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 31,
+        "commentsCount": 7,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-372",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000371",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 82,
+    "viewCount": 1902,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-371-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 3,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-373",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000372",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 11,
+    "viewCount": 494,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-372-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 25,
+        "commentsCount": 7,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-374",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000373",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 48,
+    "viewCount": 1684,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-373-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 8,
+        "commentsCount": 6,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-375",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 화성시/수원시",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000374",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 57,
+    "viewCount": 1424,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-374-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 22,
+        "commentsCount": 0,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-376",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000375",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 15,
+    "viewCount": 2160,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-375-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 6,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-377",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000376",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 24,
+    "viewCount": 1147,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-376-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 20,
+        "commentsCount": 6,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-378",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000377",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 1402,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-377-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 14,
+        "commentsCount": 0,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-379",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000378",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 7,
+    "viewCount": 1409,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-378-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 38,
+        "commentsCount": 2,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-380",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000379",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 54,
+    "viewCount": 1378,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-379-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 24,
+        "commentsCount": 8,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-381",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000380",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 50,
+    "viewCount": 2226,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-380-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 4,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-382",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입",
+    "location": "서울 송파구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000381",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 35,
+    "viewCount": 1658,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-381-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 1,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-383",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000382",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 24,
+    "viewCount": 2035,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-382-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 32,
+        "commentsCount": 6,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-384",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000383",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 33,
+    "viewCount": 1590,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-383-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 8,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-385",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000384",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 4,
+    "viewCount": 1243,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-384-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 29,
+        "commentsCount": 3,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-386",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000385",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 11,
+    "viewCount": 1461,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-385-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 41,
+        "commentsCount": 8,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-387",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000386",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 52,
+    "viewCount": 2139,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-386-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 4,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-388",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "1~3년차",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000387",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 48,
+    "viewCount": 1107,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-387-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 2,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-389",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000388",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 21,
+    "viewCount": 896,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-388-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 3,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-390",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000389",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 57,
+    "viewCount": 1487,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-389-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 36,
+        "commentsCount": 6,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-391",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000390",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 39,
+    "viewCount": 2340,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-390-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 21,
+        "commentsCount": 2,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-392",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000391",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 67,
+    "viewCount": 506,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-391-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 20,
+        "commentsCount": 7,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-393",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000392",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 34,
+    "viewCount": 2250,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-392-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 24,
+        "commentsCount": 7,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-394",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000393",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 72,
+    "viewCount": 926,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-393-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 1,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-395",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 화성시/수원시",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000394",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 38,
+    "viewCount": 1387,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-394-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 2,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-396",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000395",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 17,
+    "viewCount": 348,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-395-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 41,
+        "commentsCount": 3,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-397",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000396",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 71,
+    "viewCount": 2095,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-396-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 15,
+        "commentsCount": 7,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-398",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000397",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 4,
+    "viewCount": 2239,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-397-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 0,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-399",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000398",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 85,
+    "viewCount": 1319,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-398-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 2,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-400",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000399",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 1054,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-399-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 2,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-401",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000400",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 8,
+    "viewCount": 2334,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-400-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 4,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-402",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000401",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 63,
+    "viewCount": 260,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-401-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 2,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-403",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000402",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 67,
+    "viewCount": 1374,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-402-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 39,
+        "commentsCount": 2,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-404",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000403",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 80,
+    "viewCount": 1298,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-403-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 32,
+        "commentsCount": 5,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-405",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000404",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 15,
+    "viewCount": 2311,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-404-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 3,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-406",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000405",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 76,
+    "viewCount": 960,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-405-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 25,
+        "commentsCount": 0,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-407",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000406",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 35,
+    "viewCount": 264,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-406-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 2,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-408",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000407",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 60,
+    "viewCount": 1986,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-407-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 8,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-409",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000408",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 468,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-408-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 2,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-410",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000409",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 33,
+    "viewCount": 2207,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-409-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 8,
+        "commentsCount": 7,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-411",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000410",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 25,
+    "viewCount": 1729,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-410-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 7,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-412",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000411",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 67,
+    "viewCount": 336,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-411-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 6,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-413",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000412",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 33,
+    "viewCount": 836,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-412-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 12,
+        "commentsCount": 5,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-414",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000413",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 72,
+    "viewCount": 924,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-413-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 38,
+        "commentsCount": 7,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-415",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000414",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 29,
+    "viewCount": 1608,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-414-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 5,
+        "commentsCount": 5,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-416",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000415",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 25,
+    "viewCount": 2097,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-415-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 1,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-417",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000416",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 50,
+    "viewCount": 468,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-416-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 12,
+        "commentsCount": 0,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-418",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000417",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 62,
+    "viewCount": 1787,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-417-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 13,
+        "commentsCount": 7,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-419",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000418",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 6,
+    "viewCount": 929,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-418-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 12,
+        "commentsCount": 2,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-420",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000419",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 55,
+    "viewCount": 559,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-419-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 41,
+        "commentsCount": 0,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-421",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 화성시/수원시",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000420",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 28,
+    "viewCount": 2298,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-420-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 4,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-422",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000421",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 1530,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-421-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 19,
+        "commentsCount": 2,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-423",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000422",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 27,
+    "viewCount": 937,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-422-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 32,
+        "commentsCount": 5,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-424",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000423",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 31,
+    "viewCount": 1065,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-423-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 7,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-425",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 화성시/수원시",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000424",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 10,
+    "viewCount": 981,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-424-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 18,
+        "commentsCount": 7,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-426",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000425",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 17,
+    "viewCount": 238,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-425-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 2,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-427",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000426",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 10,
+    "viewCount": 1864,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-426-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 7,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-428",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000427",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 35,
+    "viewCount": 1930,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-427-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 20,
+        "commentsCount": 1,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-429",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000428",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 66,
+    "viewCount": 135,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-428-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 15,
+        "commentsCount": 8,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-430",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 서초구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000429",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 48,
+    "viewCount": 1386,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-429-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 40,
+        "commentsCount": 7,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-431",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 화성시/수원시",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000430",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 28,
+    "viewCount": 256,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-430-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 21,
+        "commentsCount": 7,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-432",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000431",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 52,
+    "viewCount": 517,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-431-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 21,
+        "commentsCount": 3,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-433",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000432",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 83,
+    "viewCount": 2217,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-432-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 14,
+        "commentsCount": 4,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-434",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 화성시/수원시",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000433",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 60,
+    "viewCount": 1086,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-433-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 6,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-435",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000434",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 9,
+    "viewCount": 1948,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-434-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 1,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-436",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000435",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 43,
+    "viewCount": 639,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-435-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 41,
+        "commentsCount": 3,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-437",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000436",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 43,
+    "viewCount": 2230,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-436-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 4,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-438",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000437",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 37,
+    "viewCount": 122,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-437-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 0,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-439",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000438",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 4,
+    "viewCount": 753,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-438-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 31,
+        "commentsCount": 0,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-440",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000439",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 65,
+    "viewCount": 620,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-439-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 5,
+        "commentsCount": 8,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-441",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000440",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 16,
+    "viewCount": 573,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-440-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 22,
+        "commentsCount": 0,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-442",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000441",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 4,
+    "viewCount": 1028,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-441-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 4,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-443",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000442",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 3,
+    "viewCount": 1026,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-442-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 33,
+        "commentsCount": 6,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-444",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000443",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 8,
+    "viewCount": 1755,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-443-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 15,
+        "commentsCount": 4,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-445",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000444",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 35,
+    "viewCount": 1344,
+    "matchScorePercent": 75,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-444-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 4,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-446",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 화성시/수원시",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000445",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 14,
+    "viewCount": 1417,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-445-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 12,
+        "commentsCount": 0,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-447",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000446",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 82,
+    "viewCount": 1099,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-446-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 34,
+        "commentsCount": 0,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-448",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000447",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 57,
+    "viewCount": 377,
+    "matchScorePercent": 84,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-447-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 4,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-449",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000448",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 61,
+    "viewCount": 1105,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-448-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 15,
+        "commentsCount": 5,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-450",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000449",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 15,
+    "viewCount": 1323,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-449-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 40,
+        "commentsCount": 6,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-451",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000450",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 4,
+    "viewCount": 754,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-450-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 13,
+        "commentsCount": 7,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-452",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000451",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 45,
+    "viewCount": 400,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-451-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 3,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-453",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000452",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 62,
+    "viewCount": 1259,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-452-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 7,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-454",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000453",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 7,
+    "viewCount": 1632,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-453-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 7,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-455",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000454",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 84,
+    "viewCount": 494,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-454-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 16,
+        "commentsCount": 0,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-456",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000455",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 51,
+    "viewCount": 2235,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-455-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 32,
+        "commentsCount": 5,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-457",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000456",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 67,
+    "viewCount": 124,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-456-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 15,
+        "commentsCount": 7,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-458",
+    "companyName": "센드버드",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 B2B SaaS",
+    "title": "센드버드 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000457",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 22,
+    "viewCount": 1623,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-457-1",
+        "authorVerifiedOrg": "센드버드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 8,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-459",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000458",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 69,
+    "viewCount": 1062,
+    "matchScorePercent": 87,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-458-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 6,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-460",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000459",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 73,
+    "viewCount": 1135,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-459-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 13,
+        "commentsCount": 7,
+        "createdAt": "14일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-461",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000460",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 48,
+    "viewCount": 2005,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-460-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 25,
+        "commentsCount": 3,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-462",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입",
+    "location": "경기 화성시/수원시",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000461",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 3,
+    "viewCount": 1859,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-461-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 8,
+        "commentsCount": 5,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-463",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000462",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 84,
+    "viewCount": 602,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-462-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 20,
+        "commentsCount": 3,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-464",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000463",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 6,
+    "viewCount": 1858,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-463-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 0,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-465",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000464",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 47,
+    "viewCount": 1796,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-464-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 7,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-466",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000465",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 27,
+    "viewCount": 2305,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-465-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 8,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-467",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000466",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 40,
+    "viewCount": 1787,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-466-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 11,
+        "commentsCount": 6,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-468",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 강남구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000467",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 37,
+    "viewCount": 1338,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-467-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 6,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-469",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000468",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 60,
+    "viewCount": 815,
+    "matchScorePercent": 81,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-468-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 25,
+        "commentsCount": 2,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-470",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000469",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 81,
+    "viewCount": 2309,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-469-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 7,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-471",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000470",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 40,
+    "viewCount": 848,
+    "matchScorePercent": 91,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-470-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 8,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-472",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000471",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 82,
+    "viewCount": 1195,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-471-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 6,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-473",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000472",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 25,
+    "viewCount": 1381,
+    "matchScorePercent": 86,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-472-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 43,
+        "commentsCount": 1,
+        "createdAt": "1일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-474",
+    "companyName": "직방",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "프롭테크/메타버스",
+    "title": "직방 클라우드 DevOps 엔지니어 (AWS & Kubernetes)",
+    "experienceLevel": "2~5년차",
+    "location": "원격근무 (재택 100%)",
+    "salary": "연 5,000만 ~ 9,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000473",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "AWS",
+      "Kubernetes",
+      "Terraform",
+      "CI/CD",
+      "Linux"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 6,
+    "viewCount": 685,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "전사 클라우드 인프라 무중단 배포(GitOps) 및 컨테이너 오케스트레이션 자동화",
+      "requirements": "K8s 클러스터 운영 및 Helm, Terraform 기반 코드형 인프라(IaC) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "AWS",
+        "Kubernetes",
+        "Terraform"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-473-1",
+        "authorVerifiedOrg": "직방 현직자",
+        "authorRole": "Devops 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 39,
+        "commentsCount": 5,
+        "createdAt": "7일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-475",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000474",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 52,
+    "viewCount": 838,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-474-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 26,
+        "commentsCount": 2,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-476",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000475",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 66,
+    "viewCount": 2160,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-475-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 7,
+        "commentsCount": 2,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-477",
+    "companyName": "카카오",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/포털",
+    "title": "카카오 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입",
+    "location": "경기 성남시 분당구 (판교)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000476",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 7,
+    "viewCount": 2395,
+    "matchScorePercent": 77,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-476-1",
+        "authorVerifiedOrg": "카카오 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 1,
+        "createdAt": "5일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-478",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000477",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 4,
+    "viewCount": 1937,
+    "matchScorePercent": 83,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-477-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 6,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-479",
+    "companyName": "두나무 (업비트)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "블록체인/핀테크",
+    "title": "두나무 (업비트) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000478",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 48,
+    "viewCount": 1740,
+    "matchScorePercent": 97,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-478-1",
+        "authorVerifiedOrg": "두나무 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.2,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 24,
+        "commentsCount": 4,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-480",
+    "companyName": "원티드랩",
+    "companyLogo": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "HR테크/AI매칭",
+    "title": "원티드랩 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000479",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 46,
+    "viewCount": 2298,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-479-1",
+        "authorVerifiedOrg": "원티드랩 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 4,
+        "createdAt": "13일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-481",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000480",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 48,
+    "viewCount": 1244,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-480-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 8,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-482",
+    "companyName": "현대자동차 R&D",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "자율주행/모빌리티",
+    "title": "현대자동차 R&D 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "신입",
+    "location": "서울 서초구 (양재)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000481",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 50,
+    "viewCount": 2147,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-481-1",
+        "authorVerifiedOrg": "현대자동차 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 44,
+        "commentsCount": 0,
+        "createdAt": "3일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-483",
+    "companyName": "우아한형제들 (배달의민족)",
+    "companyLogo": "https://images.unsplash.com/photo-1542744094-24638eff58bb?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "푸드테크/플랫폼",
+    "title": "우아한형제들 (배달의민족) 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000482",
+    "deadlineText": "📅 ~09/19(토) 마감",
+    "deadlineDateStr": "2026.09.19(토) 23:59",
+    "deadlineDaysLeft": 15,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 28,
+    "viewCount": 759,
+    "matchScorePercent": 95,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-482-1",
+        "authorVerifiedOrg": "우아한형제들 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 8,
+        "createdAt": "2일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-484",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000483",
+    "deadlineText": "📅 ~09/20(일) 마감",
+    "deadlineDateStr": "2026.09.20(일) 23:59",
+    "deadlineDaysLeft": 16,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 9,
+    "viewCount": 1096,
+    "matchScorePercent": 85,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-483-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 26,
+        "commentsCount": 1,
+        "createdAt": "12일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-485",
+    "companyName": "무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "패션테크/버티컬커머스",
+    "title": "무신사 AI / 머신러닝 엔지니어 (LLM & 검색 랭킹)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 성동구 (성수)",
+    "salary": "연 5,500만 ~ 9,500만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000484",
+    "deadlineText": "📅 ~09/21(월) 마감",
+    "deadlineDateStr": "2026.09.21(월) 23:59",
+    "deadlineDaysLeft": 17,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "PyTorch",
+      "LLM",
+      "LangChain",
+      "Vector DB"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 62,
+    "viewCount": 1270,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "생성형 AI 기반 사용자 맞춤형 추천 및 자연어 질의응답 모델 파인튜닝",
+      "requirements": "PyTorch 기반 모델 서빙 경험 및 RAG(Retrieval-Augmented Generation) 구축 실무",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "PyTorch",
+        "LLM"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-484-1",
+        "authorVerifiedOrg": "무신사 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 0,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-remember-486",
+    "companyName": "비바리퍼블리카 (토스)",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "핀테크/유니콘",
+    "title": "비바리퍼블리카 (토스) 주니어 웹 프론트엔드 엔지니어 (신입 우대)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구",
+    "salary": "연 3,800만 ~ 5,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000485",
+    "deadlineText": "📅 ~09/22(화) 마감",
+    "deadlineDateStr": "2026.09.22(화) 23:59",
+    "deadlineDaysLeft": 18,
+    "collectedSources": [
+      "remember"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "JavaScript",
+      "HTML/CSS",
+      "Git"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 81,
+    "viewCount": 1793,
+    "matchScorePercent": 80,
+    "geminiSummary": {
+      "mission": "B2C 고객 서비스 반응형 웹 뷰 개발 및 크로스 브라우징 QA",
+      "requirements": "웹 표준 및 비동기 처리 이해도, 문제 해결 중심의 적극적인 커뮤니케이션 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "JavaScript",
+        "HTML/CSS"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-485-1",
+        "authorVerifiedOrg": "비바리퍼블리카 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 5,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-487",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000486",
+    "deadlineText": "🔥 오늘 23:59 마감!",
+    "deadlineDateStr": "2026.09.05(토) 23:59",
+    "deadlineDaysLeft": 1,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 83,
+    "viewCount": 590,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-486-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.6,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 35,
+        "commentsCount": 5,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-488",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 서초구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000487",
+    "deadlineText": "⏰ 내일 마감 (D-1)",
+    "deadlineDateStr": "2026.09.06(일) 23:59",
+    "deadlineDaysLeft": 2,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 55,
+    "viewCount": 1306,
+    "matchScorePercent": 90,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-487-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 45,
+        "commentsCount": 0,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-jobkorea-489",
+    "companyName": "버킷플레이스 (오늘의집)",
+    "companyLogo": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "라이프스타일/인테리어",
+    "title": "버킷플레이스 (오늘의집) 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 서초구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.jobkorea.co.kr/Recruit/GI_Read/1000488",
+    "deadlineText": "⏰ D-3 마감",
+    "deadlineDateStr": "2026.09.07(월) 23:59",
+    "deadlineDaysLeft": 3,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 68,
+    "viewCount": 410,
+    "matchScorePercent": 76,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-488-1",
+        "authorVerifiedOrg": "버킷플레이스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 12,
+        "commentsCount": 0,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-490",
+    "companyName": "SK텔레콤 AI Tech",
+    "companyLogo": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "통신/생성형AI",
+    "title": "SK텔레콤 AI Tech 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "서울 중구 (을지로)",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000489",
+    "deadlineText": "⏰ D-4 마감",
+    "deadlineDateStr": "2026.09.08(화) 23:59",
+    "deadlineDaysLeft": 4,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 4,
+    "viewCount": 250,
+    "matchScorePercent": 93,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-489-1",
+        "authorVerifiedOrg": "SK텔레콤 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 28,
+        "commentsCount": 6,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-491",
+    "companyName": "야놀자",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "트래블테크/글로벌",
+    "title": "야놀자 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 (테헤란로)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000490",
+    "deadlineText": "⏰ D-5 마감",
+    "deadlineDateStr": "2026.09.09(수) 23:59",
+    "deadlineDaysLeft": 5,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 52,
+    "viewCount": 1819,
+    "matchScorePercent": 96,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-490-1",
+        "authorVerifiedOrg": "야놀자 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.9,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 6,
+        "commentsCount": 0,
+        "createdAt": "10일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-492",
+    "companyName": "몰로코",
+    "companyLogo": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "머신러닝/광고테크",
+    "title": "몰로코 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "신입",
+    "location": "서울 강남구",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000491",
+    "deadlineText": "⏰ D-6 마감",
+    "deadlineDateStr": "2026.09.10(목) 23:59",
+    "deadlineDaysLeft": 6,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 53,
+    "viewCount": 2085,
+    "matchScorePercent": 98,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-491-1",
+        "authorVerifiedOrg": "몰로코 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.7,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 27,
+        "commentsCount": 8,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-493",
+    "companyName": "쿠팡",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 이커머스",
+    "title": "쿠팡 주니어 백엔드 엔지니어 (Node.js / NestJS)",
+    "experienceLevel": "1~3년차",
+    "location": "서울 송파구 (잠실)",
+    "salary": "연 4,000만 ~ 6,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000492",
+    "deadlineText": "⏰ D-7 마감",
+    "deadlineDateStr": "2026.09.11(금) 23:59",
+    "deadlineDaysLeft": 7,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Node.js",
+      "NestJS",
+      "TypeScript",
+      "PostgreSQL"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 72,
+    "viewCount": 320,
+    "matchScorePercent": 89,
+    "geminiSummary": {
+      "mission": "RESTful API 및 실시간 웹소켓 이벤트 처리 백엔드 서비스 개발",
+      "requirements": "REST API 설계 및 DB 모델링 경험, 비동기 이벤트 루프 동작 원리 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Node.js",
+        "NestJS",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-492-1",
+        "authorVerifiedOrg": "쿠팡 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.8,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 9,
+        "commentsCount": 8,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-494",
+    "companyName": "라인플러스",
+    "companyLogo": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "글로벌 모바일 메신저",
+    "title": "라인플러스 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "경기 성남시 분당구 (서현)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000493",
+    "deadlineText": "📅 ~09/12(토) 마감",
+    "deadlineDateStr": "2026.09.12(토) 23:59",
+    "deadlineDaysLeft": 8,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 39,
+    "viewCount": 261,
+    "matchScorePercent": 92,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-493-1",
+        "authorVerifiedOrg": "라인플러스 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 10,
+        "commentsCount": 8,
+        "createdAt": "11일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-495",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 모바일 앱 개발자 (Flutter / React Native)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 4,800만 ~ 8,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000494",
+    "deadlineText": "📅 ~09/13(일) 마감",
+    "deadlineDateStr": "2026.09.13(일) 23:59",
+    "deadlineDaysLeft": 9,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Flutter",
+      "React Native",
+      "TypeScript",
+      "iOS/Android"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 52,
+    "viewCount": 454,
+    "matchScorePercent": 79,
+    "geminiSummary": {
+      "mission": "크로스 플랫폼 앱 네이티브 퍼포먼스 튜닝 및 신규 피처 고속 빌드",
+      "requirements": "1개 이상의 스토어 런칭 경험 및 모바일 라이프사이클에 대한 깊은 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Flutter",
+        "React Native",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-494-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.3,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 30,
+        "commentsCount": 4,
+        "createdAt": "8일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-496",
+    "companyName": "당근마켓",
+    "companyLogo": "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "지역 커뮤니티/커머스",
+    "title": "당근마켓 백엔드 서버 개발자 (Java / Spring Boot)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구",
+    "salary": "연 5,000만 ~ 8,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000495",
+    "deadlineText": "📅 ~09/14(월) 마감",
+    "deadlineDateStr": "2026.09.14(월) 23:59",
+    "deadlineDaysLeft": 10,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Spring Boot",
+      "Java",
+      "JPA",
+      "MySQL",
+      "Redis"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 42,
+    "viewCount": 1923,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "대용량 트래픽 결제/주문 처리 파이프라인 및 고가용성 MSA 아키텍처 설계",
+      "requirements": "Spring MVC/Boot 및 RDBMS 인덱스 최적화, 트랜잭션 격리수준에 대한 탄탄한 이해",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Spring Boot",
+        "Java",
+        "JPA"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-495-1",
+        "authorVerifiedOrg": "당근마켓 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 36,
+        "commentsCount": 3,
+        "createdAt": "6일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-497",
+    "companyName": "LG CNS 클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "IT서비스/DX",
+    "title": "LG CNS 클라우드 빅데이터 엔지니어 (Spark / Data Pipeline)",
+    "experienceLevel": "신입",
+    "location": "서울 강서구 (마곡)",
+    "salary": "연 5,200만 ~ 8,800만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000496",
+    "deadlineText": "📅 ~09/15(화) 마감",
+    "deadlineDateStr": "2026.09.15(화) 23:59",
+    "deadlineDaysLeft": 11,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Python",
+      "Spark",
+      "SQL",
+      "Airflow",
+      "AWS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 60,
+    "viewCount": 693,
+    "matchScorePercent": 78,
+    "geminiSummary": {
+      "mission": "전사 비즈니스 데이터 레이크 구축 및 일 배치/실시간 ETL 파이프라인 자동화",
+      "requirements": "SQL 고급 쿼리 작성 능력 및 대용량 배치 처리 프레임워크(Spark, Airflow) 경험",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Python",
+        "Spark",
+        "SQL"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-496-1",
+        "authorVerifiedOrg": "LG 현직자",
+        "authorRole": "Data_ai 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 42,
+        "commentsCount": 4,
+        "createdAt": "4일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-catch-498",
+    "companyName": "삼성전자 DS부문",
+    "companyLogo": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "반도체/글로벌제조",
+    "title": "삼성전자 DS부문 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "1~3년차",
+    "location": "경기 화성시/수원시",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000497",
+    "deadlineText": "📅 ~09/16(수) 마감",
+    "deadlineDateStr": "2026.09.16(수) 23:59",
+    "deadlineDaysLeft": 12,
+    "collectedSources": [
+      "catch"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 56,
+    "viewCount": 2121,
+    "matchScorePercent": 94,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-497-1",
+        "authorVerifiedOrg": "삼성전자 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 17,
+        "commentsCount": 1,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-saramin-499",
+    "companyName": "뱅크샐러드",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "마이데이터/자산관리",
+    "title": "뱅크샐러드 프론트엔드 개발자 (React / Next.js)",
+    "experienceLevel": "2~5년차",
+    "location": "서울 영등포구 (여의도)",
+    "salary": "연 4,500만 ~ 7,500만원",
+    "originUrl": "https://www.saramin.co.kr/zf_user/jobs/relay/view?rec_idx=1000498",
+    "deadlineText": "📅 ~09/17(목) 마감",
+    "deadlineDateStr": "2026.09.17(목) 23:59",
+    "deadlineDaysLeft": 13,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 15,
+    "viewCount": 143,
+    "matchScorePercent": 88,
+    "geminiSummary": {
+      "mission": "사용자 인터랙션 최적화 및 모바일/웹 고성능 대시보드 컴포넌트 개발",
+      "requirements": "React, TypeScript 실무 프로젝트 경험 및 상태관리(Zustand, React Query) 능숙자",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "React",
+        "Next.js",
+        "TypeScript"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-498-1",
+        "authorVerifiedOrg": "뱅크샐러드 현직자",
+        "authorRole": "Frontend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.4,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 31,
+        "commentsCount": 5,
+        "createdAt": "9일 전"
+      }
+    ]
+  },
+  {
+    "id": "goodjob-linkedin-500",
+    "companyName": "네이버",
+    "companyLogo": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=120&auto=format&fit=crop&q=80",
+    "companyCategory": "빅테크/AI",
+    "title": "네이버 고성능 분산 백엔드 엔지니어 (Go / Kafka)",
+    "experienceLevel": "경력 3년 이상",
+    "location": "경기 성남시 분당구 (정자)",
+    "salary": "연 6,000만 ~ 1억 1,000만원",
+    "originUrl": "https://www.linkedin.com/jobs/view/1000499",
+    "deadlineText": "📅 ~09/18(금) 마감",
+    "deadlineDateStr": "2026.09.18(금) 23:59",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "🛡️ 굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "정규직",
+      "Go",
+      "Kafka",
+      "Docker",
+      "Kubernetes",
+      "gRPC"
+    ],
+    "isBookmarked": false,
+    "applicantCount": 4,
+    "viewCount": 438,
+    "matchScorePercent": 82,
+    "geminiSummary": {
+      "mission": "초당 수만 건의 실시간 데이터 스트리밍 처리 및 분산 락/큐 파이프라인 관리",
+      "requirements": "Go 언어 코루틴 활용 경험 또는 Kafka 브로커 클러스터 운영 역량",
+      "cultureAndBenefits": "4대보험, 자율 출퇴근(유연근무제), 최신형 맥북 프로 지급, 자기계발비 및 도서구매 무제한 지원",
+      "generatedAt": "Gemini 3.6 Flash 실시간 검증 완료",
+      "keywordHighlights": [
+        "Go",
+        "Kafka",
+        "Docker"
+      ]
+    },
+    "blindReviews": [
+      {
+        "id": "rev-499-1",
+        "authorVerifiedOrg": "네이버 현직자",
+        "authorRole": "Backend 개발자",
+        "tenureYears": "재직 2년차",
+        "rating": 4.5,
+        "content": "성장하기에 정말 좋은 환경입니다. 코드 리뷰 문화가 활성화되어 있고 시니어 엔지니어분들이 친절하게 피드백해 주셔서 주니어에게 큰 성장의 기회가 됩니다.",
+        "likes": 37,
+        "commentsCount": 4,
+        "createdAt": "14일 전"
+      }
+    ]
+  }
+];

@@ -1,0 +1,7 @@
+platform: "remember"
+version: "2026-09-04.v1"
+description: "리멤버 커리어 공개 채용공고 연동 설정"
+
+request_delay_seconds: 1.5
+
+api_endpoint: "https://career.rememberapp.co.kr/api/job_postings"

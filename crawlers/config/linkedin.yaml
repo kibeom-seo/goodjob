@@ -1,0 +1,11 @@
+﻿platform: "linkedin"
+version: "2026-09-04.v1"
+description: "링크드인(LinkedIn) 채용공고 실시간 셀렉터"
+
+request_delay_seconds: 1.0
+
+selectors:
+  list_container: "li"
+  detail_link: "a.base-card__full-link"
+  company: "h4.base-search-card__subtitle"
+  title: "h3.base-search-card__title"

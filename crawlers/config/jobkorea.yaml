@@ -1,0 +1,14 @@
+platform: "jobkorea"
+version: "2026-09-04.v1"
+description: "잡코리아 채용공고 목록 및 상세 파싱 셀렉터"
+
+request_delay_seconds: 2.0
+
+selectors:
+  list_item: ".list-default li.recruit-info"
+  company_name: ".corp-name a"
+  job_title: ".title a"
+  location: ".info-etc span:nth-child(2)"
+  experience: ".info-etc span:nth-child(1)"
+  deadline: ".date"
+  detail_link: ".title a[href]"

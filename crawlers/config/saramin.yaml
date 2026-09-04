@@ -1,0 +1,9 @@
+platform: "saramin"
+version: "2026-09-04.v2"
+description: "사람인 최신 채용공고 실시간 파싱 셀렉터"
+
+request_delay_seconds: 1.0
+
+selectors:
+  list_container: ".list_body .list_item, div[class*='list_item'], .item"
+  detail_link: "a[href*='/zf_user/jobs/relay/view']"

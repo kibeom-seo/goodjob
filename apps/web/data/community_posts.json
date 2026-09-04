@@ -1,0 +1,103 @@
+[
+  {
+    "id": "post-1",
+    "category": "interview",
+    "categoryLabel": "면접·서류 후기",
+    "title": "현대오토에버 백엔드 1차 기술면접 후기 및 예상 질문 공유합니다.",
+    "content": "어제 면접 보고 왔습니다. 주로 Kafka 대용량 트래픽 처리 경험과 동시성 제어(Redis Lock)에 대해 집요하게 물어보시더군요. CS 전공 지식(OS 가상메모리, 인덱스 동작원리)도 꽤 비중 있게 다뤄졌습니다. 준비하시는 분들 포트폴리오 기술 질문 확실히 잡고 가세요!",
+    "authorTag": "판교 IT 테크 현직자",
+    "authorCompanyBadge": "현대오토에버 인증",
+    "createdAt": "10분 전",
+    "likes": 42,
+    "commentsCount": 2,
+    "views": 680,
+    "comments": [
+      {
+        "id": "c-1",
+        "authorTag": "취준생 라이언 🦁",
+        "content": "와 정말 필요한 정보였는데 감사합니다! 혹시 라이브 코딩테스트 난이도는 어떠셨나요?",
+        "createdAt": "8분 전",
+        "likes": 3
+      },
+      {
+        "id": "c-2",
+        "authorTag": "판교 IT 테크 현직자",
+        "content": "라이브 코딩은 프로그래머스 Lv.2~3 수준의 구현 및 문자열 조작 위주였습니다. 긴장만 안 하시면 풀 수 있어요.",
+        "createdAt": "5분 전",
+        "likes": 5
+      }
+    ]
+  },
+  {
+    "id": "post-2",
+    "category": "company_blind",
+    "categoryLabel": "기업 비하인드·연봉",
+    "title": "요즘 스타트업 개발팀 연봉 테이블 & 포괄임금제 폐지 현황",
+    "content": "신입 기준 강남/판교 테크 스타트업 초봉은 4,000~4,800선으로 형성되어 있습니다. 요즘은 무늬만 야근시키는 곳은 취준생들도 기피해서 자율 출퇴근 + 비포괄임금제로 전환하는 추세가 확실하네요. 공고 볼 때 야근수당 별도 지급인지 꼭 확인하세요.",
+    "authorTag": "스타트업 5년차 리드",
+    "authorCompanyBadge": "강남 스타트업 인증",
+    "createdAt": "1시간 전",
+    "likes": 85,
+    "commentsCount": 1,
+    "views": 1240,
+    "comments": [
+      {
+        "id": "c-3",
+        "authorTag": "취준생 멘티",
+        "content": "공고에 포괄인지 명시 안 된 곳이 많은데 면접 때 물어봐도 감점 안 될까요?",
+        "createdAt": "30분 전",
+        "likes": 4
+      }
+    ]
+  },
+  {
+    "id": "post-seed-1",
+    "category": "talk",
+    "categoryLabel": "취준 넋두리·위로",
+    "title": "비전공자 국비지원 수료 후 첫 취업 준비 중인데, 서류 합격이 너무 어렵네요...",
+    "content": "비전공자이고 6개월 부트캠프를 수료하고 지금 2개월째 지원 중입니다. 포트폴리오는 팀 프로젝트 2개 정도 넣었는데 서류 합격률이 5%도 안 나와서 너무 막막합니다. 뭘 더 보완해야 할까요? 현실적인 조언 부탁드립니다 ㅠㅠ",
+    "authorTag": "취준생 멘티 (답변 기다리는 중 ⏳)",
+    "authorCompanyBadge": "24시간 미답변 질문",
+    "createdAt": "1일 전",
+    "likes": 15,
+    "commentsCount": 1,
+    "views": 430,
+    "comments": [
+      {
+        "id": "ai-reply-1788522187",
+        "authorTag": "🤖 굿잡 AI 시니어 멘토 (현직자 인증)",
+        "content": "취준생님, 많이 답답하고 막막하셨을 텐데 잘 찾아오셨습니다! 기본기를 충실히 다지면서 프로젝트 트러블슈팅 경험을 자소서에 솔직하게 녹여내시면 분명 좋은 결과가 있을 겁니다. 응원합니다!",
+        "createdAt": "방금 전 (AI 멘토 케어)",
+        "likes": 12
+      }
+    ]
+  },
+  {
+    "id": "post-seed-2",
+    "category": "interview",
+    "categoryLabel": "면접·서류 후기",
+    "title": "신입 면접에서 기술 질문 모를 때 어떻게 대처하는 게 가장 좋나요?",
+    "content": "어제 면접에서 모르는 CS 질문이 나왔을 때 아예 어버버거리다 끝났습니다. 모르면 모른다고 솔직하게 말하는 게 나은지, 아니면 아는 데까지 유추해서 답하는 게 좋은지 현직자 선배님들의 기준이 궁금합니다.",
+    "authorTag": "면접 준비생 (답변 기다리는 중 ⏳)",
+    "authorCompanyBadge": "24시간 미답변 질문",
+    "createdAt": "1일 전",
+    "likes": 28,
+    "commentsCount": 0,
+    "views": 610,
+    "comments": []
+  },
+  {
+    "id": "post-seed-3",
+    "category": "career_advice",
+    "categoryLabel": "현직자 커리어 조언",
+    "title": "대기업 신입 합격자들의 공통점 3가지 (서류 통과 기준)",
+    "content": "수많은 신입 자소서와 포폴을 검토하면서 느낀 합격자들의 공통점입니다.\n1. 화려한 기술 스택 나열보다 '내가 왜 이 기술을 선택했는가'에 대한 근거가 명확함\n2. 트러블슈팅(에러 해결 과정)을 기술 블로그나 커밋 로그로 투명하게 증명함\n3. 지원하는 회사의 비즈니스 도메인(핀테크, 커머스 등)에 대한 관심도가 보임\n취준생 여러분, 서류에 본인만의 문제 해결 스토리를 꼭 담으세요!",
+    "authorTag": "카카오 출신 시니어 멘토",
+    "authorCompanyBadge": "굿잡 공식 인증 멘토",
+    "createdAt": "5시간 전",
+    "likes": 154,
+    "commentsCount": 18,
+    "views": 2890,
+    "comments": []
+  }
+]

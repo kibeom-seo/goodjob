@@ -1,0 +1,14 @@
+platform: "catch"
+version: "2026-09-04.v1"
+description: "캐치 채용공고 목록 파싱 셀렉터"
+
+request_delay_seconds: 2.0
+
+selectors:
+  list_item: "tbody tr"
+  company_name: "td.corp a"
+  job_title: "td.tit a"
+  location: "td.area"
+  experience: "td.career"
+  deadline: "td.date"
+  detail_link: "td.tit a[href]"

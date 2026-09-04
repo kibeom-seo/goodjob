@@ -1,0 +1,167 @@
+// 굿잡 (GoodJob) 통합 데이터베이스 스키마
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum JobStatus {
+  ACTIVE
+  CLOSED_EARLY
+  EXPIRED
+  ARCHIVED
+}
+
+enum JobSourceType {
+  CRAWLED
+  DIRECT_HIRE
+}
+
+enum OAuthProvider {
+  KAKAO
+  GOOGLE
+  NAVER
+}
+
+// 1. 회원 정보 (JIT 자동 회원가입)
+model User {
+  id              String         @id @default(uuid())
+  email           String?        @unique
+  nickname        String
+  profileImageUrl String?
+  role            String         @default("USER")
+  oauthAccounts   OAuthAccount[]
+  scraps          JobScrap[]
+  createdAt       DateTime       @default(now())
+  updatedAt       DateTime       @updatedAt
+
+  @@map("users")
+}
+
+model OAuthAccount {
+  id             String        @id @default(uuid())
+  userId         String
+  user           User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  provider       OAuthProvider
+  providerUserId String
+  connectedAt    DateTime      @default(now())
+
+  @@unique([provider, providerUserId])
+  @@map("oauth_accounts")
+}
+
+// 2. 채용 공고 마스터 (종료 공고 영구 보존 & 빅데이터 분석용)
+model Job {
+  id                   String        @id @default(uuid())
+  companyName          String
+  companyNormalized    String
+  companyCategory      String?
+  title                String
+  sourceType           JobSourceType @default(CRAWLED)
+  directApplyEmail     String?
+
+  // 정량 분석 데이터
+  experienceMinYears   Int           @default(0)
+  experienceMaxYears   Int?
+  minSalary            BigInt?
+  maxSalary            BigInt?
+  salaryText           String?
+  locationCity         String?
+  locationDetail       String?
+
+  // 기술 스택 분석 (JSON)
+  requiredSkills       Json          @default("[]")
+  preferredSkills      Json          @default("[]")
+
+  // AI 요약
+  geminiMission        String?
+  geminiRequirements   String?
+  geminiBenefits       String?
+
+  // 수명 주기 및 상태
+  status               JobStatus     @default(ACTIVE)
+  openedAt             DateTime      @default(now())
+  closedAt             DateTime?
+  deadlineAt           DateTime?
+  isAlwaysOpen         Boolean       @default(false)
+
+  fingerprintSimhash   String
+  viewCount            Int           @default(0)
+  scrapCount           Int           @default(0)
+
+  sources              JobSource[]
+  scraps               JobScrap[]
+
+  createdAt            DateTime      @default(now())
+  updatedAt            DateTime      @updatedAt
+
+  @@index([status, createdAt(sort: Desc)])
+  @@index([companyNormalized])
+  @@index([status, deadlineAt])
+  @@map("jobs")
+}
+
+// 3. 다중 플랫폼 수집 출처 이력
+model JobSource {
+  id                String   @id @default(uuid())
+  jobId             String
+  job               Job      @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  platform          String   // 'saramin', 'jobkorea', 'catch', 'remember', 'direct'
+  originUrl         String
+  originJobId       String?
+  crawledAt         DateTime @default(now())
+  isActiveOnOrigin  Boolean  @default(true)
+
+  @@unique([platform, originJobId])
+  @@map("job_sources")
+}
+
+// 4. 취준생 공고 스크랩 (북마크)
+model JobScrap {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  jobId     String
+  job       Job      @relation(fields: [jobId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+
+  @@unique([userId, jobId])
+  @@map("job_scraps")
+}
+
+// 5. 익명 커뮤니티 게시글 (Zero-Knowledge 단방향 해시 토큰)
+model Post {
+  id             String    @id @default(uuid())
+  authorToken    String    // HMAC-SHA256(user_id, pepper) 단방향 암호화
+  title          String
+  content        String
+  categoryTag    String
+  companyTag     String?
+  jobTag         String?
+  likeCount      Int       @default(0)
+  commentCount   Int       @default(0)
+  isBlinded      Boolean   @default(false)
+  comments       Comment[]
+  createdAt      DateTime  @default(now())
+
+  @@index([authorToken])
+  @@index([categoryTag, createdAt(sort: Desc)])
+  @@map("posts")
+}
+
+model Comment {
+  id             String    @id @default(uuid())
+  postId         String
+  post           Post      @relation(fields: [postId], references: [id], onDelete: Cascade)
+  parentCommentId String?
+  authorToken    String
+  content        String
+  likeCount      Int       @default(0)
+  isBlinded      Boolean   @default(false)
+  createdAt      DateTime  @default(now())
+
+  @@map("comments")
+}
