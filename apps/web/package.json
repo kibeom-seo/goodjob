@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -H 127.0.0.1 -p 8088",
-    "build": "next build && node -e \"const fs=require('fs');try{fs.rmSync('.next/cache',{recursive:true,force:true});fs.copyFileSync('out/index.html','.next/index.html');fs.copyFileSync('out/admin.html','.next/admin.html');fs.copyFileSync('out/404.html','.next/404.html');}catch(e){}\"",
+    "build": "next build && node -e \"const fs=require('fs');try{fs.rmSync('.next/cache',{recursive:true,force:true});fs.copyFileSync('out/index.html','.next/index.html');fs.copyFileSync('out/admin.html','.next/admin.html');fs.copyFileSync('out/404.html','.next/404.html');fs.cpSync('out','../../out',{recursive:true,force:true});}catch(e){}\"",
     "pages:build": "npx @cloudflare/next-on-pages",
     "start": "next start -H 127.0.0.1 -p 8088",
     "lint": "next lint"
