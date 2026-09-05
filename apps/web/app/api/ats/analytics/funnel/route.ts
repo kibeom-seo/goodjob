@@ -8,7 +8,7 @@ export async function GET(request: NextRequest) {
     const { searchParams } = new URL(request.url);
     const jobId = searchParams.get('jobId') || undefined;
 
-    const data = getAtsFunnelAnalytics(jobId);
+    const data = await getAtsFunnelAnalytics(jobId);
 
     // 고정 KPI 지표 함께 반환 (프론트엔드 대시보드 연동용)
     return NextResponse.json({
@@ -33,3 +33,5 @@ export async function GET(request: NextRequest) {
     );
   }
 }
+
+export const runtime = 'edge';

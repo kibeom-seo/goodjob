@@ -14,7 +14,7 @@ export async function GET(request: NextRequest) {
     const limit = parseInt(searchParams.get('limit') || '2000', 10);
     const offset = parseInt(searchParams.get('offset') || '0', 10);
 
-    const jobs = queryActiveJobs({
+    const jobs = await queryActiveJobs({
       query,
       isRemoteOnly,
       isFlexibleWorkOnly,
@@ -26,17 +26,7 @@ export async function GET(request: NextRequest) {
 
     return NextResponse.json({
       success: true,
-      count: jobs.length,
-      limit,
-      offset,
-      filters: {
-        query,
-        isRemoteOnly,
-        isFlexibleWorkOnly,
-        isMilitaryServiceOnly,
-        sortBy
-      },
-      jobs
+      data: jobs
     });
   } catch (error: any) {
     console.error('Error fetching jobs:', error);
@@ -46,3 +36,5 @@ export async function GET(request: NextRequest) {
     );
   }
 }
+
+export const runtime = 'edge';

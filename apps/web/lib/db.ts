@@ -13,10 +13,6 @@ export function getDb(): any {
   }
 }
 
-// ============================================================================
-// 1. 공고 조회 API 헬퍼 (View v_active_job_postings 기반)
-// ============================================================================
-
 export interface JobFilterParams {
   query?: string;
   isRemoteOnly?: boolean;
@@ -28,20 +24,16 @@ export interface JobFilterParams {
   offset?: number;
 }
 
-export function queryActiveJobs(params: JobFilterParams = {}) {
+export async function queryActiveJobs(params: JobFilterParams = {}) {
   const db = getDb();
-  const conditions: string[] = ['is_active = 1', 'is_expired = 0'];
-  const bindValues: any[] = [];
+  if (!db) return [];
+  
+  const conditions = ['is_active = 1', 'is_expired = 0'];
+  const bindValues = [];
 
-  if (params.isRemoteOnly) {
-    conditions.push('is_remote = 1');
-  }
-  if (params.isFlexibleWorkOnly) {
-    conditions.push('is_flexible_work = 1');
-  }
-  if (params.isMilitaryServiceOnly) {
-    conditions.push('is_military_service = 1');
-  }
+  if (params.isRemoteOnly) conditions.push('is_remote = 1');
+  if (params.isFlexibleWorkOnly) conditions.push('is_flexible_work = 1');
+  if (params.isMilitaryServiceOnly) conditions.push('is_military_service = 1');
 
   if (params.query && params.query.trim() !== '') {
     conditions.push('(title LIKE ? OR company_name LIKE ? OR summary_mission LIKE ?)');
@@ -50,11 +42,8 @@ export function queryActiveJobs(params: JobFilterParams = {}) {
   }
 
   let orderBy = 'is_boosted DESC, posted_at DESC';
-  if (params.sortBy === 'deadline') {
-    orderBy = 'is_boosted DESC, deadline_at ASC';
-  } else if (params.sortBy === 'latest') {
-    orderBy = 'is_boosted DESC, posted_at DESC';
-  }
+  if (params.sortBy === 'deadline') orderBy = 'is_boosted DESC, deadline_at ASC';
+  else if (params.sortBy === 'latest') orderBy = 'is_boosted DESC, posted_at DESC';
 
   const whereClause = conditions.length > 0 ? `WHERE ${conditions.join(' AND ')}` : '';
   const limit = params.limit || 2000;
@@ -76,86 +65,14 @@ export function queryActiveJobs(params: JobFilterParams = {}) {
 
   bindValues.push(limit, offset);
   const stmt = db.prepare(sql);
-  return stmt.all(...bindValues);
+  const result = await stmt.bind(...bindValues).all();
+  return result.results || [];
 }
 
-// ============================================================================
-// 2. B2B ATS 지원자 전형 상태 변경 & 불변 감사 원장 갱신 (ACID 트랜잭션)
-// ============================================================================
-
-export interface ChangeStageParams {
-  applicationId: string;
-  newStage: 'DOC_PASS' | 'INTERVIEW' | 'FINAL_OFFER' | 'REJECTED' | 'WITHDRAWN';
-  changedByUserId: string;
-  changeReason?: string;
-  withdrawalReason?: string;
-}
-
-export function updateApplicationStageWithAudit(params: ChangeStageParams) {
+export async function getAtsFunnelAnalytics(jobId?: string) {
   const db = getDb();
-  
-  // 1. 기존 지원자 현재 상태 조회
-  const findStmt = db.prepare('SELECT id, current_stage FROM candidate_applications WHERE id = ?');
-  const app = findStmt.get(params.applicationId) as { id: string; current_stage: string } | undefined;
-  
-  if (!app) {
-    throw new Error(`지원자 이력을 찾을 수 없습니다: ${params.applicationId}`);
-  }
+  if (!db) return { totalApplications: 0, stages: {} };
 
-  const fromStage = app.current_stage;
-  const historyId = `hist_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
-  const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
-
-  // 2. 단일 트랜잭션으로 스냅샷 UPDATE + 불변 감사 원장 INSERT 실행
-  db.exec('BEGIN TRANSACTION;');
-  try {
-    const updateStmt = db.prepare(`
-      UPDATE candidate_applications 
-      SET current_stage = ?, withdrawal_reason = ?, updated_at = ?
-      WHERE id = ?
-    `);
-    updateStmt.run(
-      params.newStage,
-      params.newStage === 'WITHDRAWN' ? (params.withdrawalReason || params.changeReason || '자진 포기/노쇼') : null,
-      nowStr,
-      params.applicationId
-    );
-
-    const insertHistoryStmt = db.prepare(`
-      INSERT INTO application_history (id, application_id, from_stage, to_stage, changed_by, change_reason, created_at)
-      VALUES (?, ?, ?, ?, ?, ?, ?)
-    `);
-    insertHistoryStmt.run(
-      historyId,
-      params.applicationId,
-      fromStage,
-      params.newStage,
-      params.changedByUserId,
-      params.changeReason || '전형 단계 변경',
-      nowStr
-    );
-
-    db.exec('COMMIT;');
-    return {
-      success: true,
-      applicationId: params.applicationId,
-      fromStage,
-      currentStage: params.newStage,
-      historyId,
-      updatedAt: nowStr
-    };
-  } catch (error) {
-    db.exec('ROLLBACK;');
-    throw error;
-  }
-}
-
-// ============================================================================
-// 3. B2B ATS 채용 분석 (Funnel & Time-to-Hire Analytics)
-// ============================================================================
-
-export function getAtsFunnelAnalytics(jobId?: string) {
-  const db = getDb();
   const sql = `
     SELECT 
       current_stage,
@@ -164,11 +81,13 @@ export function getAtsFunnelAnalytics(jobId?: string) {
     ${jobId ? 'WHERE job_posting_id = ?' : ''}
     GROUP BY current_stage
   `;
-  const stmt = db.prepare(sql);
-  const rows = (jobId ? stmt.all(jobId) : stmt.all()) as Array<{ current_stage: string; count: number }>;
   
-  const total = rows.reduce((sum, r) => sum + r.count, 0);
-  const stages: Record<string, { count: number; rate: string }> = {};
+  const stmt = db.prepare(sql);
+  const result = jobId ? await stmt.bind(jobId).all() : await stmt.all();
+  const rows = result.results || [];
+  
+  const total = rows.reduce((sum: number, r: any) => sum + r.count, 0);
+  const stages: Record<string, {count: number, rate: string}> = {};
   
   for (const r of rows) {
     const rate = total > 0 ? `${((r.count / total) * 100).toFixed(1)}%` : '0%';
@@ -177,10 +96,6 @@ export function getAtsFunnelAnalytics(jobId?: string) {
 
   return { totalApplications: total, stages };
 }
-
-// ============================================================================
-// 4. 유료 크레딧 불변 원장 트랜잭션 헬퍼
-// ============================================================================
 
 export interface CreditTransactionParams {
   userId: string;
@@ -191,67 +106,50 @@ export interface CreditTransactionParams {
   orderId?: string;
 }
 
-export function executeCreditTransaction(params: CreditTransactionParams) {
+export async function executeCreditTransaction(params: CreditTransactionParams) {
   const db = getDb();
+  if (!db) throw new Error('DB not available');
   
   const findBalanceStmt = db.prepare('SELECT balance FROM user_credits WHERE user_id = ?');
-  const current = findBalanceStmt.get(params.userId) as { balance: number } | undefined;
-  const currentBalance = current ? current.balance : 0;
+  const current = await findBalanceStmt.bind(params.userId).first();
+  const currentBalance = current ? (current as any).balance : 0;
   
   const newBalance = currentBalance + params.amount;
   if (newBalance < 0) {
-    throw new Error(`크레딧 잔액이 부족합니다. (현재 잔액: ${currentBalance}, 요청: ${params.amount})`);
+    throw new Error(`잔액이 부족합니다. (현재: ${currentBalance}, 요청: ${params.amount})`);
   }
 
   const txId = `ctx_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
   const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
 
-  db.exec('BEGIN TRANSACTION;');
-  try {
-    // 1. user_credits 갱신 (없으면 생성)
-    const upsertCreditStmt = db.prepare(`
-      INSERT INTO user_credits (id, user_id, balance, updated_at)
-      VALUES (?, ?, ?, ?)
-      ON CONFLICT(user_id) DO UPDATE SET balance = ?, updated_at = ?
-    `);
-    const credId = `crd_${params.userId}`;
-    upsertCreditStmt.run(credId, params.userId, newBalance, nowStr, newBalance, nowStr);
+  const credId = `crd_${params.userId}`;
+  
+  const upsertCreditStmt = db.prepare(`
+    INSERT INTO user_credits (id, user_id, balance, updated_at)
+    VALUES (?, ?, ?, ?)
+    ON CONFLICT(user_id) DO UPDATE SET balance = ?, updated_at = ?
+  `);
+  
+  const insertTxStmt = db.prepare(`
+    INSERT INTO credit_transactions (id, user_id, transaction_type, amount, balance_after, service_type, order_id, description, created_at)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  
+  // D1 Batch transaction
+  await db.batch([
+    upsertCreditStmt.bind(credId, params.userId, newBalance, nowStr, newBalance, nowStr),
+    insertTxStmt.bind(txId, params.userId, params.type, params.amount, newBalance, params.serviceType, params.orderId || null, params.description, nowStr)
+  ]);
 
-    // 2. credit_transactions 불변 원장 INSERT
-    const insertTxStmt = db.prepare(`
-      INSERT INTO credit_transactions (id, user_id, transaction_type, amount, balance_after, service_type, order_id, description, created_at)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-    `);
-    insertTxStmt.run(
-      txId,
-      params.userId,
-      params.type,
-      params.amount,
-      newBalance,
-      params.serviceType,
-      params.orderId || null,
-      params.description,
-      nowStr
-    );
-
-    db.exec('COMMIT;');
-    return {
-      success: true,
-      transactionId: txId,
-      previousBalance: currentBalance,
-      balanceAfter: newBalance,
-      amount: params.amount,
-      updatedAt: nowStr
-    };
-  } catch (error) {
-    db.exec('ROLLBACK;');
-    throw error;
-  }
+  return {
+    success: true,
+    transactionId: txId,
+    previousBalance: currentBalance,
+    balanceAfter: newBalance,
+    amount: params.amount,
+    updatedAt: nowStr
+  };
 }
-
-// ============================================================================
-// 5. B2B 결제 승인 & 공고 부스팅 트랜잭션 헬퍼
-// ============================================================================
 
 export interface B2BPaymentConfirmParams {
   userId: string;
@@ -264,116 +162,89 @@ export interface B2BPaymentConfirmParams {
   receiptUrl?: string;
 }
 
-export function executeB2BPaymentOrder(params: B2BPaymentConfirmParams) {
+export async function executeB2BPaymentOrder(params: B2BPaymentConfirmParams) {
   const db = getDb();
+  if (!db) throw new Error('DB not available');
+  
   const orderId = `ord_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
   const now = new Date();
   const nowStr = now.toISOString().replace('T', ' ').substring(0, 19);
 
-  db.exec('BEGIN TRANSACTION;');
-  try {
-    let boostStartedAt: string | null = null;
-    let boostExpiresAt: string | null = null;
+  let boostStartedAt: string | null = null;
+  let boostExpiresAt: string | null = null;
+  
+  const batchStmts = [];
 
-    // 1. 패키지 유형별 처리
-    if (params.packageType === 'BOOST_7D' || params.packageType === 'BOOST_30D') {
-      if (!params.targetJobId) {
-        throw new Error('부스팅 대상 공고(targetJobId)가 지정되지 않았습니다.');
-      }
-      
-      const durationDays = params.packageType === 'BOOST_7D' ? 7 : 30;
-      const expireDate = new Date(now.getTime() + durationDays * 24 * 60 * 60 * 1000);
-      boostStartedAt = nowStr;
-      boostExpiresAt = expireDate.toISOString().replace('T', ' ').substring(0, 19);
+  if (params.packageType === 'BOOST_7D' || params.packageType === 'BOOST_30D') {
+    if (!params.targetJobId) throw new Error('타겟 공고가 지정되지 않았습니다.');
+    
+    const durationDays = params.packageType === 'BOOST_7D' ? 7 : 30;
+    const expireDate = new Date(now.getTime() + durationDays * 24 * 60 * 60 * 1000);
+    boostStartedAt = nowStr;
+    boostExpiresAt = expireDate.toISOString().replace('T', ' ').substring(0, 19);
 
-      // 대상 공고의 is_boosted 및 boost_expires_at 갱신
-      const boostStmt = db.prepare(`
-        UPDATE job_postings
-        SET is_boosted = 1, boost_expires_at = ?
-        WHERE id = ?
-      `);
-      boostStmt.run(boostExpiresAt, params.targetJobId);
-    } else if (params.packageType === 'CREDIT_100K' || params.packageType === 'CREDIT_300K') {
-      // 크레딧 충전
-      const creditPoints = params.packageType === 'CREDIT_100K' ? 100000 : 300000;
-      
-      const findBalanceStmt = db.prepare('SELECT balance FROM user_credits WHERE user_id = ?');
-      const current = findBalanceStmt.get(params.userId) as { balance: number } | undefined;
-      const currentBalance = current ? current.balance : 0;
-      const newBalance = currentBalance + creditPoints;
+    const boostStmt = db.prepare(`UPDATE job_postings SET is_boosted = 1, boost_expires_at = ? WHERE id = ?`);
+    batchStmts.push(boostStmt.bind(boostExpiresAt, params.targetJobId));
+  } else if (params.packageType === 'CREDIT_100K' || params.packageType === 'CREDIT_300K') {
+    const creditPoints = params.packageType === 'CREDIT_100K' ? 100000 : 300000;
+    
+    const findBalanceStmt = db.prepare('SELECT balance FROM user_credits WHERE user_id = ?');
+    const current = await findBalanceStmt.bind(params.userId).first();
+    const currentBalance = current ? (current as any).balance : 0;
+    const newBalance = currentBalance + creditPoints;
 
-      // 크레딧 잔액 갱신
-      const upsertCreditStmt = db.prepare(`
-        INSERT INTO user_credits (id, user_id, balance, updated_at)
-        VALUES (?, ?, ?, ?)
-        ON CONFLICT(user_id) DO UPDATE SET balance = ?, updated_at = ?
-      `);
-      upsertCreditStmt.run(`crd_${params.userId}`, params.userId, newBalance, nowStr, newBalance, nowStr);
-
-      // 크레딧 거래 원장 기록
-      const insertTxStmt = db.prepare(`
-        INSERT INTO credit_transactions (id, user_id, transaction_type, amount, balance_after, service_type, order_id, description, created_at)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-      `);
-      insertTxStmt.run(
-        `ctx_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`,
-        params.userId,
-        'CHARGE',
-        creditPoints,
-        newBalance,
-        'B2B_CREDIT_PURCHASE',
-        orderId,
-        `B2B 기업 ${params.packageType === 'CREDIT_100K' ? '10만' : '30만'} 크레딧 결제 충전`,
-        nowStr
-      );
-    }
-
-    // 2. b2b_orders 주문 레코드 적재
-    const insertOrderStmt = db.prepare(`
-      INSERT INTO b2b_orders (
-        id, user_id, company_id, package_type, target_job_id,
-        amount, payment_method, pg_provider, pg_payment_key,
-        pg_status, receipt_url, boost_started_at, boost_expires_at, created_at
-      )
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    const upsertCreditStmt = db.prepare(`
+      INSERT INTO user_credits (id, user_id, balance, updated_at)
+      VALUES (?, ?, ?, ?)
+      ON CONFLICT(user_id) DO UPDATE SET balance = ?, updated_at = ?
     `);
-    insertOrderStmt.run(
-      orderId,
-      params.userId,
-      params.companyId || null,
-      params.packageType,
-      params.targetJobId || null,
-      params.amount,
-      params.paymentMethod,
-      'TOSS_PAYMENTS',
-      params.pgPaymentKey,
-      'SUCCESS',
-      params.receiptUrl || `https://receipt.tosspayments.com/mock/${orderId}`,
-      boostStartedAt,
-      boostExpiresAt,
-      nowStr
-    );
+    batchStmts.push(upsertCreditStmt.bind(`crd_${params.userId}`, params.userId, newBalance, nowStr, newBalance, nowStr));
 
-    db.exec('COMMIT;');
-    return {
-      success: true,
-      orderId,
-      packageType: params.packageType,
-      amount: params.amount,
-      boostExpiresAt,
-      receiptUrl: params.receiptUrl || `https://receipt.tosspayments.com/mock/${orderId}`,
-      createdAt: nowStr
-    };
-  } catch (error) {
-    db.exec('ROLLBACK;');
-    throw error;
+    const insertTxStmt = db.prepare(`
+      INSERT INTO credit_transactions (id, user_id, transaction_type, amount, balance_after, service_type, order_id, description, created_at)
+      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `);
+    batchStmts.push(insertTxStmt.bind(
+      `ctx_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`,
+      params.userId, 'CHARGE', creditPoints, newBalance, 'B2B_CREDIT_PURCHASE', orderId,
+      `B2B 기업 ${params.packageType === 'CREDIT_100K' ? '10만' : '30만'} 크레딧 결제 충전`, nowStr
+    ));
   }
+
+  const insertOrderStmt = db.prepare(`
+    INSERT INTO b2b_orders (
+      id, user_id, company_id, package_type, target_job_id,
+      amount, payment_method, pg_provider, pg_payment_key,
+      pg_status, receipt_url, boost_started_at, boost_expires_at, created_at
+    )
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  batchStmts.push(insertOrderStmt.bind(
+    orderId, params.userId, params.companyId || null, params.packageType, params.targetJobId || null,
+    params.amount, params.paymentMethod, 'TOSS_PAYMENTS', params.pgPaymentKey,
+    'SUCCESS', params.receiptUrl || `https://receipt.tosspayments.com/mock/${orderId}`,
+    boostStartedAt, boostExpiresAt, nowStr
+  ));
+
+  await db.batch(batchStmts);
+
+  return {
+    success: true,
+    orderId,
+    packageType: params.packageType,
+    amount: params.amount,
+    boostExpiresAt,
+    receiptUrl: params.receiptUrl || `https://receipt.tosspayments.com/mock/${orderId}`,
+    createdAt: nowStr
+  };
 }
 
-export function getB2BOrders(userId?: string, companyId?: string) {
+export async function getB2BOrders(userId?: string, companyId?: string) {
   const db = getDb();
+  if (!db) return [];
+  
   let sql = 'SELECT * FROM b2b_orders';
-  const params: any[] = [];
+  const params = [];
 
   if (companyId) {
     sql += ' WHERE company_id = ?';
@@ -385,5 +256,31 @@ export function getB2BOrders(userId?: string, companyId?: string) {
 
   sql += ' ORDER BY created_at DESC';
   const stmt = db.prepare(sql);
-  return stmt.all(...params);
+  const result = await stmt.bind(...params).all();
+  return result.results || [];
+}
+
+export async function updateApplicationStage(applicationId: string, companyId: string, newStage: string, memo?: string) {
+  const db = getDb();
+  if (!db) throw new Error('DB not available');
+  
+  const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
+
+  const updateStageStmt = db.prepare(`
+    UPDATE candidate_applications 
+    SET current_stage = ?, updated_at = ?
+    WHERE id = ? AND job_posting_id IN (SELECT id FROM job_postings WHERE company_id = ?)
+  `);
+  
+  const insertLogStmt = db.prepare(`
+    INSERT INTO application_stage_logs (application_id, stage, changed_by, memo, created_at)
+    VALUES (?, ?, ?, ?, ?)
+  `);
+  
+  await db.batch([
+    updateStageStmt.bind(newStage, nowStr, applicationId, companyId),
+    insertLogStmt.bind(applicationId, newStage, companyId, memo || null, nowStr)
+  ]);
+
+  return { success: true };
 }

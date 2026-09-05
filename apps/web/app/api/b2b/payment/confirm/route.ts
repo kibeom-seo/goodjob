@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
     }
 
     // 2. 단일 ACID 트랜잭션으로 주문 기록, 크레딧 적재 또는 공고 부스팅 활성화
-    const result = executeB2BPaymentOrder({
+    const result = await executeB2BPaymentOrder({
       userId,
       companyId,
       packageType,
@@ -65,3 +65,5 @@ export async function POST(request: NextRequest) {
     );
   }
 }
+
+export const runtime = 'edge';

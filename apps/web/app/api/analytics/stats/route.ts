@@ -5,7 +5,7 @@ export const dynamic = 'force-dynamic';
 
 export async function GET() {
   try {
-    const db = getDb();
+    const db = getDb(); if (!db) return Response.json({ success: false, error: "DB not bound" }, { status: 500 });
     
     // DB 실데이터 집계
     const totalJobs = (db.prepare('SELECT count(*) as c FROM job_postings WHERE is_active = 1').get() as any)?.c || 1250;
@@ -36,3 +36,5 @@ export async function GET() {
     );
   }
 }
+
+export const runtime = 'edge';

@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
     const userId = searchParams.get('userId') || 'user_hr_toss';
     const companyId = searchParams.get('companyId') || 'comp_toss';
 
-    const orders = getB2BOrders(userId, companyId);
+    const orders = await getB2BOrders(userId, companyId);
 
     return NextResponse.json({
       success: true,
@@ -23,3 +23,5 @@ export async function GET(request: NextRequest) {
     );
   }
 }
+
+export const runtime = 'edge';

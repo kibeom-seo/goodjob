@@ -1,4 +1,4 @@
-﻿import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
 
 export const dynamic = 'force-dynamic';
@@ -10,13 +10,13 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: false, error: '이메일을 입력해주세요.' }, { status: 400 });
     }
 
-    const db = getDb();
+    const db = getDb(); if (!db) return Response.json({ success: false, error: "DB not bound" }, { status: 500 });
     const updateStmt = db.prepare(
       "UPDATE users SET role = 'ADMIN' WHERE email = ?"
     );
-    const result = updateStmt.run(email);
+    const result = await updateStmt.bind(email).run();
 
-    if (result.changes === 0) {
+    if (!result.success) {
       return NextResponse.json({ success: false, error: '해당 이메일의 사용자를 찾을 수 없습니다.' }, { status: 404 });
     }
 
@@ -29,3 +29,5 @@ export async function POST(request: NextRequest) {
     );
   }
 }
+
+export const runtime = 'edge';

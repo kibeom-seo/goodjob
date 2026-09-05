@@ -48,3 +48,5 @@ export async function PATCH(
     );
   }
 }
+
+export const runtime = 'edge';
