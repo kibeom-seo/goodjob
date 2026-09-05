@@ -2,7 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { getDb } from '@/lib/db';
+import { MOCK_JOBS } from '@/data/mockJobs';
 import { 
   Building2, MapPin, DollarSign, Calendar, Clock, 
   ExternalLink, ArrowLeft, CheckCircle2, ShieldCheck, 
@@ -14,14 +14,15 @@ interface Props {
   params: { id: string };
 }
 
+export async function generateStaticParams() {
+  return MOCK_JOBS.map((job) => ({
+    id: job.id,
+  }));
+}
+
 // 동적 SEO 메타데이터 생성 (SSR)
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const db = getDb();
-  const stmt = db.prepare(`
-    SELECT title, company_name, location, summary_mission, summary_requirements 
-    FROM job_postings WHERE id = ?
-  `);
-  const job = stmt.get(params.id) as any;
+  const job = MOCK_JOBS.find(j => j.id === params.id) as any;
 
   if (!job) {
     return {
@@ -44,30 +45,26 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function JobDetailPage({ params }: Props) {
-  const db = getDb();
-  const stmt = db.prepare(`
-    SELECT 
-      p.*,
-      c.corporate_domain,
-      c.logo_url as comp_logo
-    FROM v_active_job_postings p
-    LEFT JOIN companies c ON p.company_id = c.id
-    WHERE p.id = ?
-  `);
-  const job = stmt.get(params.id) as any;
+  const mockJob = MOCK_JOBS.find(j => j.id === params.id);
 
-  if (!job) {
+  if (!mockJob) {
     notFound();
   }
 
+  // 매핑
+  const job = {
+    ...mockJob,
+    company_name: mockJob.companyName,
+    comp_logo: mockJob.companyLogo,
+    summary_mission: mockJob.companyCategory,
+    summary_requirements: mockJob.title
+  } as any;
+
   // 관련 기술 태그 조회
-  const tagStmt = db.prepare('SELECT tag_name FROM job_tags WHERE job_posting_id = ?');
-  const tags = (tagStmt.all(params.id) as any[]).map(t => t.tag_name);
+  const tags = mockJob.tags || [];
 
   // 출처 조회
-  const originStmt = db.prepare('SELECT source_platform, origin_url FROM crawled_origins WHERE job_posting_id = ?');
-  const origins = originStmt.all(params.id) as any[];
-  const primaryOrigin = origins[0] || { source_platform: 'goodjob', origin_url: '#' };
+  const primaryOrigin = { source_platform: mockJob.collectedSources?.[0] || 'goodjob', origin_url: mockJob.originUrl || '#' };
 
   // 구글 검색 리치 스니펫 (JSON-LD JobPosting 스키마)
   const jsonLd = {
