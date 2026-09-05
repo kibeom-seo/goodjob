@@ -14,6 +14,8 @@ interface Props {
   params: { id: string };
 }
 
+export const runtime = 'edge';
+
 export async function generateStaticParams() {
   return MOCK_JOBS.map((job) => ({
     id: job.id,
