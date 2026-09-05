@@ -19,6 +19,7 @@ import {
   CheckCircle2,
   AlertCircle
 } from 'lucide-react';
+import { useAlert } from '@/context/AlertContext';
 
 interface MonitoringModalProps {
   isOpen: boolean;
@@ -26,6 +27,7 @@ interface MonitoringModalProps {
 }
 
 export default function MonitoringModal({ isOpen, onClose }: MonitoringModalProps) {
+  const { showSuccess } = useAlert();
   const [stats, setStats] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [autoRefresh, setAutoRefresh] = useState(true);
@@ -68,7 +70,7 @@ export default function MonitoringModal({ isOpen, onClose }: MonitoringModalProp
 
   const handleApproveReply = (id: string) => {
     setApprovedList(prev => [...prev, id]);
-    alert('✅ [운영자 승인 완료] AI 시니어 멘토 명의의 따뜻한 조언이 해당 취준생 질문에 즉시 댓글로 등록되었습니다!');
+    showSuccess('운영자 승인 완료', 'AI 시니어 멘토 명의의 따뜻한 조언이 해당 취준생 질문에 즉시 댓글로 등록되었습니다!');
   };
 
   if (!isOpen) return null;

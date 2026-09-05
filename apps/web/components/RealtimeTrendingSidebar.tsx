@@ -250,11 +250,19 @@ export default function RealtimeTrendingSidebar({
               })}
             </div>
 
-            {/* 하단 팁 */}
-            <div className="bg-slate-50 p-3 border-t border-slate-100 text-center">
+            {/* 하단 팁 및 전체 공고 복귀 버튼 */}
+            <div className="bg-slate-50 p-3 border-t border-slate-100 flex items-center justify-between">
               <span className="text-[11px] text-slate-500 font-medium">
-                💡 순위 클릭 시 해당 공고가 즉시 검색됩니다.
+                💡 순위 클릭 시 즉시 검색
               </span>
+              <button
+                onClick={() => onSelectFilter?.('all')}
+                className="text-[11px] font-extrabold text-[#3182F6] hover:text-blue-700 bg-blue-50 hover:bg-blue-100 px-2 py-1 rounded-lg transition-all flex items-center gap-1 shadow-2xs"
+                title="모든 검색과 필터를 해제하고 전체 공고 보기"
+              >
+                <RefreshCw className="w-3 h-3" />
+                <span>전체 공고</span>
+              </button>
             </div>
           </div>
 

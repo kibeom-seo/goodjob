@@ -10,6 +10,7 @@ import ScrapDrawerModal from '../components/ScrapDrawerModal';
 import ResumeSetupModal from '../components/ResumeSetupModal';
 import MonitoringModal from '../components/MonitoringModal';
 import MyPageModal from '../components/MyPageModal';
+import ScrollToTopButton from '../components/ScrollToTopButton';
 import { JobPosting, UserResumeProfile } from '../types/job';
 
 export default function Home() {
@@ -164,11 +165,14 @@ export default function Home() {
       {/* 하단 푸터 */}
       <footer className="w-full border-t border-slate-200/60 py-10 mt-16 text-center text-xs text-slate-400">
         <div className="max-w-5xl mx-auto px-4 space-y-2">
-          <p className="font-bold text-slate-600">굿잡 (GoodJob) - 당신의 첫 합격을 응원하는 스마트 채용 큐레이션 & 익명 라운지</p>
+          <p className="font-bold text-slate-600">굿잡 (GoodJob) - 당신의 첫 합격을 응원하는 스마트 채용 큐레이션 & 굿잡 라운지</p>
           <p>중복 공고를 AI로 정제하고 취준생의 이력서 스펙 기반 실시간 매칭률과 익명 커뮤니티를 제공합니다.</p>
           <p className="text-[11px] text-slate-400">© 2026 GoodJob. All rights reserved. 취준생 여러분, Good Job!</p>
         </div>
       </footer>
+
+      {/* 우측 하단 플로팅 TOP 스크롤 버튼 */}
+      <ScrollToTopButton />
     </main>
   );
 }

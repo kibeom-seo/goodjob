@@ -88,7 +88,7 @@ export default function Navbar({
               }`}
             >
               <MessageSquare className="w-3.5 h-3.5" />
-              <span>익명 블라인드 라운지</span>
+              <span>굿잡 라운지</span>
               <span className="w-2 h-2 rounded-full bg-rose-500" />
             </button>
           </nav>
@@ -132,6 +132,16 @@ export default function Navbar({
           >
             <ShieldCheck className="w-3.5 h-3.5" />
             <span>관리자</span>
+          </Link>
+
+          {/* B2B 기업 ATS & 공고 부스팅 바로가기 */}
+          <Link
+            href="/enterprise/ats"
+            className="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-bold text-blue-700 bg-blue-50 hover:bg-blue-100 transition-colors border border-blue-200/60 whitespace-nowrap shrink-0"
+            title="B2B 기업 ATS 칸반보드 및 공고 부스팅 결제"
+          >
+            <Building2 className="w-3.5 h-3.5 text-blue-600" />
+            <span>기업 ATS</span>
           </Link>
 
           {/* 기업 회원 직접 공고 등록 버튼 */}

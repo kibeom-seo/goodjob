@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  # ============================================================================
+  # 1. GoodJob Next.js 14 Web Application
+  # ============================================================================
+  goodjob-web:
+    build:
+      context: ./apps/web
+      dockerfile: Dockerfile
+    container_name: goodjob_web
+    restart: always
+    ports:
+      - "8088:8088"
+    environment:
+      - NODE_ENV=production
+      - PORT=8088
+      - NEXT_PUBLIC_API_URL=http://localhost:8088
+      - NEXT_PUBLIC_SITE_URL=http://localhost:8088
+    volumes:
+      # SQLite 영속성 보장 (컨테이너 재시작 및 업데이트 시 데이터 보존)
+      - ./apps/web/data:/app/data
+    healthcheck:
+      test: ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://127.0.0.1:8088/api/jobs || exit 1"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+    networks:
+      - goodjob_network
+
+  # ============================================================================
+  # 2. Redis 7 Alpine (실시간 채용 집계, 핫 키 캐시 & 세션 레이트리밋)
+  # ============================================================================
+  goodjob-redis:
+    image: redis:7-alpine
+    container_name: goodjob_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - goodjob_network
+
+networks:
+  goodjob_network:
+    driver: bridge
+
+volumes:
+  redis_data:

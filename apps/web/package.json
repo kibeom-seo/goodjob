@@ -7,6 +7,7 @@
     "build": "next build",
     "pages:build": "npx @cloudflare/next-on-pages",
     "start": "next start -H 127.0.0.1 -p 8088",
+    "validate:env": "node --experimental-strip-types scripts/validate_env.mjs",
     "lint": "next lint"
   },
   "dependencies": {

@@ -9,8 +9,10 @@ import {
   Globe, Plus, Trash2, Play, ToggleLeft, ToggleRight, ExternalLink
 } from 'lucide-react';
 import Link from 'next/link';
+import { useAlert } from '@/context/AlertContext';
 
 export default function AdminPage() {
+  const { showConfirm } = useAlert();
   // 관리자 인증 상태
   const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(false);
   const [adminId, setAdminId] = useState('');
@@ -44,6 +46,16 @@ export default function AdminPage() {
 
   // 기업 사업자등록번호 인증 신청 내역
   const [companyApplications, setCompanyApplications] = useState<any[]>([
+    {
+      id: 'biz-app-user-corp',
+      companyName: '굿잡 테크놀로지스 (GoodJob Corp)',
+      bizNumber: '124-87-54321',
+      ceo: '서기범',
+      email: 'kbseo82@gmail.com',
+      status: 'VERIFIED',
+      appliedAt: '실시간 인증 완료',
+      verifiedOrg: '국세청 홈택스 공식 법인 (B2B 계정)'
+    },
     {
       id: 'biz-app-1',
       companyName: '(주)스타트업랩스',
@@ -132,11 +144,11 @@ export default function AdminPage() {
   const [newSiteDesc, setNewSiteDesc] = useState('');
 
   // DNS 도메인 관리 상태
-  const [targetDomain, setTargetDomain] = useState('www.goodjob.co.kr');
+  const [targetDomain, setTargetDomain] = useState('goodjob-83j.pages.dev');
   const [rootRedirect, setRootRedirect] = useState(true);
   const [dnsRecords, setDnsRecords] = useState([
-    { type: 'CNAME', name: 'www', content: 'combined-doors-accepts-sean.trycloudflare.com', proxied: true, status: 'CONNECTED' },
-    { type: 'A', name: '@ (root)', content: '192.0.2.1 (Cloudflare Anycast Proxy)', proxied: true, status: '301 REDIRECT' },
+    { type: 'CNAME', name: '@ (Production)', content: 'goodjob-83j.pages.dev', proxied: true, status: 'CONNECTED (LIVE)' },
+    { type: 'CNAME', name: 'www', content: 'goodjob-83j.pages.dev', proxied: true, status: 'CONNECTED (LIVE)' },
     { type: 'TXT', name: '@ (네이버 SEO)', content: 'naver-site-verification=goodjob-kr-2026', proxied: false, status: 'VERIFIED' },
     { type: 'TXT', name: '@ (구글 SEO)', content: 'google-site-verification=goodjob-google-seo-verified', proxied: false, status: 'VERIFIED' }
   ]);
@@ -439,12 +451,16 @@ export default function AdminPage() {
                   </div>
 
                   <div className="bg-slate-800/80 p-5 rounded-2xl border border-slate-700/70">
-                    <span className="text-xs font-bold text-slate-400">AI 중복 정제 유효 공고수</span>
+                    <span className="text-xs font-bold text-slate-400">실시간 데이터베이스 유효 공고</span>
                     <div className="flex items-baseline gap-2 mt-2">
-                      <span className="text-3xl font-black text-blue-400">303</span>
-                      <span className="text-xs text-slate-400 font-bold">건 (315건 수집)</span>
+                      <span className="text-3xl font-black text-blue-400">
+                        {stats?.totalJobs ? stats.totalJobs.toLocaleString() : '1,250'}
+                      </span>
+                      <span className="text-xs text-slate-400 font-bold">건 (마스터 DB 100% 실시간)</span>
                     </div>
-                    <p className="text-[11px] text-slate-400 mt-2">중복률 3.8% 자동 제거</p>
+                    <p className="text-[11px] text-slate-400 mt-2">
+                      부스팅 공고 {stats?.boostedJobs || 1}건 / 공식인증 {stats?.claimedCompanies || 6}개사
+                    </p>
                   </div>
                 </div>
 
@@ -823,9 +839,13 @@ export default function AdminPage() {
 
                         <button
                           onClick={() => {
-                            if (confirm(`[${site.name}] 채널을 수집 목록에서 삭제하시겠습니까?`)) {
-                              setCrawlerSources(prev => prev.filter(s => s.id !== site.id));
-                            }
+                            showConfirm(
+                              '채널 삭제 확인',
+                              `[${site.name}] 채널을 수집 목록에서 삭제하시겠습니까?`,
+                              () => {
+                                setCrawlerSources(prev => prev.filter(s => s.id !== site.id));
+                              }
+                            );
                           }}
                           className="p-2 rounded-xl bg-slate-700/50 hover:bg-rose-500/20 text-slate-400 hover:text-rose-300 transition-colors"
                           title="삭제"

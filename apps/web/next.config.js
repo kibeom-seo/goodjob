@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // Node.js SSR 및 중앙 DB Dynamic API 지원
   reactStrictMode: true,
+  output: 'standalone',
   webpack: (config, { isServer }) => {
     config.cache = false;
     return config;
@@ -23,6 +24,14 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'k.kakaocdn.net',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.gstatic.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.google.com',
       }
     ],
   },

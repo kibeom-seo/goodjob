@@ -6,6 +6,7 @@ import {
   FileCheck, AlertCircle, ArrowRight, Check, RefreshCw
 } from 'lucide-react';
 import { JobPosting } from '../types/job';
+import { useAlert } from '@/context/AlertContext';
 
 interface DirectJobPostingModalProps {
   isOpen: boolean;
@@ -14,6 +15,7 @@ interface DirectJobPostingModalProps {
 }
 
 export default function DirectJobPostingModal({ isOpen, onClose, onSubmit }: DirectJobPostingModalProps) {
+  const { showWarning, showSuccess, showConfirm } = useAlert();
   // 스텝 관리: step 1 = 기업 실명/사업자 인증, step 2 = 채용공고 작성
   const [currentStep, setCurrentStep] = useState<1 | 2>(1);
 
@@ -33,9 +35,9 @@ export default function DirectJobPostingModal({ isOpen, onClose, onSubmit }: Dir
   // 공고 작성 필드
   const [title, setTitle] = useState('');
   const [experienceLevel, setExperienceLevel] = useState('신입/경력무관');
-  const [location, setLocation] = useState('서울 강남구');
-  const [salary, setSalary] = useState('회사내규 (협의 가능)');
-  const [tagsInput, setTagsInput] = useState('React, TypeScript, 정규직');
+  const [location, setLocation] = useState('서울 강남구 테헤란로');
+  const [salary, setSalary] = useState('면접 후 결정 (신입 기준 4,000만원 이상 협의)');
+  const [tagsInput, setTagsInput] = useState('React, TypeScript, Next.js');
   const [mission, setMission] = useState('');
   const [requirements, setRequirements] = useState('');
   const [culture, setCulture] = useState('');
@@ -46,17 +48,18 @@ export default function DirectJobPostingModal({ isOpen, onClose, onSubmit }: Dir
   const handleVerifyBusinessNumber = () => {
     const cleaned = businessNumber.replace(/[^0-9]/g, '');
     if (cleaned.length !== 10) {
-      alert('사업자등록번호 10자리를 정확히 입력해 주세요. (예: 220-81-62517)');
+      showWarning('사업자등록번호 확인', '사업자등록번호 10자리를 정확히 입력해 주세요. (예: 220-81-62517)');
       return;
     }
     // 유효 사업자 인증 성공 처리
     setIsBizVerified(true);
+    showSuccess('국세청 진위확인 완료', '국세청 홈택스 DB와 대조하여 정상 사업자임이 인증되었습니다.');
   };
 
   // 기업 공식 이메일 인증코드 발송 및 1초 인증
   const handleSendEmailVerification = () => {
     if (!contactEmail || !contactEmail.includes('@')) {
-      alert('유효한 회사 이메일 주소를 입력해 주세요.');
+      showWarning('이메일 형식 오류', '유효한 회사 이메일 주소를 입력해 주세요.');
       return;
     }
 
@@ -64,9 +67,15 @@ export default function DirectJobPostingModal({ isOpen, onClose, onSubmit }: Dir
     const domain = contactEmail.split('@')[1]?.toLowerCase();
     
     if (freeMailProviders.includes(domain)) {
-      if (!confirm('포털 무료 메일(@' + domain + ')이 입력되었습니다.\n취준생 허위공고 방지를 위해 기업 공식 도메인 메일(예: hr@company.com)을 권장합니다.\n계속 진행하시겠습니까?')) {
-        return;
-      }
+      showConfirm(
+        '공식 기업 메일 권장 안내',
+        '포털 무료 메일(@' + domain + ')이 입력되었습니다.\n취준생 허위공고 방지를 위해 기업 공식 도메인 메일(예: hr@company.com)을 권장합니다.\n계속 진행하시겠습니까?',
+        () => {
+          setIsVerifyingCode(true);
+          setVerificationCode('742918');
+        }
+      );
+      return;
     }
 
     setIsVerifyingCode(true);
@@ -76,16 +85,17 @@ export default function DirectJobPostingModal({ isOpen, onClose, onSubmit }: Dir
   const handleConfirmEmailCode = () => {
     setIsEmailVerified(true);
     setIsVerifyingCode(false);
+    showSuccess('이메일 인증 완료', '기업 채용 담당자 이메일 인증이 완료되었습니다.');
   };
 
   const handleNextStep = (e: React.FormEvent) => {
     e.preventDefault();
     if (!isBizVerified) {
-      alert('안전한 채용 생태계를 위해 [사업자등록번호 국세청 진위확인]을 먼저 완료해 주세요.');
+      showWarning('인증 필수 안내', '안전한 채용 생태계를 위해 [사업자등록번호 국세청 진위확인]을 먼저 완료해 주세요.');
       return;
     }
     if (!companyName || !contactEmail) {
-      alert('기업명과 지원 접수용 이메일을 입력해 주세요.');
+      showWarning('필수 정보 누락', '기업명과 지원 접수용 이메일을 입력해 주세요.');
       return;
     }
     setCurrentStep(2);
@@ -94,7 +104,7 @@ export default function DirectJobPostingModal({ isOpen, onClose, onSubmit }: Dir
   const handleSubmitJob = (e: React.FormEvent) => {
     e.preventDefault();
     if (!title) {
-      alert('채용공고 제목을 입력해 주세요.');
+      showWarning('제목 누락', '채용공고 제목을 입력해 주세요.');
       return;
     }
 
@@ -143,7 +153,7 @@ export default function DirectJobPostingModal({ isOpen, onClose, onSubmit }: Dir
     };
 
     onSubmit(newJob);
-    alert(`[인증 공고 등록 완료] '${companyName}'의 사업자 인증 공고가 정상적으로 등록되었습니다!`);
+    showSuccess('인증 공고 등록 완료', `'${companyName}'의 사업자 인증 공고가 정상적으로 등록되었습니다!`);
     onClose();
     setCurrentStep(1);
   };

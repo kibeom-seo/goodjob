@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import { 
@@ -15,8 +15,14 @@ import {
   Send, 
   Sparkles,
   User,
-  Clock
+  Clock,
+  Flag,
+  AlertTriangle,
+  ShieldAlert,
+  EyeOff,
+  FileCheck
 } from 'lucide-react';
+import { useAlert } from '@/context/AlertContext';
 
 export interface CommunityPost {
   id: string;
@@ -31,6 +37,11 @@ export interface CommunityPost {
   commentsCount: number;
   views: number;
   isLikedByUser?: boolean;
+  reportCount: number;
+  isBlinded: boolean;
+  isMyPost?: boolean;
+  isAppealing?: boolean;
+  appealReason?: string;
   comments: {
     id: string;
     authorTag: string;
@@ -51,9 +62,11 @@ const INITIAL_POSTS: CommunityPost[] = [
     authorCompanyBadge: '현대오토에버 인증',
     createdAt: '10분 전',
     likes: 42,
-    commentsCount: 9,
+    commentsCount: 2,
     views: 680,
     isLikedByUser: false,
+    reportCount: 0,
+    isBlinded: false,
     comments: [
       {
         id: 'c-1',
@@ -81,9 +94,11 @@ const INITIAL_POSTS: CommunityPost[] = [
     authorCompanyBadge: '강남 스타트업 인증',
     createdAt: '1시간 전',
     likes: 85,
-    commentsCount: 16,
+    commentsCount: 1,
     views: 1240,
     isLikedByUser: true,
+    reportCount: 1,
+    isBlinded: false,
     comments: [
       {
         id: 'c-3',
@@ -104,9 +119,11 @@ const INITIAL_POSTS: CommunityPost[] = [
     authorCompanyBadge: '합격 선배',
     createdAt: '3시간 전',
     likes: 128,
-    commentsCount: 24,
+    commentsCount: 1,
     views: 2100,
     isLikedByUser: true,
+    reportCount: 0,
+    isBlinded: false,
     comments: [
       {
         id: 'c-4',
@@ -116,10 +133,30 @@ const INITIAL_POSTS: CommunityPost[] = [
         likes: 12
       }
     ]
+  },
+  {
+    id: 'post-4',
+    category: 'company_blind',
+    categoryLabel: '기업 비하인드·연봉',
+    title: '모 테크 유니콘 과제전형 채용 갑질 의혹 공론화 (내 작성글)',
+    content: '모 유니콘 기업의 과제 전형에서 제출했던 풀스택 시스템 아키텍처 코드가 불합격 통보 후 2주 뒤 실제 해당 서비스 신규 기능으로 흡사하게 배포된 정황이 있습니다. 기술 면접관들의 성의 없는 태도와 과제 도용 의혹에 대해 진상 규명을 요구합니다.',
+    authorTag: '취준생 멘티 (나의 글)',
+    authorCompanyBadge: '굿잡 인증 구직자',
+    createdAt: '4시간 전',
+    likes: 5,
+    commentsCount: 0,
+    views: 420,
+    isLikedByUser: false,
+    reportCount: 5,
+    isBlinded: true,
+    isMyPost: true,
+    isAppealing: false,
+    comments: []
   }
 ];
 
 export default function AnonymousCommunitySection() {
+  const { showSuccess, showWarning } = useAlert();
   const [posts, setPosts] = useState<CommunityPost[]>(INITIAL_POSTS);
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -128,6 +165,15 @@ export default function AnonymousCommunitySection() {
     'post-1': true
   });
   const [newCommentInput, setNewCommentInput] = useState<Record<string, string>>({});
+
+  // MOD-09 신고 모달 상태
+  const [reportingPost, setReportingPost] = useState<CommunityPost | null>(null);
+  const [reportReason, setReportReason] = useState<'SPAM' | 'ABUSE' | 'PROMOTION' | 'INAPPROPRIATE'>('ABUSE');
+  const [reportDetails, setReportDetails] = useState('');
+
+  // MOD-10 소명 모달 상태
+  const [appealingPost, setAppealingPost] = useState<CommunityPost | null>(null);
+  const [appealStatement, setAppealStatement] = useState('');
 
   // 신규 글쓰기 폼 상태
   const [newPostCategory, setNewPostCategory] = useState<'interview' | 'company_blind' | 'talk' | 'career_advice'>('interview');
@@ -179,7 +225,7 @@ export default function AnonymousCommunitySection() {
   const handleCreatePost = (e: React.FormEvent) => {
     e.preventDefault();
     if (!newPostTitle.trim() || !newPostContent.trim()) {
-      alert('제목과 본문을 입력해 주세요.');
+      showWarning('입력 누락 안내', '제목과 본문을 모두 입력해 주세요.');
       return;
     }
 
@@ -203,6 +249,9 @@ export default function AnonymousCommunitySection() {
       commentsCount: 0,
       views: 1,
       isLikedByUser: true,
+      reportCount: 0,
+      isBlinded: false,
+      isMyPost: true,
       comments: []
     };
 
@@ -210,7 +259,59 @@ export default function AnonymousCommunitySection() {
     setNewPostTitle('');
     setNewPostContent('');
     setIsWriteModalOpen(false);
-    alert('🤫 블라인드 익명 게시판에 글이 등록되었습니다!\n개인정보는 SHA-256 단방향 암호화 처리되어 누구도 작성자를 특정할 수 없습니다.');
+    showSuccess(
+      '익명 게시글 등록 완료', 
+      '블라인드 익명 게시판에 글이 안전하게 등록되었습니다!\n개인정보는 SHA-256 단방향 암호화 처리되어 누구도 작성자를 특정할 수 없습니다.'
+    );
+  };
+
+  const handleSubmitReport = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!reportingPost) return;
+
+    setPosts(prev =>
+      prev.map(p => {
+        if (p.id !== reportingPost.id) return p;
+        const newCount = p.reportCount + 1;
+        const willBlind = newCount >= 3;
+        return {
+          ...p,
+          reportCount: newCount,
+          isBlinded: willBlind ? true : p.isBlinded
+        };
+      })
+    );
+
+    const targetTitle = reportingPost.title;
+    setReportingPost(null);
+    setReportDetails('');
+    showWarning(
+      '신고 접수 완료',
+      `신고가 정상 접수되었습니다.\n\n• 사유: ${reportReason}\n• 대상: "${targetTitle}"\n\n🛡️ 허위·역어뷰징 방지 시스템에 의해 기록되며, 누적 신고 시 해당 글은 임시 블라인드 처리됩니다.`
+    );
+  };
+
+  const handleSubmitAppeal = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!appealingPost) return;
+
+    setPosts(prev =>
+      prev.map(p => {
+        if (p.id !== appealingPost.id) return p;
+        return {
+          ...p,
+          isAppealing: true,
+          appealReason: appealStatement
+        };
+      })
+    );
+
+    setAppealingPost(null);
+    setAppealStatement('');
+    showSuccess(
+      '소명 신청 접수 완료',
+      '소명 신청이 성공적으로 접수되었습니다!\n\n전문 운영팀이 24시간 이내에 내용을 검토한 후 부당한 신고로 판명될 경우 즉시 블라인드가 해제됩니다.'
+    );
   };
 
   const filteredPosts = posts.filter(post => {
@@ -227,10 +328,10 @@ export default function AnonymousCommunitySection() {
         <div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold mb-2 border border-emerald-200/60">
             <ShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
-            <span>100% SHA-256 익명 보장 · 취준생 & 현직자 블라인드 라운지</span>
+            <span>100% SHA-256 안심 익명 보장 · 취준생 & 현직자 굿잡 라운지</span>
           </div>
           <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-slate-900">
-            굿잡 익명 선배 & 동기 라운지
+            굿잡 라운지 (GoodJob Lounge)
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 mt-1">
             혼자 끙끙 앓지 마세요. 서류/면접 후기부터 솔직한 기업 썰까지 눈치 보지 않고 익명으로 묻고 답합니다.
@@ -316,13 +417,59 @@ export default function AnonymousCommunitySection() {
                 </div>
               </div>
 
-              {/* 제목 & 내용 */}
-              <h3 className="text-base sm:text-lg font-extrabold text-slate-900 tracking-tight mb-2 hover:text-[#3182F6] transition-colors cursor-pointer">
-                {post.title}
-              </h3>
-              <p className="text-xs sm:text-sm text-slate-700 leading-relaxed whitespace-pre-line mb-4 font-normal">
-                {post.content}
-              </p>
+              {/* 제목 & 본문 (블라인드 여부에 따른 분기) */}
+              {post.isBlinded ? (
+                <div className="bg-amber-50/80 border border-amber-200/80 rounded-2xl p-4 my-2">
+                  <div className="flex items-start gap-3">
+                    <EyeOff className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2">
+                        <span className="text-xs font-black text-amber-900">
+                          다수의 사용자 신고(누적 {post.reportCount}건)로 인해 임시 블라인드 처리된 글입니다
+                        </span>
+                        <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-200/70 text-amber-900">
+                          {post.isAppealing ? '운영팀 소명 심사 중' : '검토 대기'}
+                        </span>
+                      </div>
+                      <p className="text-[11px] text-amber-700 mt-1 leading-relaxed">
+                        본 게시글은 다중 신고 누적으로 자동 비공개되었습니다. 허위 사실 유포 및 음해 방지를 위한 커뮤니티 보호 정책이 적용 중입니다.
+                      </p>
+
+                      {post.isMyPost && (
+                        <div className="mt-3 pt-2.5 border-t border-amber-200/80 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                          <span className="text-[11px] font-bold text-amber-800">
+                            내가 작성한 글인가요? 정당한 사유가 있다면 소명하세요.
+                          </span>
+                          <button
+                            onClick={() => {
+                              setAppealingPost(post);
+                              setAppealStatement('');
+                            }}
+                            disabled={post.isAppealing}
+                            className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all shadow-xs flex items-center justify-center gap-1.5 shrink-0 ${
+                              post.isAppealing
+                                ? 'bg-slate-200 text-slate-500 cursor-not-allowed'
+                                : 'bg-amber-500 hover:bg-amber-600 text-slate-950 font-black'
+                            }`}
+                          >
+                            <FileCheck className="w-3.5 h-3.5" />
+                            <span>{post.isAppealing ? '소명 심사진행 중' : '작성자 이의제기 / 소명하기 (MOD-10)'}</span>
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              ) : (
+                <>
+                  <h3 className="text-base sm:text-lg font-extrabold text-slate-900 tracking-tight mb-2 hover:text-[#3182F6] transition-colors cursor-pointer">
+                    {post.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-700 leading-relaxed whitespace-pre-line mb-4 font-normal">
+                    {post.content}
+                  </p>
+                </>
+              )}
 
               {/* 하단 액션 버튼 */}
               <div className="flex items-center justify-between pt-3 border-t border-slate-100 text-xs">
@@ -343,6 +490,20 @@ export default function AnonymousCommunitySection() {
                   >
                     <MessageSquare className="w-4 h-4 text-slate-400" />
                     <span>댓글 {post.commentsCount}</span>
+                  </button>
+
+                  {/* MOD-09 신고 버튼 */}
+                  <button
+                    onClick={() => {
+                      setReportingPost(post);
+                      setReportReason('ABUSE');
+                      setReportDetails('');
+                    }}
+                    className="inline-flex items-center gap-1 px-2.5 py-1 rounded-xl text-[11px] text-slate-400 hover:text-rose-600 hover:bg-rose-50 transition-all font-semibold"
+                    title="불법·부적절 게시글 신고 (MOD-09)"
+                  >
+                    <Flag className="w-3.5 h-3.5" />
+                    <span>신고 {post.reportCount > 0 ? `(${post.reportCount})` : ''}</span>
                   </button>
                 </div>
 
@@ -399,7 +560,7 @@ export default function AnonymousCommunitySection() {
                 🔒 100% 완전 익명 보장
               </span>
               <h3 className="text-xl font-extrabold text-slate-900 tracking-tight mt-1">
-                블라인드 라운지에 이야기 남기기
+                굿잡 라운지에 이야기 남기기
               </h3>
             </div>
 
@@ -466,6 +627,210 @@ export default function AnonymousCommunitySection() {
                   className="px-5 py-2 bg-[#3182F6] hover:bg-blue-600 text-white rounded-xl text-xs font-bold shadow-xs"
                 >
                   익명으로 게시하기
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* MOD-09 게시글 신고 모달 */}
+      {reportingPost && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-in fade-in duration-200">
+          <div 
+            className="relative w-full max-w-lg bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 animate-in zoom-in-95 duration-200"
+            onClick={e => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
+              <div className="flex items-center gap-2">
+                <div className="p-2 rounded-xl bg-rose-50 text-rose-600">
+                  <Flag className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-[11px] font-mono text-rose-600 font-bold block">MOD-09 · REPORT</span>
+                  <h3 className="text-lg font-extrabold text-slate-900">게시글 신고하기</h3>
+                </div>
+              </div>
+              <button 
+                onClick={() => setReportingPost(null)}
+                className="text-slate-400 hover:text-slate-600 text-xs font-bold p-1"
+              >
+                닫기
+              </button>
+            </div>
+
+            {/* 역어뷰징 방지 경고 배너 */}
+            <div className="p-3.5 bg-rose-50 border border-rose-200/80 rounded-2xl mb-4 text-xs text-rose-900">
+              <div className="flex items-start gap-2">
+                <ShieldAlert className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
+                <div>
+                  <strong className="block font-bold mb-0.5">⚠️ 역어뷰징 및 허위 신고 방지 시스템</strong>
+                  <p className="text-[11px] text-rose-800 leading-relaxed">
+                    기업 평판 훼손 목적의 악의적 허위 신고나 보복성 다중 신고 적발 시, 신고자 계정 즉시 제재 및 신고 가중치 페널티가 영구 부여됩니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* 신고자 신뢰도 지수 배너 */}
+            <div className="flex items-center justify-between px-3.5 py-2 bg-slate-50 rounded-xl border border-slate-200 mb-4 text-xs">
+              <span className="text-slate-500 font-medium">내 신고자 신뢰도 지수:</span>
+              <span className="font-mono font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
+                1.0x (클린 이용자 · 정상 가중치)
+              </span>
+            </div>
+
+            <div className="mb-4">
+              <span className="text-xs text-slate-400 block mb-1 font-medium">신고 대상 게시글</span>
+              <p className="text-xs font-bold text-slate-800 bg-slate-50 p-2.5 rounded-xl border border-slate-200 truncate">
+                "{reportingPost.title}"
+              </p>
+            </div>
+
+            <form onSubmit={handleSubmitReport} className="space-y-4 text-xs">
+              <div>
+                <label className="block font-bold text-slate-700 mb-2">신고 사유 선택 *</label>
+                <div className="space-y-2">
+                  {[
+                    { id: 'ABUSE', label: '🤬 욕설, 비방, 인신공격, 혐오 표현' },
+                    { id: 'INAPPROPRIATE', label: '🚫 허위사실 유포, 사실 왜곡 및 명예훼손' },
+                    { id: 'SPAM', label: '📢 상업적 광고, 도배성 스팸 게시글' },
+                    { id: 'PROMOTION', label: '💼 기업 또는 영리 업체의 거짓 바이럴 마케팅' }
+                  ].map(item => (
+                    <label 
+                      key={item.id}
+                      className={`flex items-center gap-2.5 p-2.5 rounded-xl border cursor-pointer transition-colors ${
+                        reportReason === item.id 
+                          ? 'bg-blue-50/60 border-blue-300 text-blue-900 font-bold' 
+                          : 'bg-white border-slate-200 text-slate-700 hover:bg-slate-50'
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name="reportReason"
+                        value={item.id}
+                        checked={reportReason === item.id}
+                        onChange={() => setReportReason(item.id as any)}
+                        className="text-[#3182F6]"
+                      />
+                      <span>{item.label}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="block font-bold text-slate-700 mb-1">상세 사유 설명 (선택)</label>
+                <textarea
+                  rows={3}
+                  value={reportDetails}
+                  onChange={e => setReportDetails(e.target.value)}
+                  placeholder="구체적인 위반 사항을 적어주시면 운영팀 검토 시 적극 반영됩니다."
+                  className="w-full px-3 py-2 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#3182F6] resize-none"
+                />
+              </div>
+
+              <div className="pt-2 flex items-center justify-end gap-2">
+                <button
+                  type="button"
+                  onClick={() => setReportingPost(null)}
+                  className="px-4 py-2 rounded-xl font-bold text-slate-500 hover:bg-slate-100"
+                >
+                  취소
+                </button>
+                <button
+                  type="submit"
+                  className="px-5 py-2.5 bg-rose-600 hover:bg-rose-700 text-white rounded-xl font-extrabold shadow-sm transition-colors flex items-center gap-1.5"
+                >
+                  <Flag className="w-3.5 h-3.5" />
+                  <span>신뢰도 기반 신고 접수하기</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* MOD-10 블라인드 소명 및 이의제기 모달 */}
+      {appealingPost && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-xs animate-in fade-in duration-200">
+          <div 
+            className="relative w-full max-w-lg bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 animate-in zoom-in-95 duration-200"
+            onClick={e => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between pb-3 border-b border-slate-100 mb-4">
+              <div className="flex items-center gap-2">
+                <div className="p-2 rounded-xl bg-amber-50 text-amber-600">
+                  <FileCheck className="w-5 h-5" />
+                </div>
+                <div>
+                  <span className="text-[11px] font-mono text-amber-600 font-bold block">MOD-10 · APPEAL</span>
+                  <h3 className="text-lg font-extrabold text-slate-900">블라인드 소명 및 이의제기</h3>
+                </div>
+              </div>
+              <button 
+                onClick={() => setAppealingPost(null)}
+                className="text-slate-400 hover:text-slate-600 text-xs font-bold p-1"
+              >
+                닫기
+              </button>
+            </div>
+
+            <div className="p-3.5 bg-amber-50 border border-amber-200/80 rounded-2xl mb-4 text-xs text-amber-900">
+              <div className="flex items-start gap-2">
+                <AlertTriangle className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
+                <div>
+                  <strong className="block font-bold mb-0.5">공정한 커뮤니티를 위한 작성자 소명권 보장</strong>
+                  <p className="text-[11px] text-amber-800 leading-relaxed">
+                    본 게시글이 사실에 기반한 정당한 후기이거나 악의적 허위 신고로 블라인드 처리된 경우 소명 사유를 제출해 주세요. 
+                    운영팀이 24시간 내 심사 후 즉시 블라인드를 해제합니다.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mb-4">
+              <span className="text-xs text-slate-400 block mb-1 font-medium">소명 대상 게시글</span>
+              <p className="text-xs font-bold text-slate-800 bg-slate-50 p-2.5 rounded-xl border border-slate-200 truncate">
+                "{appealingPost.title}"
+              </p>
+            </div>
+
+            <form onSubmit={handleSubmitAppeal} className="space-y-4 text-xs">
+              <div>
+                <label className="block font-bold text-slate-700 mb-1">소명 취지 및 증빙 사실 설명 *</label>
+                <textarea
+                  required
+                  rows={4}
+                  value={appealStatement}
+                  onChange={e => setAppealStatement(e.target.value)}
+                  placeholder="예: 실제 해당 기업 면접에 참여한 사실이 있으며(면접 안내 메일 보유), 허위 사실이 아닌 사실만을 기재하였습니다."
+                  className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl focus:outline-none focus:border-[#3182F6] resize-none"
+                />
+              </div>
+
+              <div className="p-3 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-between text-xs text-slate-500">
+                <span>📎 면접 안내문 / 메일 스크린샷 첨부</span>
+                <label className="px-3 py-1.5 bg-white border border-slate-300 rounded-lg font-bold text-slate-700 cursor-pointer hover:bg-slate-50">
+                  <span>파일 첨부</span>
+                  <input type="file" className="hidden" />
+                </label>
+              </div>
+
+              <div className="pt-2 flex items-center justify-end gap-2">
+                <button
+                  type="button"
+                  onClick={() => setAppealingPost(null)}
+                  className="px-4 py-2 rounded-xl font-bold text-slate-500 hover:bg-slate-100"
+                >
+                  취소
+                </button>
+                <button
+                  type="submit"
+                  className="px-5 py-2.5 bg-amber-500 hover:bg-amber-600 text-slate-950 rounded-xl font-black shadow-sm transition-colors flex items-center gap-1.5"
+                >
+                  <CheckCircle2 className="w-3.5 h-3.5" />
+                  <span>운영팀에 소명서 제출하기</span>
                 </button>
               </div>
             </form>

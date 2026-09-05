@@ -1,8 +1,9 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import { X, Sparkles, CheckCircle2, User, FileText, Code2, MapPin, Briefcase } from 'lucide-react';
 import { UserResumeProfile } from '../types/job';
+import { useAlert } from '@/context/AlertContext';
 
 interface ResumeSetupModalProps {
   isOpen: boolean;
@@ -24,6 +25,7 @@ export default function ResumeSetupModal({
   currentProfile,
   onSaveProfile
 }: ResumeSetupModalProps) {
+  const { showSuccess } = useAlert();
   const [targetRole, setTargetRole] = useState(currentProfile?.targetRole || 'frontend');
   const [experienceLevel, setExperienceLevel] = useState(currentProfile?.experienceLevel || '신입');
   const [selectedSkills, setSelectedSkills] = useState<string[]>(
@@ -74,7 +76,7 @@ export default function ResumeSetupModal({
     };
 
     onSaveProfile(newProfile);
-    alert('🎯 취준생 간편 이력서가 저장되었습니다!\n이제 각 채용공고마다 내 스펙과의 실시간 AI 매칭률이 정확하게 표시됩니다.');
+    showSuccess('취준생 간편 이력서 저장 완료', '간편 이력서가 성공적으로 저장되었습니다!\n이제 각 채용공고마다 내 보유 스택과의 실시간 AI 매칭률이 정확하게 표시됩니다.');
     onClose();
   };
 

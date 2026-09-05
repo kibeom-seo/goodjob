@@ -158,7 +158,7 @@ export default function SocialLoginModal({ isOpen, onClose, onLoginSuccess }: So
         {/* 안심 보증 뱃지 */}
         <div className="mt-4 flex items-center justify-center gap-1.5 text-[11px] text-slate-400">
           <ShieldCheck className="w-3.5 h-3.5 text-emerald-500 shrink-0" />
-          <span>익명 라운지 활동 시 실명과 이메일은 100% 비공개 보호됩니다.</span>
+          <span>굿잡 라운지 활동 시 실명과 이메일은 100% 비공개 보호됩니다.</span>
         </div>
       </div>
     </div>

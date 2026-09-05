@@ -1,4 +1,4 @@
-﻿export type PlatformSource = 'saramin' | 'jobkorea' | 'remember' | 'catch' | 'linkedin' | 'direct';
+export type PlatformSource = 'saramin' | 'jobkorea' | 'remember' | 'catch' | 'linkedin' | 'direct';
 
 export type JobSourceType = 'CRAWLED' | 'DIRECT_HIRE';
 
@@ -35,6 +35,7 @@ export interface JobPosting {
   id: string;
   companyName: string;
   companyLogo: string;
+  corporateDomain?: string;
   companyCategory: string;
   title: string;
   experienceLevel: string;
@@ -54,6 +55,9 @@ export interface JobPosting {
   blindReviews: BlindReview[];
   applicantCount: number;
   viewCount: number;
+  isBoosted?: boolean;
+  boostExpiresAt?: string;
   matchScorePercent?: number; // 이력서 기반 계산된 매칭률
   matchedSkillHighlights?: string[]; // 내 이력서와 일치하는 핵심 기술태그
 }
+

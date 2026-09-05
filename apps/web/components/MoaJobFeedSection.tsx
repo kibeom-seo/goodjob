@@ -23,12 +23,16 @@ import {
   Search,
   Calendar,
   AlertCircle,
-  FileText
+  FileText,
+  RotateCcw,
+  Rocket
 } from 'lucide-react';
 import { JobPosting, UserResumeProfile } from '../types/job';
 import { MOCK_JOBS } from '../data/mockJobs';
 import AiReportModal from './AiReportModal';
 import RealtimeTrendingSidebar from './RealtimeTrendingSidebar';
+import CompanyBrandLogo from './CompanyBrandLogo';
+import { useAlert } from '@/context/AlertContext';
 
 interface MoaJobFeedSectionProps {
   onOpenAuthModal?: () => void;
@@ -45,6 +49,7 @@ export default function MoaJobFeedSection({
   onScrapChange,
   userProfile = null
 }: MoaJobFeedSectionProps) {
+  const { showConfirm } = useAlert();
   const [jobs, setJobs] = useState<JobPosting[]>(MOCK_JOBS);
   const [selectedFilter, setSelectedFilter] = useState<string>('all');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -57,6 +62,12 @@ export default function MoaJobFeedSection({
   const [copiedNotification, setCopiedNotification] = useState<string | null>(null);
   const [selectedJobForReport, setSelectedJobForReport] = useState<JobPosting | null>(null);
 
+  // 3대 고관여 필터 상태
+  const [isRemoteOnly, setIsRemoteOnly] = useState(false);
+  const [isFlexibleWorkOnly, setIsFlexibleWorkOnly] = useState(false);
+  const [isMilitaryServiceOnly, setIsMilitaryServiceOnly] = useState(false);
+  const [isLoadingJobs, setIsLoadingJobs] = useState(false);
+
   useEffect(() => {
     if (additionalJobs.length > 0) {
       setJobs(prev => {
@@ -66,6 +77,83 @@ export default function MoaJobFeedSection({
       });
     }
   }, [additionalJobs]);
+
+  // 백엔드 SQLite DB (/api/jobs) 실시간 연동
+  useEffect(() => {
+    let isCancelled = false;
+    async function loadJobsFromDb() {
+      setIsLoadingJobs(true);
+      try {
+        const params = new URLSearchParams();
+        if (searchQuery.trim()) params.set('q', searchQuery.trim());
+        if (isRemoteOnly) params.set('remote', '1');
+        if (isFlexibleWorkOnly) params.set('flexible', '1');
+        if (isMilitaryServiceOnly) params.set('military', '1');
+        params.set('sort', sortBy === 'deadline' ? 'deadline' : sortBy === 'recent' ? 'latest' : 'match');
+        params.set('limit', '2000'); // 운영 전체 공고 로딩 (리밋 해제)
+
+        const res = await fetch(`/api/jobs?${params.toString()}`);
+        if (!res.ok) throw new Error(`Fetch status: ${res.status}`);
+        const data = await res.json();
+
+        if (!isCancelled && data.success && Array.isArray(data.jobs) && data.jobs.length > 0) {
+          const mappedJobs: JobPosting[] = data.jobs.map((dbJob: any) => ({
+            id: dbJob.id,
+            companyName: dbJob.company_name || '테크기업',
+            companyLogo: dbJob.company_logo || 'https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100',
+            corporateDomain: dbJob.corporate_domain,
+            companyCategory: 'IT/인터넷',
+            title: dbJob.title,
+            experienceLevel: dbJob.experience_level || '신입/경력',
+            location: dbJob.location || '서울',
+            salary: dbJob.salary || '회사 내규에 따름',
+            deadlineText: dbJob.deadline_text || '상시채용',
+            deadlineDaysLeft: typeof dbJob.deadline_days_left === 'number' ? dbJob.deadline_days_left : 10,
+            collectedSources: ['direct'],
+            sourceSummaryText: dbJob.is_claimed ? '🏢 공식 채용 연동' : '원티드·사람인 통합 수집',
+            sourceType: dbJob.is_claimed ? 'DIRECT_HIRE' : 'CRAWLED',
+            tags: (() => {
+              try {
+                return JSON.parse(dbJob.keyword_highlights || '[]');
+              } catch {
+                return ['개발', '성장', '자율출퇴근'];
+              }
+            })(),
+            isBookmarked: false,
+            geminiSummary: {
+              mission: dbJob.summary_mission || '최상의 서비스를 구축하기 위한 엔지니어링',
+              requirements: dbJob.summary_requirements || 'CS 기초 역량 및 적극적인 커뮤니케이션 능력',
+              cultureAndBenefits: dbJob.summary_benefits || '자율 출퇴근, 최신 장비 지원, 성장 지원',
+              generatedAt: '오늘',
+              keywordHighlights: (() => {
+                try {
+                  return JSON.parse(dbJob.keyword_highlights || '[]');
+                } catch {
+                  return ['개발', '신입', '기술스택'];
+                }
+              })()
+            },
+            blindReviews: [],
+            applicantCount: dbJob.scrap_count || 18,
+            viewCount: dbJob.view_count || 450,
+            isBoosted: dbJob.is_boosted === 1,
+            boostExpiresAt: dbJob.boost_expires_at,
+            matchScorePercent: 92
+          }));
+          setJobs(mappedJobs);
+        }
+      } catch (e) {
+        // 백엔드 통신 오류 시 기존 목업 데이터 유지
+      } finally {
+        if (!isCancelled) setIsLoadingJobs(false);
+      }
+    }
+
+    loadJobsFromDb();
+    return () => {
+      isCancelled = true;
+    };
+  }, [isRemoteOnly, isFlexibleWorkOnly, isMilitaryServiceOnly, sortBy]);
 
   // 유저의 간편 이력서(스킬, 직무) 기반 실시간 AI 매칭률 동적 계산
   const calculateJobMatch = (job: JobPosting): { score: number; matchedSkills: string[] } => {
@@ -227,6 +315,26 @@ export default function MoaJobFeedSection({
     setSearchQuery(keyword.split(' ')[0]);
   };
 
+  // 활성화된 필터 또는 검색어가 존재하는지 판별
+  const isAnyFilterActive = Boolean(
+    searchQuery.trim() !== '' ||
+    selectedFilter !== 'all' ||
+    selectedCategory !== 'all' ||
+    isRemoteOnly ||
+    isFlexibleWorkOnly ||
+    isMilitaryServiceOnly
+  );
+
+  // 모든 필터와 검색어를 원클릭으로 초기화하여 전체 공고 보기
+  const handleResetAllFilters = () => {
+    setSearchQuery('');
+    setSelectedFilter('all');
+    setSelectedCategory('all');
+    setIsRemoteOnly(false);
+    setIsFlexibleWorkOnly(false);
+    setIsMilitaryServiceOnly(false);
+  };
+
   const filteredJobs = jobs.filter(job => {
     const matchesFilter =
       selectedFilter === 'all' ||
@@ -256,6 +364,22 @@ export default function MoaJobFeedSection({
       )) ||
       (selectedCategory === 'direct' && job.sourceType === 'DIRECT_HIRE');
 
+    const matchesRemote = !isRemoteOnly || (
+      job.location.includes('재택') || job.location.includes('리모트') || 
+      job.tags.some(t => t.toLowerCase().includes('재택') || t.toLowerCase().includes('리모트')) ||
+      (job.geminiSummary?.cultureAndBenefits || '').includes('재택') || (job.geminiSummary?.cultureAndBenefits || '').includes('리모트')
+    );
+
+    const matchesFlexible = !isFlexibleWorkOnly || (
+      job.tags.some(t => t.includes('유연') || t.includes('자율') || t.includes('4.5') || t.includes('시차')) ||
+      (job.geminiSummary?.cultureAndBenefits || '').includes('유연') || (job.geminiSummary?.cultureAndBenefits || '').includes('자율')
+    );
+
+    const matchesMilitary = !isMilitaryServiceOnly || (
+      job.tags.some(t => t.includes('병역') || t.includes('전문연')) ||
+      job.title.includes('병역') || job.title.includes('전문연')
+    );
+
     const q = searchQuery.trim().toLowerCase();
     let matchesSearch = true;
     if (q !== '') {
@@ -272,11 +396,15 @@ export default function MoaJobFeedSection({
       );
     }
 
-    return matchesFilter && matchesCategory && matchesSearch;
+    return matchesFilter && matchesCategory && matchesRemote && matchesFlexible && matchesMilitary && matchesSearch;
   });
 
-  // 정렬 순서 계산: 매칭률순, 마감일 임박순(D-Day), 최신순
+  // 정렬 순서 계산: 부스팅 공고 최우선 + 매칭률순, 마감일 임박순(D-Day), 최신순
   const displayedJobs = [...filteredJobs].sort((a, b) => {
+    // 1. 유료 프리미엄 부스팅 공고 무조건 최상단 골든 슬롯 우선 노출
+    if (a.isBoosted && !b.isBoosted) return -1;
+    if (!a.isBoosted && b.isBoosted) return 1;
+
     if (sortBy === 'match') {
       const scoreA = userProfile ? calculateJobMatch(a).score : (a.matchScorePercent || 85);
       const scoreB = userProfile ? calculateJobMatch(b).score : (b.matchScorePercent || 85);
@@ -393,6 +521,7 @@ export default function MoaJobFeedSection({
         <RealtimeTrendingSidebar 
           onSelectKeyword={handleSelectTrendingKeyword}
           onSelectFilter={(f) => {
+            if (f === 'all') handleResetAllFilters();
             if (f === 'urgent') setSelectedFilter('today');
             if (f === 'matching') onOpenResumeModal?.();
           }}
@@ -404,12 +533,13 @@ export default function MoaJobFeedSection({
           <div className="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-slate-200/60">
           <div className="flex items-center gap-1.5 overflow-x-auto text-xs font-medium pb-1 sm:pb-0">
             <button
-              onClick={() => setSelectedFilter('all')}
+              onClick={handleResetAllFilters}
               className={`px-3.5 py-1.5 rounded-xl transition-all ${
-                selectedFilter === 'all'
+                !isAnyFilterActive
                   ? 'bg-slate-900 text-white font-semibold shadow-xs'
                   : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200/80'
               }`}
+              title="모든 검색과 필터를 해제하고 전체 공고 보기"
             >
               전체 ({filteredJobs.length}/{jobs.length})
             </button>
@@ -481,16 +611,75 @@ export default function MoaJobFeedSection({
               </button>
             ))}
           </div>
+
+          {/* 3대 고관여 필터 칩 (독립 토글 & SQLite DB 실시간 연동) */}
+          <div className="w-full flex items-center gap-2 pt-2.5 border-t border-slate-100 overflow-x-auto text-xs">
+            <span className="text-slate-400 font-bold shrink-0 text-[11px] hidden sm:inline">🎯 3대 고관여 필터:</span>
+            <button
+              onClick={() => setIsRemoteOnly(!isRemoteOnly)}
+              className={`px-3 py-1.5 rounded-xl font-bold transition-all flex items-center gap-1.5 shrink-0 ${
+                isRemoteOnly
+                  ? 'bg-indigo-600 text-white shadow-xs'
+                  : 'bg-indigo-50 text-indigo-700 hover:bg-indigo-100 border border-indigo-200'
+              }`}
+            >
+              <span>🏡 풀 리모트/재택</span>
+              {isRemoteOnly && <span className="text-[10px] bg-white/20 px-1 rounded font-mono">ON</span>}
+            </button>
+
+            <button
+              onClick={() => setIsFlexibleWorkOnly(!isFlexibleWorkOnly)}
+              className={`px-3 py-1.5 rounded-xl font-bold transition-all flex items-center gap-1.5 shrink-0 ${
+                isFlexibleWorkOnly
+                  ? 'bg-purple-600 text-white shadow-xs'
+                  : 'bg-purple-50 text-purple-700 hover:bg-purple-100 border border-purple-200'
+              }`}
+            >
+              <span>⏰ 유연근무/주4.5일</span>
+              {isFlexibleWorkOnly && <span className="text-[10px] bg-white/20 px-1 rounded font-mono">ON</span>}
+            </button>
+
+            <button
+              onClick={() => setIsMilitaryServiceOnly(!isMilitaryServiceOnly)}
+              className={`px-3 py-1.5 rounded-xl font-bold transition-all flex items-center gap-1.5 shrink-0 ${
+                isMilitaryServiceOnly
+                  ? 'bg-emerald-700 text-white shadow-xs'
+                  : 'bg-emerald-50 text-emerald-800 hover:bg-emerald-100 border border-emerald-200'
+              }`}
+            >
+              <span>🎖️ 병역특례/전문연</span>
+              {isMilitaryServiceOnly && <span className="text-[10px] bg-white/20 px-1 rounded font-mono">ON</span>}
+            </button>
+
+            {isLoadingJobs && (
+              <span className="text-[11px] text-blue-600 animate-pulse font-bold ml-2">
+                ⚡ DB 실시간 쿼리 중...
+              </span>
+            )}
+          </div>
         </div>
 
         {/* 정렬 옵션 바: 매칭률순 (추천) / 마감일 임박순 (D-Day) / 최신순 */}
-        <div className="flex items-center justify-between gap-3 px-1 py-1">
-          <div className="text-xs text-slate-500">
-            총 <strong className="text-slate-900 font-bold">{displayedJobs.length}</strong>개의 공고
-            {userProfile && sortBy === 'match' && (
-              <span className="text-[#3182F6] font-semibold ml-1.5">
-                (내 스펙 일치도 실시간 반영 중)
-              </span>
+        <div className="flex flex-wrap items-center justify-between gap-3 px-1 py-1">
+          <div className="flex items-center gap-2.5 text-xs text-slate-500">
+            <div>
+              총 <strong className="text-slate-900 font-bold">{displayedJobs.length}</strong>개의 공고
+              {userProfile && sortBy === 'match' && (
+                <span className="text-[#3182F6] font-semibold ml-1.5">
+                  (내 스펙 일치도 실시간 반영 중)
+                </span>
+              )}
+            </div>
+
+            {isAnyFilterActive && (
+              <button
+                onClick={handleResetAllFilters}
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold text-rose-600 bg-rose-50 hover:bg-rose-100 active:scale-95 border border-rose-200/90 rounded-xl transition-all shadow-xs"
+                title="모든 검색어와 필터를 초기화하고 전체 채용 공고로 돌아갑니다"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>전체 공고 보기 (필터 초기화)</span>
+              </button>
             )}
           </div>
 
@@ -501,10 +690,14 @@ export default function MoaJobFeedSection({
             <button
               onClick={() => {
                 if (!userProfile) {
-                  if (confirm('내 스펙을 1분 만에 등록하시면 기술스택 일치도 기반 진짜 AI 매칭률순으로 정렬됩니다.\n지금 스펙을 등록하시겠습니까?')) {
-                    onOpenResumeModal?.();
-                    return;
-                  }
+                  showConfirm(
+                    '취준생 맞춤 스펙 등록 안내',
+                    '내 스펙(보유 기술스택)을 1분 만에 등록하시면 기술스택 일치도 기반 진짜 AI 매칭률순으로 정렬됩니다.\n지금 스펙을 등록하시겠습니까?',
+                    () => {
+                      onOpenResumeModal?.();
+                    }
+                  );
+                  return;
                 }
                 setSortBy('match');
               }}
@@ -558,13 +751,25 @@ export default function MoaJobFeedSection({
           return (
             <article
               key={job.id}
-              className={`group relative bg-white rounded-3xl border ${
-                isDirectHire ? 'border-emerald-200/90 ring-1 ring-emerald-500/10' : 'border-slate-100/90'
-              } shadow-[0_4px_20px_-2px_rgba(15,23,42,0.04)] hover:shadow-[0_12px_30px_-4px_rgba(15,23,42,0.08)] transition-all duration-300 p-6 sm:p-8`}
+              className={`group relative bg-white rounded-3xl border transition-all duration-300 p-6 sm:p-8 ${
+                job.isBoosted 
+                  ? 'border-amber-300 ring-2 ring-amber-400/30 bg-gradient-to-b from-amber-50/20 to-white shadow-[0_8px_30px_rgb(251,191,36,0.12)]' 
+                  : isDirectHire 
+                  ? 'border-emerald-200/90 ring-1 ring-emerald-500/10 shadow-[0_4px_20px_-2px_rgba(15,23,42,0.04)]' 
+                  : 'border-slate-100/90 shadow-[0_4px_20px_-2px_rgba(15,23,42,0.04)] hover:shadow-[0_12px_30px_-4px_rgba(15,23,42,0.08)]'
+              }`}
             >
-              {/* 상단 배지 헤더 (마감일정 & 진짜 AI 매칭률) */}
+              {/* 상단 배지 헤더 (마감일정 & 진짜 AI 매칭률 & 부스팅 뱃지) */}
               <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
                 <div className="flex items-center gap-2 flex-wrap">
+                  {/* B2B 유료 부스팅 골든 뱃지 */}
+                  {job.isBoosted && (
+                    <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs font-black shadow-xs animate-pulse">
+                      <Rocket className="w-3.5 h-3.5 text-amber-200" />
+                      <span>프리미엄 부스팅</span>
+                    </div>
+                  )}
+
                   {isDirectHire ? (
                     <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-50 text-emerald-800 text-xs font-bold border border-emerald-200/70">
                       <Building2 className="w-3.5 h-3.5 text-emerald-600" />
@@ -631,11 +836,11 @@ export default function MoaJobFeedSection({
 
               {/* 회사 및 직무 정보 */}
               <div className="flex items-start gap-4 mb-5">
-                <img
-                  src={job.companyLogo}
-                  alt={job.companyName}
-                  referrerPolicy="no-referrer"
-                  className="w-14 h-14 rounded-2xl object-cover ring-1 ring-slate-200/60 shadow-xs shrink-0"
+                <CompanyBrandLogo 
+                  logo={job.companyLogo} 
+                  domain={job.corporateDomain} 
+                  name={job.companyName} 
+                  size="lg" 
                 />
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 mb-1">
@@ -643,7 +848,9 @@ export default function MoaJobFeedSection({
                     <span className="text-xs text-slate-400 font-medium">{job.companyCategory}</span>
                   </div>
                   <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 tracking-tight leading-snug group-hover:text-[#3182F6] transition-colors">
-                    {job.title}
+                    <a href={`/jobs/${job.id}`} className="hover:underline">
+                      {job.title}
+                    </a>
                   </h3>
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-1.5 mt-2 text-xs sm:text-sm text-slate-600">
                     <span className="flex items-center gap-1.5"><Building2 className="w-3.5 h-3.5 text-slate-400" />{job.experienceLevel}</span>

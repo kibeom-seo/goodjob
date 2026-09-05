@@ -1,0 +1,12 @@
+{
+  "archiveId": "worm_1788569931631_287621c0",
+  "applicationId": "app_2026_0905_toss_01",
+  "candidateId": "usr_cand_01",
+  "targetCompanyId": "comp_toss",
+  "fileName": "홍길동_이력서_2026.pdf",
+  "fileSha256": "b1191565c93cb68d5db5e8069ebcca8dfe8bbad7cd0700a3cbc3444b2a09110f",
+  "archivedAt": "2026-09-05T00:58:51.631Z",
+  "retentionUntil": "2029-09-05T00:58:51.631Z",
+  "objectLockMode": "COMPLIANCE",
+  "status": "PURGED_BY_LIFECYCLE"
+}
