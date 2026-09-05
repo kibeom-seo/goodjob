@@ -1,21 +1,16 @@
-import path from 'path';
-
-// Node.js 22 내장 SQLite 모듈 동적 로드 (TypeScript 20.x 호환)
-// @ts-ignore
-const { DatabaseSync } = typeof require !== 'undefined' ? require('node:sqlite') : {};
-
-// 중앙 DB 파일 경로 (apps/web/data/goodjob.db)
-const DB_PATH = path.join(process.cwd(), 'data', 'goodjob.db');
-
-let instance: any = null;
+import { getRequestContext } from '@cloudflare/next-on-pages';
 
 export function getDb(): any {
-  if (!instance) {
-    instance = new DatabaseSync(DB_PATH);
-    instance.exec('PRAGMA foreign_keys = ON;');
-    instance.exec('PRAGMA journal_mode = WAL;');
+  try {
+    const { env } = getRequestContext();
+    if (!env || !env.DB) {
+      console.warn('D1 Database binding not found.');
+      return null;
+    }
+    return env.DB;
+  } catch (e) {
+    return null;
   }
-  return instance;
 }
 
 // ============================================================================

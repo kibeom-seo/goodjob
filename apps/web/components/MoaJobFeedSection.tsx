@@ -115,6 +115,7 @@ export default function MoaJobFeedSection({
             location: dbJob.location || '서울',
             salary: dbJob.salary || '회사 내규에 따름',
             deadlineText: dbJob.deadline_text || '상시채용',
+            deadlineDateStr: dbJob.deadline_at ? new Date(dbJob.deadline_at).toLocaleDateString('ko-KR') : undefined,
             deadlineDaysLeft: typeof dbJob.deadline_days_left === 'number' ? dbJob.deadline_days_left : 10,
             collectedSources: ['direct'],
             sourceSummaryText: dbJob.is_claimed ? '🏢 공식 채용 연동' : '원티드·사람인 통합 수집',

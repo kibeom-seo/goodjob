@@ -32,7 +32,7 @@ export default function ScrollToTopButton() {
 
   return (
     <div
-      className={`fixed bottom-6 left-6 sm:bottom-8 sm:left-8 z-40 transition-all duration-300 ease-out ${
+      className={`fixed bottom-6 right-6 sm:bottom-8 sm:right-8 z-40 transition-all duration-300 ease-out ${
         isVisible 
           ? 'opacity-100 translate-y-0 pointer-events-auto' 
           : 'opacity-0 translate-y-4 pointer-events-none'
