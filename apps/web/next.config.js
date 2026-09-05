@@ -1,13 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Node.js SSR 및 중앙 DB Dynamic API 지원
+  // Node.js SSR 및 중앙 DB Dynamic API 지원 (현재 정적 배포를 위해 export 사용)
   reactStrictMode: true,
-  output: 'standalone',
+  output: 'export',
   webpack: (config, { isServer }) => {
     config.cache = false;
     return config;
   },
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: 'https',
