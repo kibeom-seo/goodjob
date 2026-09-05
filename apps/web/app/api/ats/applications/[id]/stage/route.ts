@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { updateApplicationStageWithAudit } from '@/lib/db';
+import { updateApplicationStage } from '@/lib/db';
 
 export const dynamic = 'force-dynamic';
 
@@ -14,7 +14,7 @@ export async function PATCH(
 
     if (!stage) {
       return NextResponse.json(
-        { success: false, error: '전형 단계(stage)가 지정되지 않았습니다.' },
+        { success: false, error: '지원 전형 단계(stage)가 지정되지 않았습니다.' },
         { status: 400 }
       );
     }
@@ -27,13 +27,12 @@ export async function PATCH(
       );
     }
 
-    const result = updateApplicationStageWithAudit({
-      applicationId,
-      newStage: stage,
-      changedByUserId: changedByUserId || 'user_hr_toss',
-      changeReason,
-      withdrawalReason
-    });
+    const result = await updateApplicationStage(
+      applicationId, 
+      changedByUserId || 'user_hr_toss', 
+      stage, 
+      changeReason || withdrawalReason
+    );
 
     return NextResponse.json({
       success: true,
