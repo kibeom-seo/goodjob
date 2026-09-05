@@ -40,6 +40,7 @@ interface MoaJobFeedSectionProps {
   additionalJobs?: JobPosting[];
   onScrapChange?: (bookmarkedList: JobPosting[]) => void;
   userProfile?: UserResumeProfile | null;
+  currentUser?: { name: string; email: string; avatar: string; provider: string, role?: string } | null;
 }
 
 export default function MoaJobFeedSection({ 
@@ -47,14 +48,20 @@ export default function MoaJobFeedSection({
   onOpenResumeModal,
   additionalJobs = [], 
   onScrapChange,
-  userProfile = null
+  userProfile = null,
+  currentUser = null
 }: MoaJobFeedSectionProps) {
   const { showConfirm } = useAlert();
   const [jobs, setJobs] = useState<JobPosting[]>(MOCK_JOBS);
   const [selectedFilter, setSelectedFilter] = useState<string>('all');
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [sortBy, setSortBy] = useState<'match' | 'deadline' | 'recent'>('match');
+  const [sortBy, setSortBy] = useState<'match' | 'deadline' | 'recent'>(currentUser ? 'match' : 'recent');
+  
+  // 로그인이 변경될 때 정렬 순서 업데이트
+  useEffect(() => {
+    setSortBy(currentUser ? 'match' : 'recent');
+  }, [currentUser]);
   const [expandedReviews, setExpandedReviews] = useState<Record<string, boolean>>({
     'real-job-1': true,
   });

@@ -548,6 +548,47 @@ export default function AdminPage() {
                     </div>
                   </div>
                 </div>
+
+                {/* 운영자 권한 부여 */}
+                <div className="bg-slate-800/80 p-5 rounded-2xl border border-slate-700/70">
+                  <h4 className="text-xs font-bold text-slate-300 uppercase tracking-wider mb-4 flex items-center gap-2">
+                    <ShieldCheck className="w-4 h-4 text-emerald-400" />
+                    운영자 권한 부여
+                  </h4>
+                  <div className="flex gap-2">
+                    <input 
+                      type="email" 
+                      id="grant-admin-email"
+                      placeholder="권한을 부여할 이메일 입력" 
+                      className="flex-1 bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-white"
+                    />
+                    <button 
+                      onClick={async () => {
+                        const email = (document.getElementById('grant-admin-email') as HTMLInputElement).value;
+                        if (!email) return alert('이메일을 입력하세요.');
+                        try {
+                          const res = await fetch('/api/admin/grant', {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ email })
+                          });
+                          const data = await res.json();
+                          if (data.success) {
+                            alert('권한 부여 성공');
+                            (document.getElementById('grant-admin-email') as HTMLInputElement).value = '';
+                          } else {
+                            alert('실패: ' + data.error);
+                          }
+                        } catch (e) {
+                          alert('오류 발생');
+                        }
+                      }}
+                      className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 rounded-xl text-xs font-bold text-white transition-colors"
+                    >
+                      권한 부여
+                    </button>
+                  </div>
+                </div>
               </div>
             )}
 

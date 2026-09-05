@@ -14,7 +14,7 @@ interface NavbarProps {
   onOpenMonitoringModal: () => void;
   onOpenMyPageModal: () => void;
   scrapCount?: number;
-  currentUser?: { name: string; email: string; avatar: string; provider: string } | null;
+  currentUser?: { name: string; email: string; avatar: string; provider: string, role?: string } | null;
   resumeProfile?: UserResumeProfile | null;
   onLogout?: () => void;
 }
@@ -113,26 +113,30 @@ export default function Navbar({
           </div>
 
           {/* 실시간 접속자 모니터링 관제 버튼 (운영자/관리자 뷰) */}
-          <button
-            onClick={onOpenMonitoringModal}
-            className="inline-flex items-center gap-1 px-2 sm:px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-900 hover:bg-slate-800 text-white shadow-xs transition-all whitespace-nowrap shrink-0"
-            title="실시간 접속자 & 트래픽 관제 대시보드"
-          >
-            <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-            <Activity className="w-3.5 h-3.5 text-emerald-400" />
-            <span className="hidden sm:inline">LIVE</span>
-            <span className="hidden md:inline">접속자</span>
-          </button>
+          {currentUser?.role === 'ADMIN' && (
+            <button
+              onClick={onOpenMonitoringModal}
+              className="inline-flex items-center gap-1 px-2 sm:px-2.5 py-1.5 rounded-xl text-xs font-bold bg-slate-900 hover:bg-slate-800 text-white shadow-xs transition-all whitespace-nowrap shrink-0"
+              title="실시간 접속자 & 트래픽 관제 대시보드"
+            >
+              <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+              <Activity className="w-3.5 h-3.5 text-emerald-400" />
+              <span className="hidden sm:inline">LIVE</span>
+              <span className="hidden md:inline">접속자</span>
+            </button>
+          )}
 
           {/* 최고 관리자 센터 바로가기 버튼 */}
-          <Link
-            href="/admin"
-            className="hidden md:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-bold bg-blue-600 hover:bg-blue-500 text-white shadow-xs transition-all whitespace-nowrap shrink-0"
-            title="수집 사이트 및 DNS 관리자 센터"
-          >
-            <ShieldCheck className="w-3.5 h-3.5" />
-            <span>관리자</span>
-          </Link>
+          {currentUser?.role === 'ADMIN' && (
+            <Link
+              href="/admin"
+              className="hidden md:inline-flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-xs font-bold bg-blue-600 hover:bg-blue-500 text-white shadow-xs transition-all whitespace-nowrap shrink-0"
+              title="수집 사이트 및 DNS 관리자 센터"
+            >
+              <ShieldCheck className="w-3.5 h-3.5" />
+              <span>관리자</span>
+            </Link>
+          )}
 
           {/* B2B 기업 ATS & 공고 부스팅 바로가기 */}
           <Link

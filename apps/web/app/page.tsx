@@ -23,7 +23,7 @@ export default function Home() {
   const [isMyPageModalOpen, setIsMyPageModalOpen] = useState(false);
   const [customJobs, setCustomJobs] = useState<JobPosting[]>([]);
   const [bookmarkedJobs, setBookmarkedJobs] = useState<JobPosting[]>([]);
-  const [currentUser, setCurrentUser] = useState<{ name: string; email: string; avatar: string; provider: string } | null>(null);
+  const [currentUser, setCurrentUser] = useState<{ name: string; email: string; avatar: string; provider: string, role?: string } | null>(null);
   const [userProfile, setUserProfile] = useState<UserResumeProfile | null>(null);
 
   // 마운트 시 소셜 로그인 세션 확인 및 OAuth 리디렉션 처리
@@ -103,6 +103,7 @@ export default function Home() {
           additionalJobs={customJobs}
           onScrapChange={(list) => setBookmarkedJobs(list)}
           userProfile={userProfile}
+          currentUser={currentUser}
         />
       )}
 
