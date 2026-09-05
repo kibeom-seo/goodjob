@@ -1,0 +1,9 @@
+name = "goodjob-web"
+pages_build_output_dir = "out"
+compatibility_date = "2024-09-01"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "goodjob-db"
+database_id = "a58af87b-b739-4901-8c09-6b673835027b"
