@@ -2,7 +2,6 @@
 const nextConfig = {
   // Node.js SSR 및 중앙 DB Dynamic API 지원
   reactStrictMode: true,
-  output: 'standalone',
   webpack: (config, { isServer }) => {
     config.cache = false;
     return config;
