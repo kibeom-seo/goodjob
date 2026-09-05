@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev -H 127.0.0.1 -p 8088",
     "build": "next build",
-    "pages:build": "npx @cloudflare/next-on-pages",
+    "pages:build": "npx @cloudflare/next-on-pages && rm -rf out && cp -r .vercel/output/static out",
     "start": "next start -H 127.0.0.1 -p 8088",
     "validate:env": "node --experimental-strip-types scripts/validate_env.mjs",
     "lint": "next lint"
