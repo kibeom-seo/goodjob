@@ -216,9 +216,14 @@ export async function executeB2BPaymentOrder(params: B2BPaymentOrderParams) {
   }
 }
 
-export async function getB2BOrders(userId: string) {
+export async function getB2BOrders(userId: string, companyId?: string) {
   const db = getDb();
   if (!db) return [];
+  if (companyId) {
+    const stmt = db.prepare('SELECT * FROM b2b_orders WHERE user_id = ? OR company_id = ? ORDER BY created_at DESC');
+    const result = await stmt.bind(userId, companyId).all();
+    return result.results || [];
+  }
   const stmt = db.prepare('SELECT * FROM b2b_orders WHERE user_id = ? ORDER BY created_at DESC');
   const result = await stmt.bind(userId).all();
   return result.results || [];
