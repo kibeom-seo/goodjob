@@ -419,12 +419,12 @@ export default function AdminPage() {
                     </div>
                     <div className="flex items-baseline gap-2">
                       <span className="text-3xl font-black text-emerald-400">
-                        {stats?.activeUsersNow || 142}
+                        {stats?.activeUsersNow ?? 0}
                       </span>
                       <span className="text-xs text-slate-400 font-bold">명 접속 중</span>
                     </div>
                     <p className="text-[11px] text-slate-400 mt-2">
-                      모바일 64% · 데스크톱 36%
+                      실시간 동시 세션 관제
                     </p>
                   </div>
 
@@ -432,34 +432,32 @@ export default function AdminPage() {
                     <span className="text-xs font-bold text-slate-400">오늘 누적 순방문자 (UV)</span>
                     <div className="flex items-baseline gap-2 mt-2">
                       <span className="text-3xl font-black text-white">
-                        {stats?.todayUV?.toLocaleString() || '3,840'}
+                        {stats?.todayUV?.toLocaleString() ?? '0'}
                       </span>
-                      <span className="text-xs text-emerald-400 font-bold">▲ 18.2%</span>
                     </div>
-                    <p className="text-[11px] text-slate-400 mt-2">취준생 유입 급증</p>
+                    <p className="text-[11px] text-slate-400 mt-2">금일 실시간 순방문자</p>
                   </div>
 
                   <div className="bg-slate-800/80 p-5 rounded-2xl border border-slate-700/70">
                     <span className="text-xs font-bold text-slate-400">오늘 페이지뷰 (PV)</span>
                     <div className="flex items-baseline gap-2 mt-2">
                       <span className="text-3xl font-black text-white">
-                        {stats?.todayPV?.toLocaleString() || '18,920'}
+                        {stats?.todayPV?.toLocaleString() ?? '0'}
                       </span>
-                      <span className="text-xs text-blue-400 font-bold">인당 4.9페이지</span>
                     </div>
-                    <p className="text-[11px] text-slate-400 mt-2">공고 상세 & 커뮤니티 열람</p>
+                    <p className="text-[11px] text-slate-400 mt-2">금일 실시간 페이지뷰</p>
                   </div>
 
                   <div className="bg-slate-800/80 p-5 rounded-2xl border border-slate-700/70">
                     <span className="text-xs font-bold text-slate-400">실시간 데이터베이스 유효 공고</span>
                     <div className="flex items-baseline gap-2 mt-2">
                       <span className="text-3xl font-black text-blue-400">
-                        {stats?.totalJobs ? stats.totalJobs.toLocaleString() : '1,250'}
+                        {stats?.totalJobs ? stats.totalJobs.toLocaleString() : '0'}
                       </span>
-                      <span className="text-xs text-slate-400 font-bold">건 (마스터 DB 100% 실시간)</span>
+                      <span className="text-xs text-slate-400 font-bold">건 (D1 실시간 DB)</span>
                     </div>
                     <p className="text-[11px] text-slate-400 mt-2">
-                      부스팅 공고 {stats?.boostedJobs || 1}건 / 공식인증 {stats?.claimedCompanies || 6}개사
+                      부스팅 공고 {stats?.boostedJobs ?? 0}건 / 공식인증 {stats?.claimedCompanies ?? 0}개사
                     </p>
                   </div>
                 </div>
