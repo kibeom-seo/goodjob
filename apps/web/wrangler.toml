@@ -1,4 +1,4 @@
-name = "goodjob-web"
+name = "goodjob"
 pages_build_output_dir = "out"
 compatibility_date = "2024-09-01"
 compatibility_flags = ["nodejs_compat"]
