@@ -166,8 +166,8 @@ export interface B2BPaymentOrderParams {
   targetJobId?: string;
   amount: number;
   paymentMethod: string;
-  pgProvider: string;
-  pgPaymentKey: string;
+  pgProvider?: string;
+  pgPaymentKey?: string;
   pgStatus?: string;
   receiptUrl?: string;
 }
