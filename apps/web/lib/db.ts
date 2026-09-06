@@ -3,11 +3,14 @@ import { getRequestContext } from '@cloudflare/next-on-pages';
 export function getDb(): any {
   try {
     const { env } = getRequestContext();
-    if (!env || !(env as any).DB) {
-      console.warn('D1 Database binding not found.');
+    const e = env as any;
+    if (!e) return null;
+    const db = e.DB || e.goodjob_db || e.GOODJOB_DB || e['goodjob-db'];
+    if (!db) {
+      console.warn('D1 Database binding (DB / goodjob_db) not found in env.');
       return null;
     }
-    return (env as any).DB;
+    return db;
   } catch (e) {
     return null;
   }
