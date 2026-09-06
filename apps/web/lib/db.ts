@@ -2,15 +2,19 @@ import { getRequestContext } from '@cloudflare/next-on-pages';
 
 export function getDb(): any {
   try {
-    const { env } = getRequestContext();
-    const e = env as any;
-    if (!e) return null;
-    const db = e.DB || e.goodjob_db || e.GOODJOB_DB || e['goodjob-db'];
-    if (!db) {
-      console.warn('D1 Database binding (DB / goodjob_db) not found in env.');
-      return null;
+    let env: any = null;
+    try {
+      const ctx = getRequestContext();
+      env = ctx?.env;
+    } catch (_) {}
+
+    if (!env) {
+      env = (globalThis as any).env || (globalThis as any).__env__ || (process as any).env;
     }
-    return db;
+
+    if (!env) return null;
+    const db = env.DB || env.goodjob_db || env.GOODJOB_DB || env['goodjob-db'];
+    return db || null;
   } catch (e) {
     return null;
   }
@@ -102,188 +106,139 @@ export async function getAtsFunnelAnalytics(jobId?: string) {
 
 export interface CreditTransactionParams {
   userId: string;
-  type: 'CHARGE' | 'USE' | 'REFUND' | 'REWARD_BONUS';
+  transactionType: 'DEPOSIT' | 'USAGE' | 'REFUND';
   amount: number;
-  serviceType: string;
-  description: string;
+  serviceType?: string;
   orderId?: string;
+  description?: string;
 }
 
 export async function executeCreditTransaction(params: CreditTransactionParams) {
   const db = getDb();
-  if (!db) throw new Error('DB not available');
-  
-  const findBalanceStmt = db.prepare('SELECT balance FROM user_credits WHERE user_id = ?');
-  const current = await findBalanceStmt.bind(params.userId).first();
-  const currentBalance = current ? (current as any).balance : 0;
-  
-  const newBalance = currentBalance + params.amount;
-  if (newBalance < 0) {
-    throw new Error(`잔액이 부족합니다. (현재: ${currentBalance}, 요청: ${params.amount})`);
+  if (!db) return { success: false, error: 'Database unavailable' };
+
+  try {
+    const userRes = await db.prepare('SELECT balance FROM user_credits WHERE user_id = ?').bind(params.userId).first() as any;
+    const currentBalance = userRes?.balance || 0;
+    
+    let newBalance = currentBalance;
+    if (params.transactionType === 'DEPOSIT' || params.transactionType === 'REFUND') {
+      newBalance += params.amount;
+    } else if (params.transactionType === 'USAGE') {
+      if (currentBalance < params.amount) {
+        return { success: false, error: '보유 크레딧 잔액이 부족합니다.' };
+      }
+      newBalance -= params.amount;
+    }
+
+    const txId = `tx_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
+    const nowIso = new Date().toISOString();
+
+    const insertTx = db.prepare(`
+      INSERT INTO credit_transactions (
+        id, user_id, transaction_type, amount, balance_after, service_type, order_id, description, created_at
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `).bind(
+      txId, params.userId, params.transactionType, params.amount, newBalance,
+      params.serviceType || null, params.orderId || null, params.description || null, nowIso
+    );
+
+    const upsertCredit = db.prepare(`
+      INSERT INTO user_credits (id, user_id, balance, updated_at)
+      VALUES (?, ?, ?, ?)
+      ON CONFLICT(user_id) DO UPDATE SET
+        balance = excluded.balance,
+        updated_at = excluded.updated_at
+    `).bind(`cred_${params.userId}`, params.userId, newBalance, nowIso);
+
+    await db.batch([insertTx, upsertCredit]);
+    return { success: true, transactionId: txId, newBalance };
+  } catch (error: any) {
+    console.error('Credit transaction error:', error);
+    return { success: false, error: error.message };
   }
-
-  const txId = `ctx_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
-  const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
-
-  const credId = `crd_${params.userId}`;
-  
-  const upsertCreditStmt = db.prepare(`
-    INSERT INTO user_credits (id, user_id, balance, updated_at)
-    VALUES (?, ?, ?, ?)
-    ON CONFLICT(user_id) DO UPDATE SET balance = ?, updated_at = ?
-  `);
-  
-  const insertTxStmt = db.prepare(`
-    INSERT INTO credit_transactions (id, user_id, transaction_type, amount, balance_after, service_type, order_id, description, created_at)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-  `);
-  
-  // D1 Batch transaction
-  await db.batch([
-    upsertCreditStmt.bind(credId, params.userId, newBalance, nowStr, newBalance, nowStr),
-    insertTxStmt.bind(txId, params.userId, params.type, params.amount, newBalance, params.serviceType, params.orderId || null, params.description, nowStr)
-  ]);
-
-  return {
-    success: true,
-    transactionId: txId,
-    previousBalance: currentBalance,
-    balanceAfter: newBalance,
-    amount: params.amount,
-    updatedAt: nowStr
-  };
 }
 
-export interface B2BPaymentConfirmParams {
+export interface B2BPaymentOrderParams {
   userId: string;
   companyId?: string;
-  packageType: 'BOOST_7D' | 'BOOST_30D' | 'CREDIT_100K' | 'CREDIT_300K';
+  packageType: 'ENTERPRISE_AI_MONTHLY' | 'JOB_BOOSTING_14DAYS' | 'DIRECT_CREDIT_TOPUP';
   targetJobId?: string;
   amount: number;
   paymentMethod: string;
+  pgProvider: string;
   pgPaymentKey: string;
+  pgStatus?: string;
   receiptUrl?: string;
 }
 
-export async function executeB2BPaymentOrder(params: B2BPaymentConfirmParams) {
+export async function executeB2BPaymentOrder(params: B2BPaymentOrderParams) {
   const db = getDb();
-  if (!db) throw new Error('DB not available');
-  
-  const orderId = `ord_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
-  const now = new Date();
-  const nowStr = now.toISOString().replace('T', ' ').substring(0, 19);
+  if (!db) return { success: false, error: 'Database unavailable' };
 
-  let boostStartedAt: string | null = null;
-  let boostExpiresAt: string | null = null;
-  
-  const batchStmts = [];
+  try {
+    const orderId = `ord_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`;
+    const nowIso = new Date().toISOString();
 
-  if (params.packageType === 'BOOST_7D' || params.packageType === 'BOOST_30D') {
-    if (!params.targetJobId) throw new Error('타겟 공고가 지정되지 않았습니다.');
-    
-    const durationDays = params.packageType === 'BOOST_7D' ? 7 : 30;
-    const expireDate = new Date(now.getTime() + durationDays * 24 * 60 * 60 * 1000);
-    boostStartedAt = nowStr;
-    boostExpiresAt = expireDate.toISOString().replace('T', ' ').substring(0, 19);
+    let boostExpiresAt: string | null = null;
+    if (params.packageType === 'JOB_BOOSTING_14DAYS') {
+      const exp = new Date(Date.now() + 14 * 24 * 60 * 60 * 1000);
+      boostExpiresAt = exp.toISOString();
+    }
 
-    const boostStmt = db.prepare(`UPDATE job_postings SET is_boosted = 1, boost_expires_at = ? WHERE id = ?`);
-    batchStmts.push(boostStmt.bind(boostExpiresAt, params.targetJobId));
-  } else if (params.packageType === 'CREDIT_100K' || params.packageType === 'CREDIT_300K') {
-    const creditPoints = params.packageType === 'CREDIT_100K' ? 100000 : 300000;
-    
-    const findBalanceStmt = db.prepare('SELECT balance FROM user_credits WHERE user_id = ?');
-    const current = await findBalanceStmt.bind(params.userId).first();
-    const currentBalance = current ? (current as any).balance : 0;
-    const newBalance = currentBalance + creditPoints;
+    const insertOrder = db.prepare(`
+      INSERT INTO b2b_orders (
+        id, user_id, company_id, package_type, target_job_id, amount,
+        payment_method, pg_provider, pg_payment_key, pg_status, receipt_url,
+        boost_started_at, boost_expires_at, created_at
+      ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    `).bind(
+      orderId, params.userId, params.companyId || null, params.packageType, params.targetJobId || null,
+      params.amount, params.paymentMethod, params.pgProvider, params.pgPaymentKey,
+      params.pgStatus || 'SUCCESS', params.receiptUrl || null,
+      boostExpiresAt ? nowIso : null, boostExpiresAt, nowIso
+    );
 
-    const upsertCreditStmt = db.prepare(`
-      INSERT INTO user_credits (id, user_id, balance, updated_at)
-      VALUES (?, ?, ?, ?)
-      ON CONFLICT(user_id) DO UPDATE SET balance = ?, updated_at = ?
-    `);
-    batchStmts.push(upsertCreditStmt.bind(`crd_${params.userId}`, params.userId, newBalance, nowStr, newBalance, nowStr));
+    const statements = [insertOrder];
 
-    const insertTxStmt = db.prepare(`
-      INSERT INTO credit_transactions (id, user_id, transaction_type, amount, balance_after, service_type, order_id, description, created_at)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-    `);
-    batchStmts.push(insertTxStmt.bind(
-      `ctx_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`,
-      params.userId, 'CHARGE', creditPoints, newBalance, 'B2B_CREDIT_PURCHASE', orderId,
-      `B2B 기업 ${params.packageType === 'CREDIT_100K' ? '10만' : '30만'} 크레딧 결제 충전`, nowStr
-    ));
+    if (params.packageType === 'JOB_BOOSTING_14DAYS' && params.targetJobId) {
+      statements.push(
+        db.prepare('UPDATE job_postings SET is_boosted = 1, boost_expires_at = ? WHERE id = ?')
+          .bind(boostExpiresAt, params.targetJobId)
+      );
+    }
+
+    await db.batch(statements);
+    return { success: true, orderId, boostExpiresAt };
+  } catch (error: any) {
+    console.error('B2B payment order error:', error);
+    return { success: false, error: error.message };
   }
-
-  const insertOrderStmt = db.prepare(`
-    INSERT INTO b2b_orders (
-      id, user_id, company_id, package_type, target_job_id,
-      amount, payment_method, pg_provider, pg_payment_key,
-      pg_status, receipt_url, boost_started_at, boost_expires_at, created_at
-    )
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-  `);
-  batchStmts.push(insertOrderStmt.bind(
-    orderId, params.userId, params.companyId || null, params.packageType, params.targetJobId || null,
-    params.amount, params.paymentMethod, 'TOSS_PAYMENTS', params.pgPaymentKey,
-    'SUCCESS', params.receiptUrl || `https://receipt.tosspayments.com/mock/${orderId}`,
-    boostStartedAt, boostExpiresAt, nowStr
-  ));
-
-  await db.batch(batchStmts);
-
-  return {
-    success: true,
-    orderId,
-    packageType: params.packageType,
-    amount: params.amount,
-    boostExpiresAt,
-    receiptUrl: params.receiptUrl || `https://receipt.tosspayments.com/mock/${orderId}`,
-    createdAt: nowStr
-  };
 }
 
-export async function getB2BOrders(userId?: string, companyId?: string) {
+export async function getB2BOrders(userId: string) {
   const db = getDb();
   if (!db) return [];
-  
-  let sql = 'SELECT * FROM b2b_orders';
-  const params = [];
-
-  if (companyId) {
-    sql += ' WHERE company_id = ?';
-    params.push(companyId);
-  } else if (userId) {
-    sql += ' WHERE user_id = ?';
-    params.push(userId);
-  }
-
-  sql += ' ORDER BY created_at DESC';
-  const stmt = db.prepare(sql);
-  const result = await stmt.bind(...params).all();
+  const stmt = db.prepare('SELECT * FROM b2b_orders WHERE user_id = ? ORDER BY created_at DESC');
+  const result = await stmt.bind(userId).all();
   return result.results || [];
 }
 
 export async function updateApplicationStage(applicationId: string, companyId: string, newStage: string, memo?: string) {
   const db = getDb();
-  if (!db) throw new Error('DB not available');
-  
-  const nowStr = new Date().toISOString().replace('T', ' ').substring(0, 19);
+  if (!db) return { success: false, error: 'Database unavailable' };
 
-  const updateStageStmt = db.prepare(`
-    UPDATE candidate_applications 
-    SET current_stage = ?, updated_at = ?
-    WHERE id = ? AND job_posting_id IN (SELECT id FROM job_postings WHERE company_id = ?)
-  `);
-  
-  const insertLogStmt = db.prepare(`
-    INSERT INTO application_stage_logs (application_id, stage, changed_by, memo, created_at)
-    VALUES (?, ?, ?, ?, ?)
-  `);
-  
-  await db.batch([
-    updateStageStmt.bind(newStage, nowStr, applicationId, companyId),
-    insertLogStmt.bind(applicationId, newStage, companyId, memo || null, nowStr)
-  ]);
+  try {
+    const nowIso = new Date().toISOString();
+    const updateApp = db.prepare('UPDATE candidate_applications SET current_stage = ? WHERE id = ?').bind(newStage, applicationId);
+    const insertLog = db.prepare(`
+      INSERT INTO application_stage_logs (application_id, stage, changed_by, memo, created_at)
+      VALUES (?, ?, ?, ?, ?)
+    `).bind(applicationId, newStage, companyId, memo || null, nowIso);
 
-  return { success: true };
+    await db.batch([updateApp, insertLog]);
+    return { success: true };
+  } catch (error: any) {
+    return { success: false, error: error.message };
+  }
 }
