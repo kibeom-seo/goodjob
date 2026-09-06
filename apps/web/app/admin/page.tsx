@@ -156,10 +156,14 @@ export default function AdminPage() {
   const [isCrawling, setIsCrawling] = useState(false);
 
   // 크롤러 즉시 수집 트리거 (빌드 없이 D1 DB 직접 적재)
-  const handleTriggerCrawler = async () => {
+  const handleTriggerCrawler = async (count = 50) => {
     setIsCrawling(true);
     try {
-      const res = await fetch('/api/admin/crawler/trigger', { method: 'POST' });
+      const res = await fetch('/api/admin/crawler/trigger', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ count })
+      });
       if (!res.ok) {
         const errText = await res.text();
         throw new Error(`서버 응답 오류 (${res.status}): ${errText.substring(0, 150)}`);
@@ -763,16 +767,29 @@ export default function AdminPage() {
                     </p>
                   </div>
 
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-2">
                     <button
-                      onClick={handleTriggerCrawler}
+                      onClick={() => handleTriggerCrawler(50)}
                       disabled={isCrawling}
-                      className={`px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-md inline-flex items-center gap-1.5 text-white ${
+                      className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all shadow-md inline-flex items-center gap-1.5 text-white ${
                         isCrawling ? 'bg-slate-600 cursor-not-allowed opacity-75' : 'bg-emerald-600 hover:bg-emerald-500 active:scale-95'
                       }`}
+                      title="5대 채용 플랫폼 50건 정밀 수집"
                     >
                       <Play className={`w-3.5 h-3.5 fill-current ${isCrawling ? 'animate-spin' : ''}`} />
-                      <span>{isCrawling ? '실시간 수집 및 D1 적재 중...' : '전체 크롤러 지금 즉시 실행'}</span>
+                      <span>{isCrawling ? '수집 및 D1 적재 중...' : '전체 크롤러 즉시 실행 (50건)'}</span>
+                    </button>
+
+                    <button
+                      onClick={() => handleTriggerCrawler(100)}
+                      disabled={isCrawling}
+                      className={`px-3.5 py-2 rounded-xl text-xs font-bold transition-all shadow-md inline-flex items-center gap-1.5 text-white ${
+                        isCrawling ? 'bg-slate-600 cursor-not-allowed opacity-75' : 'bg-blue-600 hover:bg-blue-500 active:scale-95'
+                      }`}
+                      title="대량 100건 일괄 수집"
+                    >
+                      <Sparkles className="w-3.5 h-3.5" />
+                      <span>100건 대량 수집</span>
                     </button>
                   </div>
                 </div>

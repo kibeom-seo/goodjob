@@ -18,12 +18,13 @@ export async function GET() {
 
     if (db) {
       try {
-        const threeMinAgoIso = new Date(Date.now() - 3 * 60 * 1000).toISOString();
+        // 45초 이내에 하트비트를 보낸 실제 활성 세션만 집계 (이탈 시 즉시 감소)
+        const fortyFiveSecAgoIso = new Date(Date.now() - 45 * 1000).toISOString();
         const todayStartIso = new Date(new Date().setHours(0, 0, 0, 0)).toISOString();
 
         const activeSessionsRes = await db.prepare(
           'SELECT count(*) as c FROM active_sessions WHERE last_active_at >= ?'
-        ).bind(threeMinAgoIso).first() as any;
+        ).bind(fortyFiveSecAgoIso).first() as any;
 
         const todayUvRes = await db.prepare(
           'SELECT count(DISTINCT session_id) as uv FROM active_sessions WHERE last_active_at >= ?'
