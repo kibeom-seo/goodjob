@@ -2,7 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { MOCK_JOBS } from '@/data/mockJobs';
+import { MOCK_JOBS, ALL_JOBS } from '@/data/mockJobs';
 import { 
   Building2, MapPin, DollarSign, Calendar, Clock, 
   ExternalLink, ArrowLeft, CheckCircle2, ShieldCheck, 
@@ -15,17 +15,18 @@ interface Props {
   params: { id: string };
 }
 
+export const dynamic = 'force-dynamic';
 export const runtime = 'edge';
 
 export async function generateStaticParams() {
-  return MOCK_JOBS.map((job) => ({
+  return MOCK_JOBS.slice(0, 30).map((job) => ({
     id: job.id,
   }));
 }
 
 // 동적 SEO 메타데이터 생성 (SSR)
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const job = MOCK_JOBS.find(j => j.id === params.id) as any;
+  const job = (ALL_JOBS.find(j => j.id === params.id) || MOCK_JOBS.find(j => j.id === params.id)) as any;
 
   if (!job) {
     return {
@@ -48,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default function JobDetailPage({ params }: Props) {
-  const mockJob = MOCK_JOBS.find(j => j.id === params.id);
+  const mockJob = ALL_JOBS.find(j => j.id === params.id) || MOCK_JOBS.find(j => j.id === params.id);
 
   if (!mockJob) {
     notFound();
