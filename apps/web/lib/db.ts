@@ -162,10 +162,10 @@ export async function executeCreditTransaction(params: CreditTransactionParams) 
 export interface B2BPaymentOrderParams {
   userId: string;
   companyId?: string;
-  packageType: 'ENTERPRISE_AI_MONTHLY' | 'JOB_BOOSTING_14DAYS' | 'DIRECT_CREDIT_TOPUP';
+  packageType: string;
   targetJobId?: string;
   amount: number;
-  paymentMethod: string;
+  paymentMethod?: string;
   pgProvider?: string;
   pgPaymentKey?: string;
   pgStatus?: string;

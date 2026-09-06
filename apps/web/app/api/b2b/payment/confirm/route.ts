@@ -48,6 +48,7 @@ export async function POST(request: NextRequest) {
       targetJobId,
       amount: Number(amount),
       paymentMethod,
+      pgProvider: 'TOSS_PAYMENTS',
       pgPaymentKey: pgPaymentKey || `toss_pay_${Date.now()}_${Math.random().toString(36).substr(2, 6)}`,
       receiptUrl
     });
