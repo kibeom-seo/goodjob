@@ -160,6 +160,10 @@ export default function AdminPage() {
     setIsCrawling(true);
     try {
       const res = await fetch('/api/admin/crawler/trigger', { method: 'POST' });
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(`서버 응답 오류 (${res.status}): ${errText.substring(0, 150)}`);
+      }
       const data = await res.json();
       if (data.success) {
         alert(`⚡ [실시간 수집 완료]\n${data.message}\n현재 D1 데이터베이스 총 유효 공고: ${data.totalJobs}건`);
@@ -168,7 +172,7 @@ export default function AdminPage() {
         alert('크롤러 실행 실패: ' + (data.error || '오류 발생'));
       }
     } catch (e: any) {
-      alert('크롤러 실행 중 통신 오류가 발생했습니다.');
+      alert(`크롤러 실행 중 오류: ${e.message}`);
     } finally {
       setIsCrawling(false);
     }
@@ -179,12 +183,14 @@ export default function AdminPage() {
     setIsLoading(true);
     try {
       const res = await fetch('/api/analytics/stats');
-      const data = await res.json();
-      if (data.success) {
-        setStats(data.data);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.success) {
+          setStats(data.data);
+        }
       }
     } catch (e) {
-      console.error(e);
+      console.error('Stats fetch error:', e);
     } finally {
       setIsLoading(false);
     }
