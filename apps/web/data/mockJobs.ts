@@ -1,6 +1,5 @@
 import { JobPosting } from '../types/job';
 
-// 굿잡(GoodJob) 실시간 취준생 맞춤 마감일정 & 기술태그 동기화 데이터
 export const MOCK_JOBS: JobPosting[] = [
   {
     "id": "real-job-1",
@@ -66253,5 +66252,11345 @@ export const MOCK_JOBS: JobPosting[] = [
         "isLikedByUser": false
       }
     ]
+  },
+  {
+    "id": "goodjob-1",
+    "companyName": "이노에이엑스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "기술연구소 솔루션 웹개발자경력 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 경력 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/11(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 기술연구소 솔루션 웹개발자경력 채용",
+      "requirements": "기술연구소 솔루션 웹개발자경력 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-2",
+    "companyName": "지에스아이티엠",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "유통 SI 프로젝트 PM / PL /개발자/ DBA 대규모 모집",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 종로구 경력4년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/30(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 유통 SI 프로젝트 PM / PL /개발자/ DBA 대규모 모집",
+      "requirements": "유통 SI 프로젝트 PM / PL /개발자/ DBA 대규모 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-3",
+    "companyName": "미디어윌네트웍스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[알바천국본사] AI개발자정규직 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력1년↑ 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/17(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [알바천국본사] AI개발자정규직 채용",
+      "requirements": "[알바천국본사] AI개발자정규직 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-4",
+    "companyName": "비트컴퓨터",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[비트컴퓨터] 신사업 풀스택개발자(Product Engineer)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구 경력무관 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/30(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [비트컴퓨터] 신사업 풀스택개발자(Product Engineer)",
+      "requirements": "[비트컴퓨터] 신사업 풀스택개발자(Product Engineer)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-5",
+    "companyName": "인터엑스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드 (Backend) ​개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 신입·경력 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/24(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드 (Backend) ​개발자",
+      "requirements": "백엔드 (Backend) ​개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-6",
+    "companyName": "삼중테크",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[창원] 주차시스템 관제 S/W개발자채용 (C#/.NET, IoT·로봇제어)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경남 창원시 성산구 신입·경력 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/13(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [창원] 주차시스템 관제 S/W개발자채용 (C#/.NET, IoT·로봇제어)",
+      "requirements": "[창원] 주차시스템 관제 S/W개발자채용 (C#/.NET, IoT·로봇제어)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-7",
+    "companyName": "어니컴",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[어니컴(주)] 데이터 분석 서비스개발자모집 (경력 무관)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 용산구 경력무관 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "오늘마감",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [어니컴(주)] 데이터 분석 서비스개발자모집 (경력 무관)",
+      "requirements": "[어니컴(주)] 데이터 분석 서비스개발자모집 (경력 무관)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-8",
+    "companyName": "쿨스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[ICT사업부] 프론트/백엔드/챗봇/인공지능 웹개발자정규직 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "부산 강서구 경력무관 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/30(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [ICT사업부] 프론트/백엔드/챗봇/인공지능 웹개발자정규직 채용",
+      "requirements": "[ICT사업부] 프론트/백엔드/챗봇/인공지능 웹개발자정규직 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-9",
+    "companyName": "앰진",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주)앰진개발자신입·경력 채용공고",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 신입·경력 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "내일마감",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주)앰진개발자신입·경력 채용공고",
+      "requirements": "(주)앰진개발자신입·경력 채용공고",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-10",
+    "companyName": "투게더스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주)투게더스에서 웹개발자채용합니다",
+    "experienceLevel": "신입/경력무관",
+    "location": "인천 부평구 경력무관 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/13(화)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주)투게더스에서 웹개발자채용합니다",
+      "requirements": "(주)투게더스에서 웹개발자채용합니다",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-11",
+    "companyName": "티윈",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[LG 협력사] 백엔드개발자채용 (상현역/마곡역)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 용인시 수지구 경력3년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "오늘마감",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [LG 협력사] 백엔드개발자채용 (상현역/마곡역)",
+      "requirements": "[LG 협력사] 백엔드개발자채용 (상현역/마곡역)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-12",
+    "companyName": "윈드밀소프트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Salesforce 세일즈포스개발자신입/경력(3년 이상) 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 마포구 신입·경력 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Salesforce 세일즈포스개발자신입/경력(3년 이상) 채용",
+      "requirements": "Salesforce 세일즈포스개발자신입/경력(3년 이상) 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-13",
+    "companyName": "글로벌비전",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "AI개발자. 바이브코딩. 오픈클로 실무 경험자 채용합니다.",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 신입·경력 초대졸↑ 정규직 300 만원",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/23(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] AI개발자. 바이브코딩. 오픈클로 실무 경험자 채용합니다.",
+      "requirements": "AI개발자. 바이브코딩. 오픈클로 실무 경험자 채용합니다.",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-14",
+    "companyName": "에버스핀",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[신입/경력] 웹개발자(Web Developer)채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 동작구 경력무관 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/01(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [신입/경력] 웹개발자(Web Developer)채용",
+      "requirements": "[신입/경력] 웹개발자(Web Developer)채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-15",
+    "companyName": "이트리즈시스템",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[SI/SM] JAVA 기반 웹개발자신입 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 구로구 신입 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/30(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [SI/SM] JAVA 기반 웹개발자신입 채용",
+      "requirements": "[SI/SM] JAVA 기반 웹개발자신입 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-16",
+    "companyName": "마이패스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주)마이패스에서 웹개발자와 함께 성장해요",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 관악구 경력무관 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/09(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주)마이패스에서 웹개발자와 함께 성장해요",
+      "requirements": "(주)마이패스에서 웹개발자와 함께 성장해요",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-17",
+    "companyName": "식스스타스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "철도 관제시스템 분야 소프트웨어개발자(신입·경력)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 광명시 신입·경력 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/25(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 철도 관제시스템 분야 소프트웨어개발자(신입·경력)",
+      "requirements": "철도 관제시스템 분야 소프트웨어개발자(신입·경력)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-18",
+    "companyName": "로지브라더스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[코드모스] 백엔드개발자채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 신입·경력 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/17(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [코드모스] 백엔드개발자채용",
+      "requirements": "[코드모스] 백엔드개발자채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-19",
+    "companyName": "다원컴퓨팅",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[신입]개발자채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 용인시 기흥구 신입 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/13(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [신입]개발자채용",
+      "requirements": "[신입]개발자채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-20",
+    "companyName": "글로우업리즈",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "글로우업리즈(주)개발자채용합니다.",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 성동구 경력무관 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/03(토)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 글로우업리즈(주)개발자채용합니다.",
+      "requirements": "글로우업리즈(주)개발자채용합니다.",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-21",
+    "companyName": "이비엠엔지니어링",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "AI개발자채용 공고",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 마포구 경력무관 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/25(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] AI개발자채용 공고",
+      "requirements": "AI개발자채용 공고",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-22",
+    "companyName": "크럭스데이타",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "금융IT 솔루션 풀스택개발자채용(신입, 경력)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력무관 대졸↑ 정규직·계약직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 금융IT 솔루션 풀스택개발자채용(신입, 경력)",
+      "requirements": "금융IT 솔루션 풀스택개발자채용(신입, 경력)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-23",
+    "companyName": "펄포즌PURPOZEN",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "주도적으로 설계하는 Java/Spring 백엔드개발자채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 신입·경력 학력무관 정규직 3,300 만원",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/30(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 주도적으로 설계하는 Java/Spring 백엔드개발자채용",
+      "requirements": "주도적으로 설계하는 Java/Spring 백엔드개발자채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-24",
+    "companyName": "브이링크글로벌VLINKGLOBALCOLTD",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "웹개발자및 백엔드 엔지니어 구함",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력무관 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 웹개발자및 백엔드 엔지니어 구함",
+      "requirements": "웹개발자및 백엔드 엔지니어 구함",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-25",
+    "companyName": "리퀴드",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "웹·앱 서비스개발자(신입/경력) 모집",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력무관 학력무관 계약직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/30(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 웹·앱 서비스개발자(신입/경력) 모집",
+      "requirements": "웹·앱 서비스개발자(신입/경력) 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-26",
+    "companyName": "이씨오",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[이씨오] 도서관 웹 솔루션 Back-end JAVA개발자채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 종로구 신입·경력 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/18(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [이씨오] 도서관 웹 솔루션 Back-end JAVA개발자채용",
+      "requirements": "[이씨오] 도서관 웹 솔루션 Back-end JAVA개발자채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-27",
+    "companyName": "칼영업소",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[CAL/ 일본 근무] WEB/ IT개발자채용, 미경험 신입 대환영",
+    "experienceLevel": "신입/경력무관",
+    "location": "일본 경력무관 초대졸↑ 정규직 3,700 만원",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/27(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [CAL/ 일본 근무] WEB/ IT개발자채용, 미경험 신입 대환영",
+      "requirements": "[CAL/ 일본 근무] WEB/ IT개발자채용, 미경험 신입 대환영",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-28",
+    "companyName": "에이브릭스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "조금 부족해도 괜찮아요, 함께 성장할개발자를 찾습니다.",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 금천구 경력무관 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/10(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 조금 부족해도 괜찮아요, 함께 성장할개발자를 찾습니다.",
+      "requirements": "조금 부족해도 괜찮아요, 함께 성장할개발자를 찾습니다.",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-29",
+    "companyName": "지어소프트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "IT서비스부문 Web/Sever,  Cloud개발자채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 종로구 경력 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/30(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] IT서비스부문 Web/Sever,  Cloud개발자채용",
+      "requirements": "IT서비스부문 Web/Sever,  Cloud개발자채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-30",
+    "companyName": "펨트론",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[펨트론] SW개발자채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 금천구 신입·경력 대졸↑ 정규직·계약직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/30(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [펨트론] SW개발자채용",
+      "requirements": "[펨트론] SW개발자채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-31",
+    "companyName": "피에스앤마케팅",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[피에스앤마케팅] 웹개발자(백엔드) 경력 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 마포구 경력 3~7년 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/11(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [피에스앤마케팅] 웹개발자(백엔드) 경력 채용",
+      "requirements": "[피에스앤마케팅] 웹개발자(백엔드) 경력 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-32",
+    "companyName": "한국미스미",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "㈜한국미스미 ME사업부 EC개발자채용 (정규직)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력4년↑ 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/18(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] ㈜한국미스미 ME사업부 EC개발자채용 (정규직)",
+      "requirements": "㈜한국미스미 ME사업부 EC개발자채용 (정규직)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-33",
+    "companyName": "드림어스컴퍼니",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "음악 서비스 백엔드 서버개발자채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 3~8년 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/22(화)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 음악 서비스 백엔드 서버개발자채용",
+      "requirements": "음악 서비스 백엔드 서버개발자채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-34",
+    "companyName": "인스피언",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[청년디지털일자리]2026년 상반기 Java 기반 EAI개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 금천구 신입·경력 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/03(토)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [청년디지털일자리]2026년 상반기 Java 기반 EAI개발자",
+      "requirements": "[청년디지털일자리]2026년 상반기 Java 기반 EAI개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-35",
+    "companyName": "아이쓰리시스템",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "SW개발자채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "대전 유성구 신입·경력 대졸↑ 정규직 4,650 만원",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/13(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] SW개발자채용",
+      "requirements": "SW개발자채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-36",
+    "companyName": "테크랩스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드개발자팀원",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 2~5년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/25(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드개발자팀원",
+      "requirements": "백엔드개발자팀원",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-37",
+    "companyName": "시너스텍",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "물류 자동화 장비 S/W개발자채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 과천시 경력무관 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/13(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 물류 자동화 장비 S/W개발자채용",
+      "requirements": "물류 자동화 장비 S/W개발자채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-38",
+    "companyName": "삼안",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "한맥가족 기술개발센터개발자경력직 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 경력2년↑ 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/30(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 한맥가족 기술개발센터개발자경력직 채용",
+      "requirements": "한맥가족 기술개발센터개발자경력직 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-39",
+    "companyName": "지에스아이티엠",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "대외 SI/SM 사업 프로젝트 관리자(PM) /개발자모집",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 종로구 경력3년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/18(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 대외 SI/SM 사업 프로젝트 관리자(PM) /개발자모집",
+      "requirements": "대외 SI/SM 사업 프로젝트 관리자(PM) /개발자모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-40",
+    "companyName": "미디어윌네트웍스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[알바천국본사] 웹개발자정규직 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력5년↑ 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/17(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [알바천국본사] 웹개발자정규직 채용",
+      "requirements": "[알바천국본사] 웹개발자정규직 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-41",
+    "companyName": "위펀",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발자 (React)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력5년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발자 (React)",
+      "requirements": "프론트엔드개발자 (React)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-42",
+    "companyName": "준컴퍼니",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주)준컴퍼니 React / React Native프론트엔드개발자 경력 채용 공고",
+    "experienceLevel": "신입/경력무관",
+    "location": "인천 부평구 경력3년↑ 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/04(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주)준컴퍼니 React / React Native프론트엔드개발자 경력 채용 공고",
+      "requirements": "(주)준컴퍼니 React / React Native프론트엔드개발자 경력 채용 공고",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-43",
+    "companyName": "아이트럭",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드하이브리드 앱 개발자 (React / Ionic) 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구 경력 5~10년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드하이브리드 앱 개발자 (React / Ionic) 채용",
+      "requirements": "프론트엔드하이브리드 앱 개발자 (React / Ionic) 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-44",
+    "companyName": "와탭랩스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구 경력 3~10년 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/09(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발자",
+      "requirements": "프론트엔드개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-45",
+    "companyName": "아이브릭스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[아이브릭스] 웹프론트엔드/ 백엔드 경력개발자 채용공고",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 경력3년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/25(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [아이브릭스] 웹프론트엔드/ 백엔드 경력개발자 채용공고",
+      "requirements": "[아이브릭스] 웹프론트엔드/ 백엔드 경력개발자 채용공고",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-46",
+    "companyName": "와이디엔에스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[웹개발]프론트엔드&백엔드 경력자 모집(5년 ~ 15년)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 수정구 경력 5~15년 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/13(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [웹개발]프론트엔드&백엔드 경력자 모집(5년 ~ 15년)",
+      "requirements": "[웹개발]프론트엔드&백엔드 경력자 모집(5년 ~ 15년)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-47",
+    "companyName": "에스티엘",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[STL] 스타트투데이프론트엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 경력3년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/30(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [STL] 스타트투데이프론트엔드개발자 채용",
+      "requirements": "[STL] 스타트투데이프론트엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-48",
+    "companyName": "블루개러지",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발자(2~4년)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강동구 경력 2~4년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/29(화)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발자(2~4년)",
+      "requirements": "프론트엔드개발자(2~4년)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-49",
+    "companyName": "아인잡",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발자 (경력)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 3~10년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/24(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발자 (경력)",
+      "requirements": "프론트엔드개발자 (경력)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-50",
+    "companyName": "에듀서브",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[민트영어] 개발파트 백엔드(PHP) &프론트엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 구로구 경력 2~6년 대졸↑ 정규직·계약직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/11(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [민트영어] 개발파트 백엔드(PHP) &프론트엔드개발자 채용",
+      "requirements": "[민트영어] 개발파트 백엔드(PHP) &프론트엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-51",
+    "companyName": "예진",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발자 (React / Next.js / Python)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 경력2년↑ 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "내일마감",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발자 (React / Next.js / Python)",
+      "requirements": "프론트엔드개발자 (React / Next.js / Python)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-52",
+    "companyName": "학교종이",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발자 (경력)",
+    "experienceLevel": "신입/경력무관",
+    "location": "세종특별자치시 경력 2~3년 학력무관 계약직 4,200 만원",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/25(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발자 (경력)",
+      "requirements": "프론트엔드개발자 (경력)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-53",
+    "companyName": "인프랩",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[인프런]프론트엔드개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 경력무관 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/23(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [인프런]프론트엔드개발자",
+      "requirements": "[인프런]프론트엔드개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-54",
+    "companyName": "천하이너스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[경력]프론트엔드(React) 개발자 모집 공고",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 부천시 경력 3~10년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [경력]프론트엔드(React) 개발자 모집 공고",
+      "requirements": "[경력]프론트엔드(React) 개발자 모집 공고",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-55",
+    "companyName": "델레오코리아",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[델레오코리아]프론트엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력6년↑ 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [델레오코리아]프론트엔드개발자 채용",
+      "requirements": "[델레오코리아]프론트엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-56",
+    "companyName": "델레오코리아",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[플랫폼개발팀]프론트엔드개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 6~13년 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/18(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [플랫폼개발팀]프론트엔드개발자",
+      "requirements": "[플랫폼개발팀]프론트엔드개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-57",
+    "companyName": "알티넷솔루션",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[FAP팀]프론트엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 1~5년 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/24(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [FAP팀]프론트엔드개발자 채용",
+      "requirements": "[FAP팀]프론트엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-58",
+    "companyName": "비에스일렉트릭",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "비에스일렉트릭에서 에너지관리시스템프론트엔드개발자 모셔요",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 과천시 경력 2~4년 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/01(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 비에스일렉트릭에서 에너지관리시스템프론트엔드개발자 모셔요",
+      "requirements": "비에스일렉트릭에서 에너지관리시스템프론트엔드개발자 모셔요",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-59",
+    "companyName": "피피비스튜디오스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[ppb studios]프론트엔드(React Native)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 성동구 경력 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/11(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [ppb studios]프론트엔드(React Native)",
+      "requirements": "[ppb studios]프론트엔드(React Native)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-60",
+    "companyName": "모멘티",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발자 (1~3년) [역삼역]",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 1~3년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/13(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발자 (1~3년) [역삼역]",
+      "requirements": "프론트엔드개발자 (1~3년) [역삼역]",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-61",
+    "companyName": "모멘티",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발자 (4~10년) [역삼역]",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 4~10년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/13(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발자 (4~10년) [역삼역]",
+      "requirements": "프론트엔드개발자 (4~10년) [역삼역]",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-62",
+    "companyName": "코딧",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발자 (React.js 2년이상)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 영등포구 경력2년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발자 (React.js 2년이상)",
+      "requirements": "프론트엔드개발자 (React.js 2년이상)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-63",
+    "companyName": "칼리시",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[칼리시]프론트엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "대전 유성구 경력1년↑ 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [칼리시]프론트엔드개발자 채용",
+      "requirements": "[칼리시]프론트엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-64",
+    "companyName": "헬로디지털",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발자 (경력 2~5년, 기간제)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 성동구 경력 2~5년 초대졸↑ 기간제·계약직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/10(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발자 (경력 2~5년, 기간제)",
+      "requirements": "프론트엔드개발자 (경력 2~5년, 기간제)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-65",
+    "companyName": "엑스홀딩스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "AI-Driven프론트엔드엔지니어 / 테크니컬 PM",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구 경력 학력무관 정규직·계약직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/22(화)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] AI-Driven프론트엔드엔지니어 / 테크니컬 PM",
+      "requirements": "AI-Driven프론트엔드엔지니어 / 테크니컬 PM",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-66",
+    "companyName": "에그풀",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "IT·광고 스타트업프론트엔드개발자 팀원 모집",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 안산시 단원구 경력무관 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] IT·광고 스타트업프론트엔드개발자 팀원 모집",
+      "requirements": "IT·광고 스타트업프론트엔드개발자 팀원 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-67",
+    "companyName": "클라이브",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[클라이브]  웹프론트엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 중원구 경력무관 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/13(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [클라이브]  웹프론트엔드개발자 채용",
+      "requirements": "[클라이브]  웹프론트엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-68",
+    "companyName": "씽클레어",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "웹 개발자 백엔드/프론트엔드중급 계약직 (경력 4년 이상)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 영등포구 경력4년↑ 대졸↑ 기간제·계약직 600 만원",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/22(화)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 웹 개발자 백엔드/프론트엔드중급 계약직 (경력 4년 이상)",
+      "requirements": "웹 개발자 백엔드/프론트엔드중급 계약직 (경력 4년 이상)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-69",
+    "companyName": "엔투에이아이",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "26년 하반기 N2AI IT 개발팀프론트엔드개발자(React) 채용.",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 영등포구 경력3년↑ 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/11(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 26년 하반기 N2AI IT 개발팀프론트엔드개발자(React) 채용.",
+      "requirements": "26년 하반기 N2AI IT 개발팀프론트엔드개발자(React) 채용.",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-70",
+    "companyName": "디케이닥터",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발자 채용 (경력)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 금천구 경력5년↑ 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발자 채용 (경력)",
+      "requirements": "프론트엔드개발자 채용 (경력)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-71",
+    "companyName": "텐빌리언",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발 경력 (2~5년)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 구로구 경력 2~5년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/17(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발 경력 (2~5년)",
+      "requirements": "프론트엔드개발 경력 (2~5년)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-72",
+    "companyName": "펫박스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드개발자_5년 이상",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 마포구 경력 5~7년 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/23(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드개발자_5년 이상",
+      "requirements": "프론트엔드개발자_5년 이상",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-73",
+    "companyName": "나나자레",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "React / Next.js프론트엔드개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 중구 경력 2~5년 학력무관 프리랜서",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "내일마감",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] React / Next.js프론트엔드개발자",
+      "requirements": "React / Next.js프론트엔드개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-74",
+    "companyName": "더게임",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[더게임]프론트엔드개발자 채용 (정규직)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 성동구 경력 3~5년 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [더게임]프론트엔드개발자 채용 (정규직)",
+      "requirements": "[더게임]프론트엔드개발자 채용 (정규직)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-75",
+    "companyName": "토글랩스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "이커머스 SaaS 소프트웨어프론트엔드개발자님을 찾습니다.",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력3년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/11(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 이커머스 SaaS 소프트웨어프론트엔드개발자님을 찾습니다.",
+      "requirements": "이커머스 SaaS 소프트웨어프론트엔드개발자님을 찾습니다.",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-76",
+    "companyName": "모달리",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "AI 에이전트 서비스프론트엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 성동구 경력 2~10년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/17(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] AI 에이전트 서비스프론트엔드개발자 채용",
+      "requirements": "AI 에이전트 서비스프론트엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-77",
+    "companyName": "모어다임",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[웹개발]프론트엔드및 풀 스택 개발자 모집",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 용인시 기흥구 경력무관 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/26(토)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [웹개발]프론트엔드및 풀 스택 개발자 모집",
+      "requirements": "[웹개발]프론트엔드및 풀 스택 개발자 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-78",
+    "companyName": "시스템노바",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "프론트엔드엔지니어(Front-end Engineer)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력5년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "오늘마감",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 프론트엔드엔지니어(Front-end Engineer)",
+      "requirements": "프론트엔드엔지니어(Front-end Engineer)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-79",
+    "companyName": "디자인네트워크",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주)디자인네트워크 웹프론트엔드신입사원 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "대구 동구 신입 학력무관 정규직·계약직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/23(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주)디자인네트워크 웹프론트엔드신입사원 채용",
+      "requirements": "(주)디자인네트워크 웹프론트엔드신입사원 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-80",
+    "companyName": "플랫파이브",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[프론트엔드] React / TypeScript 기반 웹 서비스 개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 오산시 경력3년↑ 학력무관 계약직·프리랜서",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/23(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [프론트엔드] React / TypeScript 기반 웹 서비스 개발자",
+      "requirements": "[프론트엔드] React / TypeScript 기반 웹 서비스 개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-81",
+    "companyName": "미디어젠",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[미디어젠(주)]백엔드개발자(경력)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 경력4년↑ 초대졸↑ 기간제·계약직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/13(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [미디어젠(주)]백엔드개발자(경력)",
+      "requirements": "[미디어젠(주)]백엔드개발자(경력)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-82",
+    "companyName": "다이퀘스트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[다이퀘스트] AI 서비스백엔드개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 경력5년↑ 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/23(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [다이퀘스트] AI 서비스백엔드개발자",
+      "requirements": "[다이퀘스트] AI 서비스백엔드개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-83",
+    "companyName": "한컴이노스트림",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "솔루션백엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 경력 2~10년 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/27(화)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 솔루션백엔드개발자 채용",
+      "requirements": "솔루션백엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-84",
+    "companyName": "헤리트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드개발자 (Java/Kotlin) 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 경력5년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/30(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드개발자 (Java/Kotlin) 채용",
+      "requirements": "백엔드개발자 (Java/Kotlin) 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-85",
+    "companyName": "버넥트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[VIRNECT]백엔드개발자 채용(3년차이상)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 용산구 경력2년↑ 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/31(토)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [VIRNECT]백엔드개발자 채용(3년차이상)",
+      "requirements": "[VIRNECT]백엔드개발자 채용(3년차이상)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-86",
+    "companyName": "에스티유니타스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[ST UNITAS]백엔드개발(계약) 인재 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 구로구 경력3년↑ 학력무관 계약직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/25(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [ST UNITAS]백엔드개발(계약) 인재 채용",
+      "requirements": "[ST UNITAS]백엔드개발(계약) 인재 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-87",
+    "companyName": "레인보우로보틱스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주)레인보우로보틱스 web백엔드개발",
+    "experienceLevel": "신입/경력무관",
+    "location": "세종특별자치시 경력5년↑ 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주)레인보우로보틱스 web백엔드개발",
+      "requirements": "(주)레인보우로보틱스 web백엔드개발",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-88",
+    "companyName": "사람인에이치에스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[국내유명 대기업 계열사 / 정규직] Web백엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "세종특별자치시 경력5년↑ 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [국내유명 대기업 계열사 / 정규직] Web백엔드개발자 채용",
+      "requirements": "[국내유명 대기업 계열사 / 정규직] Web백엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-89",
+    "companyName": "이도에코원",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "이도에스테이트 IT사업팀백엔드/ 웹 개발 채용 (단기계약직)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 중구 경력7년↑ 초대졸↑ 계약직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/13(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 이도에스테이트 IT사업팀백엔드/ 웹 개발 채용 (단기계약직)",
+      "requirements": "이도에스테이트 IT사업팀백엔드/ 웹 개발 채용 (단기계약직)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-90",
+    "companyName": "티엔에이치",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 경력 3~5년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/12(토)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드개발자",
+      "requirements": "백엔드개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-91",
+    "companyName": "엑스페릭스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 경력 5~15년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/09(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드개발자 채용",
+      "requirements": "백엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-92",
+    "companyName": "인터엑스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[울산] SDF백엔드개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "울산 중구 신입·경력 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/24(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [울산] SDF백엔드개발자",
+      "requirements": "[울산] SDF백엔드개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-93",
+    "companyName": "베스텔라랩",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드·인프라 풀스택 엔지니어",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 안양시 동안구 경력 2~10년 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/30(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드·인프라 풀스택 엔지니어",
+      "requirements": "백엔드·인프라 풀스택 엔지니어",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-94",
+    "companyName": "엔젠바이오",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[(주)엔젠바이오]백엔드개발 인력 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 구로구 경력 5~10년 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/09(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [(주)엔젠바이오]백엔드개발 인력 채용",
+      "requirements": "[(주)엔젠바이오]백엔드개발 인력 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-95",
+    "companyName": "핀다",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 4~8년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/10(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드개발자",
+      "requirements": "백엔드개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-96",
+    "companyName": "엑스페릭스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[4.5일제/유연근무제]백엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 송파구 경력 5~15년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/10(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [4.5일제/유연근무제]백엔드개발자 채용",
+      "requirements": "[4.5일제/유연근무제]백엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-97",
+    "companyName": "씨앤테크",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주)씨앤테크백엔드엔지니어(Agentic AI 개발) 경력 채용 공고",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 3~10년 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/14(월)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주)씨앤테크백엔드엔지니어(Agentic AI 개발) 경력 채용 공고",
+      "requirements": "(주)씨앤테크백엔드엔지니어(Agentic AI 개발) 경력 채용 공고",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-98",
+    "companyName": "올이즈웰",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드개발자 채용 (3년차 이상)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 용산구 경력 3~5년 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/12(토)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드개발자 채용 (3년차 이상)",
+      "requirements": "백엔드개발자 채용 (3년차 이상)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-99",
+    "companyName": "이든비즈텍",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "GW백엔드개발자 채용(경력)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 영등포구 경력4년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/18(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] GW백엔드개발자 채용(경력)",
+      "requirements": "GW백엔드개발자 채용(경력)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-100",
+    "companyName": "엔에스원소프트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "자사 솔루션백엔드개발자/중급(경력5-10년)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 5~10년 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/19(토)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 자사 솔루션백엔드개발자/중급(경력5-10년)",
+      "requirements": "자사 솔루션백엔드개발자/중급(경력5-10년)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-101",
+    "companyName": "모비젠",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주) 모비젠 플랫폼백엔드개발자 채용 (정규직)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 수정구 경력 4~8년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주) 모비젠 플랫폼백엔드개발자 채용 (정규직)",
+      "requirements": "(주) 모비젠 플랫폼백엔드개발자 채용 (정규직)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-102",
+    "companyName": "인피아드",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[경력] JAVA 웹/앱백엔드개발자 모집",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 과천시 경력3년↑ 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [경력] JAVA 웹/앱백엔드개발자 모집",
+      "requirements": "[경력] JAVA 웹/앱백엔드개발자 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-103",
+    "companyName": "마크클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "마크클라우드 솔루션백엔드개발자 채용 (경력)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 3~7년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/12(토)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 마크클라우드 솔루션백엔드개발자 채용 (경력)",
+      "requirements": "마크클라우드 솔루션백엔드개발자 채용 (경력)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-104",
+    "companyName": "넛지헬스케어",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[캐시워크]백엔드/서버 개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력3년↑ 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/20(화)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [캐시워크]백엔드/서버 개발자",
+      "requirements": "[캐시워크]백엔드/서버 개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-105",
+    "companyName": "브로제이",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[R&D] 여러분의 형제 브로제이백엔드개발자 모집",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 금천구 경력3년↑ 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/23(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [R&D] 여러분의 형제 브로제이백엔드개발자 모집",
+      "requirements": "[R&D] 여러분의 형제 브로제이백엔드개발자 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-106",
+    "companyName": "주피터랩스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[주피터랩스]백엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 3~10년 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 10/20(화)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [주피터랩스]백엔드개발자 채용",
+      "requirements": "[주피터랩스]백엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-107",
+    "companyName": "위펀",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드개발자 (경력 5년 이상)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력5년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드개발자 (경력 5년 이상)",
+      "requirements": "백엔드개발자 (경력 5년 이상)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-108",
+    "companyName": "위펀",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "시니어백엔드개발자 (경력 8년 이상)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력8년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 시니어백엔드개발자 (경력 8년 이상)",
+      "requirements": "시니어백엔드개발자 (경력 8년 이상)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-109",
+    "companyName": "위펀",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드개발자 (서비스 운영·보안)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력5년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드개발자 (서비스 운영·보안)",
+      "requirements": "백엔드개발자 (서비스 운영·보안)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-110",
+    "companyName": "오픈웍스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[경력]백엔드서버 개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 남양주시 경력3년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/10(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [경력]백엔드서버 개발자 채용",
+      "requirements": "[경력]백엔드서버 개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-111",
+    "companyName": "서울거래",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드시니어 개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 영등포구 경력 4~20년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/14(월)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드시니어 개발자 채용",
+      "requirements": "백엔드시니어 개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-112",
+    "companyName": "엔조이소프트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[엔조이소프트]백엔드개발자를 모십니다.",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 경력5년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/20(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [엔조이소프트]백엔드개발자를 모십니다.",
+      "requirements": "[엔조이소프트]백엔드개발자를 모십니다.",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-113",
+    "companyName": "대동애그테크",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "영농 에이전트 및 스마트파밍 플랫폼백엔드개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 서초구 경력 5~10년 대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/09(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 영농 에이전트 및 스마트파밍 플랫폼백엔드개발자",
+      "requirements": "영농 에이전트 및 스마트파밍 플랫폼백엔드개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-114",
+    "companyName": "나무에이엑스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "클라우드/가상화 관리 시스템백엔드개발자",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 경력 6~20년 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "내일마감",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 클라우드/가상화 관리 시스템백엔드개발자",
+      "requirements": "클라우드/가상화 관리 시스템백엔드개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-115",
+    "companyName": "넵튠",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "엔플라이유닛(무한의 계단)백엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강남구 경력 3~5년 학력무관 계약직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "채용시",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 엔플라이유닛(무한의 계단)백엔드개발자 채용",
+      "requirements": "엔플라이유닛(무한의 계단)백엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-116",
+    "companyName": "에스티엘",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[STL] 스타트투데이백엔드개발자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 강서구 경력3년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/23(수)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [STL] 스타트투데이백엔드개발자 채용",
+      "requirements": "[STL] 스타트투데이백엔드개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-117",
+    "companyName": "아이브릭스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[아이브릭스] 웹 프론트엔드/백엔드경력개발자 채용공고",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 분당구 경력3년↑ 학력무관 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/25(금)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [아이브릭스] 웹 프론트엔드/백엔드경력개발자 채용공고",
+      "requirements": "[아이브릭스] 웹 프론트엔드/백엔드경력개발자 채용공고",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-118",
+    "companyName": "와이디엔에스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[웹개발]프론트엔드&백엔드경력자 모집(5년 ~ 15년)",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 수정구 경력 5~15년 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/13(일)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [웹개발]프론트엔드&백엔드경력자 모집(5년 ~ 15년)",
+      "requirements": "[웹개발]프론트엔드&백엔드경력자 모집(5년 ~ 15년)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-119",
+    "companyName": "와이와이소프트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드개발자(온톨로지/AI) 경력자 채용",
+    "experienceLevel": "신입/경력무관",
+    "location": "경기 성남시 수정구 경력2년↑ 학력무관 정규직 3,000 만원",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/08(화)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드개발자(온톨로지/AI) 경력자 채용",
+      "requirements": "백엔드개발자(온톨로지/AI) 경력자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-120",
+    "companyName": "혁산정보시스템",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "JAVA 기반백엔드개발자 (경력 7~15년)",
+    "experienceLevel": "신입/경력무관",
+    "location": "서울 영등포구 경력 7~15년 초대졸↑ 정규직",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "~ 09/10(목)",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "saramin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "saramin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] JAVA 기반백엔드개발자 (경력 7~15년)",
+      "requirements": "JAVA 기반백엔드개발자 (경력 7~15년)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "saramin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-121",
+    "companyName": "대한상공회의소",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[대한상공회의소] 취업연계 첨단기술 교육생 모집(반도체/AI/응용SW/로봇/스마트제조/IoT)",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 중복 정제 완료] [대한상공회의소] 취업연계 첨단기술 교육생 모집(반도체/AI/응용SW/로봇/스마트제조/IoT)",
+      "requirements": "[대한상공회의소] 취업연계 첨단기술 교육생 모집(반도체/AI/응용SW/로봇/스마트제조/IoT)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-122",
+    "companyName": "사각코퍼레이션",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "중국 소싱·무역 담당자 (상품개발·기획)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 중복 정제 완료] 중국 소싱·무역 담당자 (상품개발·기획)",
+      "requirements": "중국 소싱·무역 담당자 (상품개발·기획)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-123",
+    "companyName": "넥슨",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[넥슨컴퍼니] 2026 넥토리얼 for Game Programmer",
+    "experienceLevel": "신입",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [넥슨컴퍼니] 2026 넥토리얼 for Game Programmer",
+      "requirements": "[넥슨컴퍼니] 2026 넥토리얼 for Game Programmer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-124",
+    "companyName": "HLKLEMOVE",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[HL클레무브] [R&D, 영업, 구매, 생산기술] 2026 하반기 HL그룹 신입사원 채용",
+    "experienceLevel": "신입",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [HL클레무브] [R&D, 영업, 구매, 생산기술] 2026 하반기 HL그룹 신입사원 채용",
+      "requirements": "[HL클레무브] [R&D, 영업, 구매, 생산기술] 2026 하반기 HL그룹 신입사원 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-125",
+    "companyName": "디에스이트레이드",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[경력] 데이터 사이언티스트 - 수요예측 / 시계열 모델링",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [경력] 데이터 사이언티스트 - 수요예측 / 시계열 모델링",
+      "requirements": "[경력] 데이터 사이언티스트 - 수요예측 / 시계열 모델링",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-126",
+    "companyName": "한국투자공사",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "한국투자공사 2026년 신입직원 채용",
+    "experienceLevel": "신입",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 한국투자공사 2026년 신입직원 채용",
+      "requirements": "한국투자공사 2026년 신입직원 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-127",
+    "companyName": "인바디",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주)인바디 2026 하반기 GBD 신입 채용 - 통합 직무",
+    "experienceLevel": "신입",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주)인바디 2026 하반기 GBD 신입 채용 - 통합 직무",
+      "requirements": "(주)인바디 2026 하반기 GBD 신입 채용 - 통합 직무",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-128",
+    "companyName": "현대해상화재보험",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "2026년 현대해상 대졸 신입사원 채용",
+    "experienceLevel": "신입",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 2026년 현대해상 대졸 신입사원 채용",
+      "requirements": "2026년 현대해상 대졸 신입사원 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-129",
+    "companyName": "우리은행",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "2026년 우리은행 채용 (일반 / 전문(통역, 변호사, 회계사, 세무사))",
+    "experienceLevel": "신입",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 2026년 우리은행 채용 (일반 / 전문(통역, 변호사, 회계사, 세무사))",
+      "requirements": "2026년 우리은행 채용 (일반 / 전문(통역, 변호사, 회계사, 세무사))",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-130",
+    "companyName": "케이티KT그룹",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "2026년 KT 대졸신입 채용",
+    "experienceLevel": "신입",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 2026년 KT 대졸신입 채용",
+      "requirements": "2026년 KT 대졸신입 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-131",
+    "companyName": "에이피알",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "2026 하반기 에이피알 신입 대규모 채용",
+    "experienceLevel": "신입",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 2026 하반기 에이피알 신입 대규모 채용",
+      "requirements": "2026 하반기 에이피알 신입 대규모 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-132",
+    "companyName": "안랩",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[안랩] 2026년 9월 신입/경력 채용",
+    "experienceLevel": "신입/경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [안랩] 2026년 9월 신입/경력 채용",
+      "requirements": "[안랩] 2026년 9월 신입/경력 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-133",
+    "companyName": "NC",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "엔씨소프트 전 부문 수시 채용",
+    "experienceLevel": "신입/경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 엔씨소프트 전 부문 수시 채용",
+      "requirements": "엔씨소프트 전 부문 수시 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-134",
+    "companyName": "유비벨록스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "유비벨록스 분야별 인원 모집",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 유비벨록스 분야별 인원 모집",
+      "requirements": "유비벨록스 분야별 인원 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-135",
+    "companyName": "솔탑",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "㈜솔탑 2026년도 위성/항공/경영 분야 신입/경력 채용",
+    "experienceLevel": "신입/경력",
+    "location": "세종",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] ㈜솔탑 2026년도 위성/항공/경영 분야 신입/경력 채용",
+      "requirements": "㈜솔탑 2026년도 위성/항공/경영 분야 신입/경력 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-136",
+    "companyName": "웍스피어",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[웍스피어] FE개발 (3년이상)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [웍스피어] FE개발 (3년이상)",
+      "requirements": "[웍스피어] FE개발 (3년이상)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-137",
+    "companyName": "웍스피어",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[웍스피어] BE개발 (3년이상)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [웍스피어] BE개발 (3년이상)",
+      "requirements": "[웍스피어] BE개발 (3년이상)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-138",
+    "companyName": "세화",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "㈜세화 2026년도 하반기 채용",
+    "experienceLevel": "신입/경력",
+    "location": "대전",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] ㈜세화 2026년도 하반기 채용",
+      "requirements": "㈜세화 2026년도 하반기 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-139",
+    "companyName": "KB데이타시스템KB금융그룹",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "KB데이타시스템 IT분야 경력직원 모집",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] KB데이타시스템 IT분야 경력직원 모집",
+      "requirements": "KB데이타시스템 IT분야 경력직원 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-140",
+    "companyName": "크레신",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "HW(HW, 무선HW), ERP, 자동화 설계, 영업, 기술 채용",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] HW(HW, 무선HW), ERP, 자동화 설계, 영업, 기술 채용",
+      "requirements": "HW(HW, 무선HW), ERP, 자동화 설계, 영업, 기술 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-141",
+    "companyName": "샘표식품",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "2026 샘표식품 신입/경력 수시채용",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 2026 샘표식품 신입/경력 수시채용",
+      "requirements": "2026 샘표식품 신입/경력 수시채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-142",
+    "companyName": "솔탑",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "㈜솔탑 2026년도 위성 연구소 분야 신입/경력 채용",
+    "experienceLevel": "신입/경력",
+    "location": "세종",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] ㈜솔탑 2026년도 위성 연구소 분야 신입/경력 채용",
+      "requirements": "㈜솔탑 2026년도 위성 연구소 분야 신입/경력 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-143",
+    "companyName": "SIMPAC",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[SIMPAC GROUP] 각 부문별 신입/경력사원 채용",
+    "experienceLevel": "신입/경력",
+    "location": "인천",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [SIMPAC GROUP] 각 부문별 신입/경력사원 채용",
+      "requirements": "[SIMPAC GROUP] 각 부문별 신입/경력사원 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-144",
+    "companyName": "ABB코리아",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "㈜ABB코리아 각 부문 채용",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] ㈜ABB코리아 각 부문 채용",
+      "requirements": "㈜ABB코리아 각 부문 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-145",
+    "companyName": "테슬라코리아",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Tesla Korea 2026 대규모 공개 채용",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Tesla Korea 2026 대규모 공개 채용",
+      "requirements": "Tesla Korea 2026 대규모 공개 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-146",
+    "companyName": "포스코플로우포스코그룹",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "2026년 하반기 포스코플로우 신입/경력직 채용",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 2026년 하반기 포스코플로우 신입/경력직 채용",
+      "requirements": "2026년 하반기 포스코플로우 신입/경력직 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-147",
+    "companyName": "대원제약",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "대원제약 DNA 채용 (신입/경력 수시 채용)",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 대원제약 DNA 채용 (신입/경력 수시 채용)",
+      "requirements": "대원제약 DNA 채용 (신입/경력 수시 채용)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-148",
+    "companyName": "포스코퓨처엠포스코그룹",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "포스코퓨처엠 신입/경력사원 채용",
+    "experienceLevel": "신입/경력",
+    "location": "경북",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 포스코퓨처엠 신입/경력사원 채용",
+      "requirements": "포스코퓨처엠 신입/경력사원 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-149",
+    "companyName": "시몬스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "2026년 하반기 각 부문별 신입/경력 채용공고",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 2026년 하반기 각 부문별 신입/경력 채용공고",
+      "requirements": "2026년 하반기 각 부문별 신입/경력 채용공고",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-150",
+    "companyName": "범천정밀",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "㈜범천정밀 하반기 각 부문별 신입 및 경력직 채용",
+    "experienceLevel": "신입/경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] ㈜범천정밀 하반기 각 부문별 신입 및 경력직 채용",
+      "requirements": "㈜범천정밀 하반기 각 부문별 신입 및 경력직 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-151",
+    "companyName": "우신화장품",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "우신화장품 관리부[인사] 채용",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 우신화장품 관리부[인사] 채용",
+      "requirements": "우신화장품 관리부[인사] 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-152",
+    "companyName": "디팜스테크",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "㈜디팜스테크 각 부문 신입/경력 채용",
+    "experienceLevel": "신입/경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] ㈜디팜스테크 각 부문 신입/경력 채용",
+      "requirements": "㈜디팜스테크 각 부문 신입/경력 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-153",
+    "companyName": "비아이매트릭스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "2026년 비아이매트릭스 하반기 신입 채용",
+    "experienceLevel": "신입",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 2026년 비아이매트릭스 하반기 신입 채용",
+      "requirements": "2026년 비아이매트릭스 하반기 신입 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-154",
+    "companyName": "모나용평",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "2026년 모나용평 신입/경력사원 모집",
+    "experienceLevel": "신입/경력",
+    "location": "강원",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 2026년 모나용평 신입/경력사원 모집",
+      "requirements": "2026년 모나용평 신입/경력사원 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-155",
+    "companyName": "동아에스티",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "동아ST 2026년 하반기 정기채용",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 동아ST 2026년 하반기 정기채용",
+      "requirements": "동아ST 2026년 하반기 정기채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-156",
+    "companyName": "모백스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "2026년 하반기 공개채용 [건설현장 공무/건축설계/기술영업/안전관리]",
+    "experienceLevel": "신입/경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 2026년 하반기 공개채용 [건설현장 공무/건축설계/기술영업/안전관리]",
+      "requirements": "2026년 하반기 공개채용 [건설현장 공무/건축설계/기술영업/안전관리]",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-157",
+    "companyName": "다우기술다우키움그룹",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "다우기술 경력·신입 대규모 인재영입",
+    "experienceLevel": "신입/경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 다우기술 경력·신입 대규모 인재영입",
+      "requirements": "다우기술 경력·신입 대규모 인재영입",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-158",
+    "companyName": "안국약품",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "안국약품㈜ 9월 신입 및 경력직 채용",
+    "experienceLevel": "신입/경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 안국약품㈜ 9월 신입 및 경력직 채용",
+      "requirements": "안국약품㈜ 9월 신입 및 경력직 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-159",
+    "companyName": "윈스테크넷",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "9월 윈스테크넷 월간채용(신입)-보안관제, CERT, 개발, 영업, 클라우드MSP",
+    "experienceLevel": "신입",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 9월 윈스테크넷 월간채용(신입)-보안관제, CERT, 개발, 영업, 클라우드MSP",
+      "requirements": "9월 윈스테크넷 월간채용(신입)-보안관제, CERT, 개발, 영업, 클라우드MSP",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-160",
+    "companyName": "제주신화월드",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "제주신화월드 하반기 사원 모집",
+    "experienceLevel": "신입/경력",
+    "location": "제주",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 제주신화월드 하반기 사원 모집",
+      "requirements": "제주신화월드 하반기 사원 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-161",
+    "companyName": "한솔케미칼",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "2026 하반기 한솔케미칼 경력사원 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 2026 하반기 한솔케미칼 경력사원 채용",
+      "requirements": "2026 하반기 한솔케미칼 경력사원 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-162",
+    "companyName": "한국국제협력단",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "2026년 2차 KOICA 코디네이터 모집·선발 공고",
+    "experienceLevel": "경력",
+    "location": "전국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 2026년 2차 KOICA 코디네이터 모집·선발 공고",
+      "requirements": "2026년 2차 KOICA 코디네이터 모집·선발 공고",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-163",
+    "companyName": "웍스피어",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[웍스피어] 잡코리아 알바몬 PO (1년 이상)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [웍스피어] 잡코리아 알바몬 PO (1년 이상)",
+      "requirements": "[웍스피어] 잡코리아 알바몬 PO (1년 이상)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-164",
+    "companyName": "웍스피어",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[웍스피어] AI 매칭 엔진 PO (5년이상)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [웍스피어] AI 매칭 엔진 PO (5년이상)",
+      "requirements": "[웍스피어] AI 매칭 엔진 PO (5년이상)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-165",
+    "companyName": "에스앤아이코퍼레이션",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[경력] 시설관리(전기, 기계) 정규직 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [경력] 시설관리(전기, 기계) 정규직 채용",
+      "requirements": "[경력] 시설관리(전기, 기계) 정규직 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-166",
+    "companyName": "글로우서울",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[글로우서울/본사] 시공팀 인테리어·공무 견적 담당 채용 - 경력",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [글로우서울/본사] 시공팀 인테리어·공무 견적 담당 채용 - 경력",
+      "requirements": "[글로우서울/본사] 시공팀 인테리어·공무 견적 담당 채용 - 경력",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-167",
+    "companyName": "웍스피어",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[웍스피어] DataOps (3년이상)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [웍스피어] DataOps (3년이상)",
+      "requirements": "[웍스피어] DataOps (3년이상)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-168",
+    "companyName": "미디어로그LG그룹",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "미디어로그(LG그룹) 채용연계형 인턴(신입) 채용",
+    "experienceLevel": "신입",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 미디어로그(LG그룹) 채용연계형 인턴(신입) 채용",
+      "requirements": "미디어로그(LG그룹) 채용연계형 인턴(신입) 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-169",
+    "companyName": "인하대학교산학협력단",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "AI기반 미래자동차 자율주행 소프트웨어 개발자 전액무료 교육 (2026 KDT)",
+    "experienceLevel": "신입/경력",
+    "location": "인천",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] AI기반 미래자동차 자율주행 소프트웨어 개발자 전액무료 교육 (2026 KDT)",
+      "requirements": "AI기반 미래자동차 자율주행 소프트웨어 개발자 전액무료 교육 (2026 KDT)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-170",
+    "companyName": "솔트룩스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[베트남] 개발자 채용(앱개발자/프론트엔드/백엔드/AI엔지니어)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [베트남] 개발자 채용(앱개발자/프론트엔드/백엔드/AI엔지니어)",
+      "requirements": "[베트남] 개발자 채용(앱개발자/프론트엔드/백엔드/AI엔지니어)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-171",
+    "companyName": "휴먼교육센터",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[국비최대무료/기숙사무료/취업연계]AI/빅데이터/풀스택/KDT단기심화",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [국비최대무료/기숙사무료/취업연계]AI/빅데이터/풀스택/KDT단기심화",
+      "requirements": "[국비최대무료/기숙사무료/취업연계]AI/빅데이터/풀스택/KDT단기심화",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-172",
+    "companyName": "한국ICT인재개발원",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[국비지원IT취업교육]인공지능/풀스택/웹앱/JAVA파이썬/프론트엔드/백엔드/빅데이터 외 취업과정",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [국비지원IT취업교육]인공지능/풀스택/웹앱/JAVA파이썬/프론트엔드/백엔드/빅데이터 외 취업과정",
+      "requirements": "[국비지원IT취업교육]인공지능/풀스택/웹앱/JAVA파이썬/프론트엔드/백엔드/빅데이터 외 취업과정",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-173",
+    "companyName": "삼성에이엑스아이",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[숙식교육무료]삼성SDS RPA 채용연계 AI부트캠프",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [숙식교육무료]삼성SDS RPA 채용연계 AI부트캠프",
+      "requirements": "[숙식교육무료]삼성SDS RPA 채용연계 AI부트캠프",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-174",
+    "companyName": "아이엠뱅크",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "안드로이드 개발자 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 안드로이드 개발자 채용",
+      "requirements": "안드로이드 개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-175",
+    "companyName": "엠비씨MBC아카데미컴퓨터교육센터",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[서울/경기/인천/대전/부산] 최대 전액지원 AI 무료 취업교육생과정 모집",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [서울/경기/인천/대전/부산] 최대 전액지원 AI 무료 취업교육생과정 모집",
+      "requirements": "[서울/경기/인천/대전/부산] 최대 전액지원 AI 무료 취업교육생과정 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-176",
+    "companyName": "해태제과식품",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "해태제과식품(주) 채용연계형 인턴 모집",
+    "experienceLevel": "신입",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 해태제과식품(주) 채용연계형 인턴 모집",
+      "requirements": "해태제과식품(주) 채용연계형 인턴 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-177",
+    "companyName": "그렙",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[프로그래머스] 백엔드 온라인 교육생 모집",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [프로그래머스] 백엔드 온라인 교육생 모집",
+      "requirements": "[프로그래머스] 백엔드 온라인 교육생 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-178",
+    "companyName": "크림",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Partner Backend 개발자 모집",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Partner Backend 개발자 모집",
+      "requirements": "Partner Backend 개발자 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-179",
+    "companyName": "유니닥스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "유니닥스㈜ 개발자 채용(경력)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 유니닥스㈜ 개발자 채용(경력)",
+      "requirements": "유니닥스㈜ 개발자 채용(경력)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-180",
+    "companyName": "시옷",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "개발자 모집",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 개발자 모집",
+      "requirements": "개발자 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-181",
+    "companyName": "다임즈",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Web / Java 개발자 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Web / Java 개발자 채용",
+      "requirements": "Web / Java 개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-182",
+    "companyName": "주성엔지니어링",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[기간 연장] 2026년 8월 신입 Engineer(R&D, C/S, 제조) 집중 채용",
+    "experienceLevel": "신입",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [기간 연장] 2026년 8월 신입 Engineer(R&D, C/S, 제조) 집중 채용",
+      "requirements": "[기간 연장] 2026년 8월 신입 Engineer(R&D, C/S, 제조) 집중 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-183",
+    "companyName": "젠솔소프트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "소프트웨어 개발자 모집",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 소프트웨어 개발자 모집",
+      "requirements": "소프트웨어 개발자 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-184",
+    "companyName": "마크로젠",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "㈜마크로젠 JAVA개발자 경력 모집",
+    "experienceLevel": "경력",
+    "location": "인천",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] ㈜마크로젠 JAVA개발자 경력 모집",
+      "requirements": "㈜마크로젠 JAVA개발자 경력 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-185",
+    "companyName": "인스웨이브",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[정규직] 웹스퀘어 UI공통 개발자 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [정규직] 웹스퀘어 UI공통 개발자 채용",
+      "requirements": "[정규직] 웹스퀘어 UI공통 개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-186",
+    "companyName": "쎄트렉아이",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "쎄트렉아이 2026 하반기 신입 채용, SI Future-Ship 모집",
+    "experienceLevel": "신입",
+    "location": "대전",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 쎄트렉아이 2026 하반기 신입 채용, SI Future-Ship 모집",
+      "requirements": "쎄트렉아이 2026 하반기 신입 채용, SI Future-Ship 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-187",
+    "companyName": "퓨전소프트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "SI 및 웹 개발자 채용(프리랜서)",
+    "experienceLevel": "경력",
+    "location": "대구",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] SI 및 웹 개발자 채용(프리랜서)",
+      "requirements": "SI 및 웹 개발자 채용(프리랜서)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-188",
+    "companyName": "크림",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Android 서비스 개발자 모집",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Android 서비스 개발자 모집",
+      "requirements": "Android 서비스 개발자 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-189",
+    "companyName": "컴퓨존",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "PHP웹개발자 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] PHP웹개발자 채용",
+      "requirements": "PHP웹개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-190",
+    "companyName": "클레온",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[클레온] AI 디지털 휴먼 Android 개발자 (5년차 이상 SDK 개발)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [클레온] AI 디지털 휴먼 Android 개발자 (5년차 이상 SDK 개발)",
+      "requirements": "[클레온] AI 디지털 휴먼 Android 개발자 (5년차 이상 SDK 개발)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-191",
+    "companyName": "에스앤케이인스티튜트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "PC 애플리케이션 개발자 모집(경력직)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] PC 애플리케이션 개발자 모집(경력직)",
+      "requirements": "PC 애플리케이션 개발자 모집(경력직)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-192",
+    "companyName": "세윤씨앤에스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "JAVA 및 마이크로소프트(Microsoft) ERP (D365 F&O) 경력 개발자",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] JAVA 및 마이크로소프트(Microsoft) ERP (D365 F&O) 경력 개발자",
+      "requirements": "JAVA 및 마이크로소프트(Microsoft) ERP (D365 F&O) 경력 개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-193",
+    "companyName": "아이엠뱅크",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "뱅킹 개발자 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 뱅킹 개발자 채용",
+      "requirements": "뱅킹 개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-194",
+    "companyName": "와디즈",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Java 백엔드 개발자 - 회원 개발",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Java 백엔드 개발자 - 회원 개발",
+      "requirements": "Java 백엔드 개발자 - 회원 개발",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-195",
+    "companyName": "아이아이컴바인드",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[GENTLE MONSTER] Unreal Engine 클라이언트 개발자",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [GENTLE MONSTER] Unreal Engine 클라이언트 개발자",
+      "requirements": "[GENTLE MONSTER] Unreal Engine 클라이언트 개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-196",
+    "companyName": "제이에스시스템",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "응용프로그램 소프트웨어 개발자를 모십니다.",
+    "experienceLevel": "신입/경력",
+    "location": "대구",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 응용프로그램 소프트웨어 개발자를 모십니다.",
+      "requirements": "응용프로그램 소프트웨어 개발자를 모십니다.",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-197",
+    "companyName": "엘에스웨어",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "소프트웨어 경력 개발자 모집공고",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 소프트웨어 경력 개발자 모집공고",
+      "requirements": "소프트웨어 경력 개발자 모집공고",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-198",
+    "companyName": "네이버웹툰네이버그룹",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "경력 개발자 인재 Pool",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 경력 개발자 인재 Pool",
+      "requirements": "경력 개발자 인재 Pool",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-199",
+    "companyName": "퓨전소프트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "공공 LMS 풀스택 개발자 채용(재택 프리랜서)",
+    "experienceLevel": "경력",
+    "location": "대구",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 공공 LMS 풀스택 개발자 채용(재택 프리랜서)",
+      "requirements": "공공 LMS 풀스택 개발자 채용(재택 프리랜서)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-200",
+    "companyName": "크림",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Service Backend 개발자 모집",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Service Backend 개발자 모집",
+      "requirements": "Service Backend 개발자 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-201",
+    "companyName": "미래아이엔씨",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주)미래아이엔씨 개발자 모집(경력)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주)미래아이엔씨 개발자 모집(경력)",
+      "requirements": "(주)미래아이엔씨 개발자 모집(경력)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-202",
+    "companyName": "동양건설산업",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[라인그룹] 앱 개발자, 토목 경력직 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [라인그룹] 앱 개발자, 토목 경력직 채용",
+      "requirements": "[라인그룹] 앱 개발자, 토목 경력직 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-203",
+    "companyName": "카카오모빌리티카카오그룹",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[카카오모빌리티] 내비게이션 3D 지도 렌더링 엔진 개발자",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [카카오모빌리티] 내비게이션 3D 지도 렌더링 엔진 개발자",
+      "requirements": "[카카오모빌리티] 내비게이션 3D 지도 렌더링 엔진 개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-204",
+    "companyName": "NC",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[NC]커머스 플랫폼 서버 개발자 채용",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [NC]커머스 플랫폼 서버 개발자 채용",
+      "requirements": "[NC]커머스 플랫폼 서버 개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-205",
+    "companyName": "데이타솔루션",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[중견기업/IT] 데이타솔루션 VDI포털 개발자(경력) 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [중견기업/IT] 데이타솔루션 VDI포털 개발자(경력) 채용",
+      "requirements": "[중견기업/IT] 데이타솔루션 VDI포털 개발자(경력) 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-206",
+    "companyName": "제니엘",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[제니엘그룹] IT ERP개발자 모집",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [제니엘그룹] IT ERP개발자 모집",
+      "requirements": "[제니엘그룹] IT ERP개발자 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-207",
+    "companyName": "씨어스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[경력] PyQt GUI 개발자",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [경력] PyQt GUI 개발자",
+      "requirements": "[경력] PyQt GUI 개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-208",
+    "companyName": "엠비씨MBC아카데미컴퓨터교육센터",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[서울/경기/인천/대전/부산] 국비 전액지원 무료 취업교육생과정모집 (AI, 풀스택개발, 웹디자인/퍼블리싱",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [서울/경기/인천/대전/부산] 국비 전액지원 무료 취업교육생과정모집 (AI, 풀스택개발, 웹디자인/퍼블리싱",
+      "requirements": "[서울/경기/인천/대전/부산] 국비 전액지원 무료 취업교육생과정모집 (AI, 풀스택개발, 웹디자인/퍼블리싱",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-209",
+    "companyName": "메가존클라우드",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "SW 개발자 (ServiceNow 솔루션) 채용(신입/경력)",
+    "experienceLevel": "신입/경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] SW 개발자 (ServiceNow 솔루션) 채용(신입/경력)",
+      "requirements": "SW 개발자 (ServiceNow 솔루션) 채용(신입/경력)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-210",
+    "companyName": "그라비티",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[그라비티] 풀스택 개발자 경력 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [그라비티] 풀스택 개발자 경력 채용",
+      "requirements": "[그라비티] 풀스택 개발자 경력 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-211",
+    "companyName": "인라이플",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[인라이플] 프론트엔드 개발자(Vue)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [인라이플] 프론트엔드 개발자(Vue)",
+      "requirements": "[인라이플] 프론트엔드 개발자(Vue)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-212",
+    "companyName": "피에스앤마케팅SK그룹",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[피에스앤마케팅] 웹개발자(백엔드) 경력 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [피에스앤마케팅] 웹개발자(백엔드) 경력 채용",
+      "requirements": "[피에스앤마케팅] 웹개발자(백엔드) 경력 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-213",
+    "companyName": "나이스평가정보",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[NICE평가정보] 2026년 하반기 신입/경력 직원 수시채용",
+    "experienceLevel": "신입/경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [NICE평가정보] 2026년 하반기 신입/경력 직원 수시채용",
+      "requirements": "[NICE평가정보] 2026년 하반기 신입/경력 직원 수시채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-214",
+    "companyName": "비큐에이아이",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(경력) AI개발자 10년 이상",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (경력) AI개발자 10년 이상",
+      "requirements": "(경력) AI개발자 10년 이상",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-215",
+    "companyName": "다날",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주)다날 [경력] MVNO 서비스 BE 개발자",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주)다날 [경력] MVNO 서비스 BE 개발자",
+      "requirements": "(주)다날 [경력] MVNO 서비스 BE 개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-216",
+    "companyName": "온품",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "풀스택 웹개발자 모집",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 풀스택 웹개발자 모집",
+      "requirements": "풀스택 웹개발자 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-217",
+    "companyName": "에이피알",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[IT] 백엔드 개발자 경력사원 모집",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [IT] 백엔드 개발자 경력사원 모집",
+      "requirements": "[IT] 백엔드 개발자 경력사원 모집",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-218",
+    "companyName": "핑거",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(프리랜서) 웹스퀘어 기반 뱅킹 시스템(통합단말) Java 개발자 모집합니다.",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (프리랜서) 웹스퀘어 기반 뱅킹 시스템(통합단말) Java 개발자 모집합니다.",
+      "requirements": "(프리랜서) 웹스퀘어 기반 뱅킹 시스템(통합단말) Java 개발자 모집합니다.",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-219",
+    "companyName": "모비젠",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주) 모비젠 생성형 AI Agent 개발자 채용 (정규직)",
+    "experienceLevel": "경력",
+    "location": "경기",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주) 모비젠 생성형 AI Agent 개발자 채용 (정규직)",
+      "requirements": "(주) 모비젠 생성형 AI Agent 개발자 채용 (정규직)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-220",
+    "companyName": "알서포트",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[코스닥 상장사] macOS 개발자 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [코스닥 상장사] macOS 개발자 채용",
+      "requirements": "[코스닥 상장사] macOS 개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-221",
+    "companyName": "리드코프",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "(주)리드데이터시스템즈 AI서비스 개발자 모집((주)리드코프 계열사)",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] (주)리드데이터시스템즈 AI서비스 개발자 모집((주)리드코프 계열사)",
+      "requirements": "(주)리드데이터시스템즈 AI서비스 개발자 모집((주)리드코프 계열사)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-222",
+    "companyName": "딜라이브MBK파트너스그룹",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "개발자(계약직/3개월/외부 프로젝트 연장시 연장 가능) 채용",
+    "experienceLevel": "경력",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "jobkorea"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "jobkorea"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 개발자(계약직/3개월/외부 프로젝트 연장시 연장 가능) 채용",
+      "requirements": "개발자(계약직/3개월/외부 프로젝트 연장시 연장 가능) 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "jobkorea"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-223",
+    "companyName": "HOPAE",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer",
+      "requirements": "Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-224",
+    "companyName": "JNPMEDI",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Back-end Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "송도국제도시",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Back-end Software Engineer",
+      "requirements": "Back-end Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-225",
+    "companyName": "HYUNDAIAUTOEVER현대오토에버",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[SDx] Backend Developer - Robot/Smart Factory",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [SDx] Backend Developer - Robot/Smart Factory",
+      "requirements": "[SDx] Backend Developer - Robot/Smart Factory",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-226",
+    "companyName": "GEHEALTHCARE",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성남",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 중복 정제 완료] Software Engineer",
+      "requirements": "Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-227",
+    "companyName": "당근",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer, Backend - 광고",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 중복 정제 완료] Software Engineer, Backend - 광고",
+      "requirements": "Software Engineer, Backend - 광고",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-228",
+    "companyName": "LVIS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Backend Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Backend Software Engineer",
+      "requirements": "Backend Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-229",
+    "companyName": "채널톡",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "강남구",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer",
+      "requirements": "Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-230",
+    "companyName": "HYUNDAIMOTORCOMPANY",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[AVP] Mobility Service Software Engineer for Map",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [AVP] Mobility Service Software Engineer for Map",
+      "requirements": "[AVP] Mobility Service Software Engineer for Map",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-231",
+    "companyName": "TINDER",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Senior Software Engineer, Backend — Seoul Studios (Tinder Seoul)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Senior Software Engineer, Backend — Seoul Studios (Tinder Seoul)",
+      "requirements": "Senior Software Engineer, Backend — Seoul Studios (Tinder Seoul)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-232",
+    "companyName": "HYUNDAIAUTOEVER현대오토에버",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[EnIT] Backend Developer - 인증/계정플랫폼 개발 및 운영",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [EnIT] Backend Developer - 인증/계정플랫폼 개발 및 운영",
+      "requirements": "[EnIT] Backend Developer - 인증/계정플랫폼 개발 및 운영",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-233",
+    "companyName": "토스증권TOSSSECURITIES",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Node.js Developer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Node.js Developer",
+      "requirements": "Node.js Developer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-234",
+    "companyName": "MOLOCO",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer - Ads Experience  (소프트웨어 엔지니어)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer - Ads Experience  (소프트웨어 엔지니어)",
+      "requirements": "Software Engineer - Ads Experience  (소프트웨어 엔지니어)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-235",
+    "companyName": "FRIENDLIAI",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer – Senior Backend",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer – Senior Backend",
+      "requirements": "Software Engineer – Senior Backend",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-236",
+    "companyName": "OTTER",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Senior Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 중복 정제 완료] Senior Software Engineer",
+      "requirements": "Senior Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-237",
+    "companyName": "UJETCX",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer - Full Stack",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer - Full Stack",
+      "requirements": "Software Engineer - Full Stack",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-238",
+    "companyName": "PLAYTAG",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Frontend Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Frontend Engineer",
+      "requirements": "Frontend Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-239",
+    "companyName": "EDWARDSVACUUM",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "아산",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer",
+      "requirements": "Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-240",
+    "companyName": "CANONICAL",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Senior Software Engineer - Digital Workplace",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Senior Software Engineer - Digital Workplace",
+      "requirements": "Senior Software Engineer - Digital Workplace",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-241",
+    "companyName": "당근페이KARROTPAY",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer, Backend",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer, Backend",
+      "requirements": "Software Engineer, Backend",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-242",
+    "companyName": "BEARROBOTICS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer",
+      "requirements": "Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-243",
+    "companyName": "EDWARDSVACUUM",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Sr. Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "아산",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Sr. Software Engineer",
+      "requirements": "Sr. Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-244",
+    "companyName": "SAP",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Platform Engineer (Full-stack)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울 인천 지역",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Platform Engineer (Full-stack)",
+      "requirements": "Platform Engineer (Full-stack)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-245",
+    "companyName": "AUMOVIO",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer – Orin/Thor ADAS in Architecture and Network Solutions R&D | AUMOVIO Korea",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성남",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer – Orin/Thor ADAS in Architecture and Network Solutions R&D | AUMOVIO Korea",
+      "requirements": "Software Engineer – Orin/Thor ADAS in Architecture and Network Solutions R&D | AUMOVIO Korea",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-246",
+    "companyName": "서울로보틱스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer- Autonomy",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성남",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer- Autonomy",
+      "requirements": "Software Engineer- Autonomy",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-247",
+    "companyName": "SECURION시큐리온",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "백엔드(Back-end)개발자 채용",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울 인천 지역",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 백엔드(Back-end)개발자 채용",
+      "requirements": "백엔드(Back-end)개발자 채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-248",
+    "companyName": "CLOVIRTUALFASHION",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer, R&D",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 중복 정제 완료] Software Engineer, R&D",
+      "requirements": "Software Engineer, R&D",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-249",
+    "companyName": "당근",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer, Frontend - 로컬 잡스",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer, Frontend - 로컬 잡스",
+      "requirements": "Software Engineer, Frontend - 로컬 잡스",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-250",
+    "companyName": "DURUPER",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성환",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer",
+      "requirements": "Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-251",
+    "companyName": "TATACONSULTANCYSERVICES",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Application Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성남",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Application Engineer",
+      "requirements": "Software Application Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-252",
+    "companyName": "42DOT",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Senior Backend Engineer(Mobile Platform)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성남",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Senior Backend Engineer(Mobile Platform)",
+      "requirements": "Senior Backend Engineer(Mobile Platform)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-253",
+    "companyName": "IMWEB아임웹",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Back-end Engineer (Core)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 중복 정제 완료] Back-end Engineer (Core)",
+      "requirements": "Back-end Engineer (Core)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-254",
+    "companyName": "FURIOSAAI",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer, Compiler (Front-end)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer, Compiler (Front-end)",
+      "requirements": "Software Engineer, Compiler (Front-end)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-255",
+    "companyName": "VIREVAI",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Founding engineer (Product, full-stack)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울 인천 지역",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Founding engineer (Product, full-stack)",
+      "requirements": "Founding engineer (Product, full-stack)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-256",
+    "companyName": "AMD",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Staff Software Development Technology Engineer - Games",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울 인천 지역",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Staff Software Development Technology Engineer - Games",
+      "requirements": "Staff Software Development Technology Engineer - Games",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-257",
+    "companyName": "UNISOC",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "LXC容器开发工程师8242",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "안산",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] LXC容器开发工程师8242",
+      "requirements": "LXC容器开发工程师8242",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-258",
+    "companyName": "FEVER",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Senior Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Senior Software Engineer",
+      "requirements": "Senior Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-259",
+    "companyName": "HOPAE",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Senior Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Senior Software Engineer",
+      "requirements": "Senior Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-260",
+    "companyName": "스펙터SPECTER",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Backend Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "강남구",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Backend Engineer",
+      "requirements": "Backend Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-261",
+    "companyName": "LEIDOS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Senior Combat Coder - Full Stack Developer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "부산 지역",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Senior Combat Coder - Full Stack Developer",
+      "requirements": "Senior Combat Coder - Full Stack Developer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-262",
+    "companyName": "BJAK",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Staff Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Staff Software Engineer",
+      "requirements": "Staff Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-263",
+    "companyName": "BJAK",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Engineering Lead",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Engineering Lead",
+      "requirements": "Engineering Lead",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-264",
+    "companyName": "TOSSBANK토스뱅크",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Server Developer (Platform)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Server Developer (Platform)",
+      "requirements": "Server Developer (Platform)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-265",
+    "companyName": "LAPLACIANROBOTICS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Forward Deployed Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Forward Deployed Engineer",
+      "requirements": "Forward Deployed Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-266",
+    "companyName": "THEFLEX",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer",
+      "requirements": "Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-267",
+    "companyName": "LAPLACIANROBOTICS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Robot Fleet Platform Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Robot Fleet Platform Engineer",
+      "requirements": "Robot Fleet Platform Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-268",
+    "companyName": "SONATUS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer - Customer Integration (Network)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성남",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 중복 정제 완료] Software Engineer - Customer Integration (Network)",
+      "requirements": "Software Engineer - Customer Integration (Network)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-269",
+    "companyName": "ENHANS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Product Engineer (AgentOS)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Product Engineer (AgentOS)",
+      "requirements": "Product Engineer (AgentOS)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-270",
+    "companyName": "우아한형제들WOOWABROS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "플랫폼엔지니어링(배포시스템)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 플랫폼엔지니어링(배포시스템)",
+      "requirements": "플랫폼엔지니어링(배포시스템)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-271",
+    "companyName": "RAIONROBOTICS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer",
+      "requirements": "Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-272",
+    "companyName": "PALANTIRTECHNOLOGIES",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Forward Deployed Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Forward Deployed Software Engineer",
+      "requirements": "Forward Deployed Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-273",
+    "companyName": "DEEPX",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[SW] LLM Serving SW Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성남",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [SW] LLM Serving SW Engineer",
+      "requirements": "[SW] LLM Serving SW Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-274",
+    "companyName": "IMWEB아임웹",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Back-end Engineer (Web Builder)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Back-end Engineer (Web Builder)",
+      "requirements": "Back-end Engineer (Web Builder)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-275",
+    "companyName": "아드리엘",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Senior Backend Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Senior Backend Engineer",
+      "requirements": "Senior Backend Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-276",
+    "companyName": "DOOSANROBOTICS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Full-Stack Developer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "경기도, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Full-Stack Developer",
+      "requirements": "Full-Stack Developer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-277",
+    "companyName": "AUMOVIO",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "SW Engineer in Architecture and Networking Solutions (Telematics) | AUMOVIO Korea",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성남",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] SW Engineer in Architecture and Networking Solutions (Telematics) | AUMOVIO Korea",
+      "requirements": "SW Engineer in Architecture and Networking Solutions (Telematics) | AUMOVIO Korea",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-278",
+    "companyName": "特变电工国际工程有限公司",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "软件研发工程师",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "안산",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 软件研发工程师",
+      "requirements": "软件研发工程师",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-279",
+    "companyName": "NEON",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Forward Deployed Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Forward Deployed Engineer",
+      "requirements": "Forward Deployed Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-280",
+    "companyName": "QUESTGLOBAL",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "AUTOSAR BSW development",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] AUTOSAR BSW development",
+      "requirements": "AUTOSAR BSW development",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-281",
+    "companyName": "채널톡",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer, Senior",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "강남구",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer, Senior",
+      "requirements": "Software Engineer, Senior",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-282",
+    "companyName": "KRAFTONINC",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[KRAFTON JUNGLE] 크래프톤 정글 SW Engineer (1년 이상 / 계약직)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "분당",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [KRAFTON JUNGLE] 크래프톤 정글 SW Engineer (1년 이상 / 계약직)",
+      "requirements": "[KRAFTON JUNGLE] 크래프톤 정글 SW Engineer (1년 이상 / 계약직)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-283",
+    "companyName": "SPEECHIFY",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer, Data Infrastructure & Acquisition - Seoul, South Korea",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer, Data Infrastructure & Acquisition - Seoul, South Korea",
+      "requirements": "Software Engineer, Data Infrastructure & Acquisition - Seoul, South Korea",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-284",
+    "companyName": "BUCKETPLACE오늘의집",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Fullstack Engineer, Payment",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Fullstack Engineer, Payment",
+      "requirements": "Fullstack Engineer, Payment",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-285",
+    "companyName": "PUBLISHPROTOCOL",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "앱(APP) 개발자",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 앱(APP) 개발자",
+      "requirements": "앱(APP) 개발자",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-286",
+    "companyName": "BUCKETPLACE오늘의집",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Backend Engineer, Content",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Backend Engineer, Content",
+      "requirements": "Backend Engineer, Content",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-287",
+    "companyName": "BUCKETPLACE오늘의집",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Backend Engineer, Ads",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Backend Engineer, Ads",
+      "requirements": "Backend Engineer, Ads",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-288",
+    "companyName": "ACTAI",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "iOS Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] iOS Software Engineer",
+      "requirements": "iOS Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-289",
+    "companyName": "TOSSPLACE토스플레이스",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Server Developer (AI Platform)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Server Developer (AI Platform)",
+      "requirements": "Server Developer (AI Platform)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-290",
+    "companyName": "FURIOSAAI",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer, Compiler (AX Engineer)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer, Compiler (AX Engineer)",
+      "requirements": "Software Engineer, Compiler (AX Engineer)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-291",
+    "companyName": "SEARCHAPI",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Anti-Bot Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Anti-Bot Engineer",
+      "requirements": "Anti-Bot Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-292",
+    "companyName": "SEARCHAPI",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "AI Integrations Engineer (Open Source ·  Web Search)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] AI Integrations Engineer (Open Source ·  Web Search)",
+      "requirements": "AI Integrations Engineer (Open Source ·  Web Search)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-293",
+    "companyName": "CJOLIVEYOUNG",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Back-end Engineer (광고/AD-Server)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Back-end Engineer (광고/AD-Server)",
+      "requirements": "Back-end Engineer (광고/AD-Server)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-294",
+    "companyName": "FURIOSAAI",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer, Kernel Programming Model",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer, Kernel Programming Model",
+      "requirements": "Software Engineer, Kernel Programming Model",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-295",
+    "companyName": "FURIOSAAI",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer, Compiler (Middle-end)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer, Compiler (Middle-end)",
+      "requirements": "Software Engineer, Compiler (Middle-end)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-296",
+    "companyName": "TOSS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Network Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Network Software Engineer",
+      "requirements": "Network Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-297",
+    "companyName": "TOSSBANK토스뱅크",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Server Developer (Product)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Server Developer (Product)",
+      "requirements": "Server Developer (Product)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-298",
+    "companyName": "MUSINSA무신사",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Backend Engineer (SCM Platform)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Backend Engineer (SCM Platform)",
+      "requirements": "Backend Engineer (SCM Platform)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-299",
+    "companyName": "COUPANG",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Sr-Staff Backend Engineer (Core Member & Infra Platform Team)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Sr-Staff Backend Engineer (Core Member & Infra Platform Team)",
+      "requirements": "Sr-Staff Backend Engineer (Core Member & Infra Platform Team)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-300",
+    "companyName": "BJAK",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Lead Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Lead Software Engineer",
+      "requirements": "Lead Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-301",
+    "companyName": "CJOLIVEYOUNG",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Back-end Engineer (공통영역개선)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Back-end Engineer (공통영역개선)",
+      "requirements": "Back-end Engineer (공통영역개선)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-302",
+    "companyName": "HYUNDAIMOTORCOMPANY",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Development of Mobile Robot Application Software",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성남",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Development of Mobile Robot Application Software",
+      "requirements": "Development of Mobile Robot Application Software",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-303",
+    "companyName": "CLOVIRTUALFASHION",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Frontend Developer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Frontend Developer",
+      "requirements": "Frontend Developer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-304",
+    "companyName": "토스증권TOSSSECURITIES",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Frontend Developer (2026년 커뮤니티 대규모 채용)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Frontend Developer (2026년 커뮤니티 대규모 채용)",
+      "requirements": "Frontend Developer (2026년 커뮤니티 대규모 채용)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-305",
+    "companyName": "CJOLIVEYOUNG",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "커머스플랫폼유닛 Front-end 개발채용",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] 커머스플랫폼유닛 Front-end 개발채용",
+      "requirements": "커머스플랫폼유닛 Front-end 개발채용",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-306",
+    "companyName": "COUPANG",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Staff Frontend Engineer (Coupang Eats)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Staff Frontend Engineer (Coupang Eats)",
+      "requirements": "Staff Frontend Engineer (Coupang Eats)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-307",
+    "companyName": "MEDIATEK",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "WLAN / Wi-Fi Software / Firmware Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 중복 정제 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 중복 정제 완료] WLAN / Wi-Fi Software / Firmware Engineer",
+      "requirements": "WLAN / Wi-Fi Software / Firmware Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-308",
+    "companyName": "TOSS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "iOS Developer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] iOS Developer",
+      "requirements": "iOS Developer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-309",
+    "companyName": "COUPANG",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Senior Staff Back-end Engineer (eCommerce Engineering)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Senior Staff Back-end Engineer (eCommerce Engineering)",
+      "requirements": "Senior Staff Back-end Engineer (eCommerce Engineering)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-310",
+    "companyName": "MEDIATEK",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "GNSS Software Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "경기도, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] GNSS Software Engineer",
+      "requirements": "GNSS Software Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-311",
+    "companyName": "HYUNDAIMOTORCOMPANY",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Lunar Mobility Software Engineer (Space)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "화성시",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Lunar Mobility Software Engineer (Space)",
+      "requirements": "Lunar Mobility Software Engineer (Space)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-312",
+    "companyName": "COUPANG",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Senior Staff, Back-end Engineer (Gateway Services)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Senior Staff, Back-end Engineer (Gateway Services)",
+      "requirements": "Senior Staff, Back-end Engineer (Gateway Services)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-313",
+    "companyName": "COMMVAULT",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Software Engineer - Automation",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Software Engineer - Automation",
+      "requirements": "Software Engineer - Automation",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-314",
+    "companyName": "CJOLIVEYOUNG",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Windows Application Engineer (POS 시스템)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Windows Application Engineer (POS 시스템)",
+      "requirements": "Windows Application Engineer (POS 시스템)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-315",
+    "companyName": "42DOT",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Vehicle Application Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성남",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Vehicle Application Engineer",
+      "requirements": "Vehicle Application Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-316",
+    "companyName": "TOSS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Frontend Developer [산업기능요원/전문연구요원]",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Frontend Developer [산업기능요원/전문연구요원]",
+      "requirements": "Frontend Developer [산업기능요원/전문연구요원]",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-317",
+    "companyName": "DEEPX",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[SW] NPU Runtime SW Engineer",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성남",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [SW] NPU Runtime SW Engineer",
+      "requirements": "[SW] NPU Runtime SW Engineer",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-318",
+    "companyName": "XCENA",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "KV 캐시 인프라 소프트웨어 엔지니어 (Software Engineer, KV Cache Infrastructure)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "경기도, 대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] KV 캐시 인프라 소프트웨어 엔지니어 (Software Engineer, KV Cache Infrastructure)",
+      "requirements": "KV 캐시 인프라 소프트웨어 엔지니어 (Software Engineer, KV Cache Infrastructure)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-319",
+    "companyName": "BEARROBOTICS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Robotics Software Engineer, Navigation",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Robotics Software Engineer, Navigation",
+      "requirements": "Robotics Software Engineer, Navigation",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-320",
+    "companyName": "DEEPX",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[SW_Entry-Level] Application Technology Development",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "성남",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [SW_Entry-Level] Application Technology Development",
+      "requirements": "[SW_Entry-Level] Application Technology Development",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-321",
+    "companyName": "KRAFTONINC",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[PUBG STUDIOS] Sr. Engine Engineer (7년 이상)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [PUBG STUDIOS] Sr. Engine Engineer (7년 이상)",
+      "requirements": "[PUBG STUDIOS] Sr. Engine Engineer (7년 이상)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-322",
+    "companyName": "SEARCHAPI",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Staff Product Engineer (Ruby on Rails)",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "대한민국",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Staff Product Engineer (Ruby on Rails)",
+      "requirements": "Staff Product Engineer (Ruby on Rails)",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-323",
+    "companyName": "PASQAL",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "Mid-Senior Quantum Developer - W/M",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "서울 인천 지역",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] Mid-Senior Quantum Developer - W/M",
+      "requirements": "Mid-Senior Quantum Developer - W/M",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
+  },
+  {
+    "id": "goodjob-324",
+    "companyName": "HYUNDAIMOBIS",
+    "companyLogo": "https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100",
+    "companyCategory": "IT/인터넷",
+    "title": "[신입-연구직] AI 애플리케이션 개발",
+    "experienceLevel": "경력무관 / 주니어 우대",
+    "location": "용인",
+    "salary": "회사 내규에 따름",
+    "deadlineText": "상시채용",
+    "deadlineDaysLeft": 14,
+    "collectedSources": [
+      "linkedin"
+    ],
+    "sourceSummaryText": "굿잡 AI 검증 완료",
+    "sourceType": "CRAWLED",
+    "tags": [
+      "linkedin"
+    ],
+    "isBookmarked": false,
+    "geminiSummary": {
+      "mission": "[굿잡 AI 검증 완료] [신입-연구직] AI 애플리케이션 개발",
+      "requirements": "[신입-연구직] AI 애플리케이션 개발",
+      "cultureAndBenefits": "4대보험, 유연근무제, 최신 개발 장비 지원",
+      "generatedAt": "오늘",
+      "keywordHighlights": [
+        "linkedin"
+      ]
+    },
+    "blindReviews": [],
+    "applicantCount": 12,
+    "viewCount": 320,
+    "isBoosted": false,
+    "matchScorePercent": 90
   }
 ];
