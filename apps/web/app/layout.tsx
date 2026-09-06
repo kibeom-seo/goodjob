@@ -29,6 +29,7 @@ export const metadata: Metadata = {
 };
 
 import { AlertProvider } from "@/context/AlertContext";
+import RealtimeHeartbeat from "@/components/RealtimeHeartbeat";
 
 export default function RootLayout({
   children,
@@ -39,6 +40,7 @@ export default function RootLayout({
     <html lang="ko">
       <body className="min-h-screen bg-[#F8FAFC] antialiased">
         <AlertProvider>
+          <RealtimeHeartbeat />
           {children}
         </AlertProvider>
       </body>
