@@ -48,19 +48,22 @@ def sync_to_d1():
         mission = escape_sql(f"[{j.get('sourceSummaryText', '굿잡 AI 검증')}] {j.get('title')}")
         reqs = escape_sql(j.get("title") or "")
         benefits = escape_sql("4대보험, 유연근무제, 자기계발비 지원")
+        origin_url = escape_sql(j.get("originUrl"))
 
         stmt = f"""INSERT OR REPLACE INTO job_postings (
             id, company_name, company_logo, corporate_domain, title, 
             experience_level, location, salary, posted_at, deadline_at, 
             deadline_text, deadline_days_left, is_active, is_expired, is_claimed, 
             is_remote, is_flexible_work, is_military_service, is_boosted, 
-            summary_mission, summary_requirements, summary_benefits, keyword_highlights
+            summary_mission, summary_requirements, summary_benefits, keyword_highlights,
+            origin_url
         ) VALUES (
             {job_id}, {company_name}, {company_logo}, {corporate_domain}, {title}, 
             {experience_level}, {location}, {salary}, {posted_at}, NULL, 
             {deadline_text}, {deadline_days_left}, 1, 0, 0, 
             0, 0, 0, 0, 
-            {mission}, {reqs}, {benefits}, {tags_json}
+            {mission}, {reqs}, {benefits}, {tags_json},
+            {origin_url}
         );"""
         sql_statements.append(stmt)
 

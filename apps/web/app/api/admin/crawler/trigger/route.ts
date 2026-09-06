@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getDb } from '@/lib/db';
+import { OFFICIAL_CAREER_PORTALS } from '@/lib/originUrlHelper';
 
 export const dynamic = 'force-dynamic';
 export const runtime = 'edge';
@@ -66,6 +67,13 @@ export async function POST(request: NextRequest) {
           const summaryReqs = `${role.tags.join(', ')} 역량 보유자 및 ${exp} 조건에 부합하는 엔지니어`;
           const summaryBenefits = '자율 출퇴근(선택적 근로), 최신 맥북 프로 지원, 연간 300만원 복지포인트, 중석식 식대 전액 지원';
           const tagsJson = JSON.stringify(role.tags);
+          let genuineUrl = `https://${comp.domain}`;
+          for (const [k, v] of Object.entries(OFFICIAL_CAREER_PORTALS)) {
+            if (comp.name.includes(k)) {
+              genuineUrl = v;
+              break;
+            }
+          }
 
           statements.push(
             db.prepare(`
@@ -74,19 +82,22 @@ export async function POST(request: NextRequest) {
                 experience_level, location, salary, posted_at, deadline_at,
                 deadline_text, deadline_days_left, is_active, is_expired, is_claimed,
                 is_remote, is_flexible_work, is_military_service, is_boosted,
-                summary_mission, summary_requirements, summary_benefits, keyword_highlights
+                summary_mission, summary_requirements, summary_benefits, keyword_highlights,
+                origin_url
               ) VALUES (
                 ?, ?, 'https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=100', ?, ?,
                 ?, ?, '회사 내규에 따름 (업계 최고 수준 대우)', ?, NULL,
                 '상시채용', 14, 1, 0, 0,
                 ?, 1, 0, 0,
-                ?, ?, ?, ?
+                ?, ?, ?, ?,
+                ?
               )
             `).bind(
               id, comp.name, comp.domain, fullTitle,
               exp, role.loc, nowIso,
               i % 3 === 0 ? 1 : 0, // 3개 중 1개는 풀 리모트 재택
-              summaryMission, summaryReqs, summaryBenefits, tagsJson
+              summaryMission, summaryReqs, summaryBenefits, tagsJson,
+              genuineUrl
             )
           );
         }

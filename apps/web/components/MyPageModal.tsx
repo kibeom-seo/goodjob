@@ -9,6 +9,7 @@ import {
 } from 'lucide-react';
 import { JobPosting, UserResumeProfile } from '../types/job';
 import CompanyBrandLogo from './CompanyBrandLogo';
+import { resolveOriginUrl } from '@/lib/originUrlHelper';
 
 interface MyPageModalProps {
   isOpen: boolean;
@@ -273,17 +274,15 @@ export default function MyPageModal({
                       </div>
 
                       <div className="flex items-center gap-2 self-end sm:self-center shrink-0">
-                        {job.originUrl && (
-                          <a
-                            href={job.originUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-[#3182F6] text-white text-xs font-bold transition-colors inline-flex items-center gap-1"
-                          >
-                            <span>원문 보기</span>
-                            <ArrowUpRight className="w-3 h-3" />
-                          </a>
-                        )}
+                        <a
+                          href={resolveOriginUrl(job)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-[#3182F6] text-white text-xs font-bold transition-colors inline-flex items-center gap-1"
+                        >
+                          <span>원문 보기</span>
+                          <ArrowUpRight className="w-3 h-3" />
+                        </a>
                         <button
                           onClick={() => onRemoveBookmark(job.id)}
                           className="p-2 text-slate-400 hover:text-rose-500 hover:bg-rose-50 rounded-xl transition-colors"

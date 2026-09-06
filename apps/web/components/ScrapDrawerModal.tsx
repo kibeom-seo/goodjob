@@ -1,8 +1,9 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { X, Bookmark, ExternalLink, Trash2, Zap, Building2, MapPin } from 'lucide-react';
 import { JobPosting } from '../types/job';
+import { resolveOriginUrl } from '@/lib/originUrlHelper';
 
 interface ScrapDrawerModalProps {
   isOpen: boolean;
@@ -81,7 +82,7 @@ export default function ScrapDrawerModal({
 
                 <div className="flex items-center gap-2 pt-2 border-t border-slate-200/50">
                   <a
-                    href={job.originUrl || '#'}
+                    href={resolveOriginUrl(job)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 py-1.5 px-2.5 rounded-xl bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 font-bold text-[11px] inline-flex items-center justify-center gap-1 transition-colors"
@@ -90,7 +91,7 @@ export default function ScrapDrawerModal({
                     <ExternalLink className="w-3 h-3 text-slate-400" />
                   </a>
                   <a
-                    href={job.originUrl || '#'}
+                    href={resolveOriginUrl(job)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="py-1.5 px-3 rounded-xl bg-[#3182F6] hover:bg-blue-600 text-white font-bold text-[11px] inline-flex items-center justify-center gap-1 transition-colors"

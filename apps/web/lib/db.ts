@@ -63,8 +63,8 @@ export async function queryActiveJobs(params: JobFilterParams = {}) {
       is_claimed, is_remote, is_flexible_work, is_military_service,
       is_boosted, boost_expires_at,
       summary_mission, summary_requirements, summary_benefits, keyword_highlights,
-      view_count, scrap_count
-    FROM v_active_job_postings
+      view_count, scrap_count, origin_url
+    FROM job_postings
     ${whereClause}
     ORDER BY ${orderBy}
     LIMIT ? OFFSET ?

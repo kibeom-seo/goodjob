@@ -33,6 +33,7 @@ import AiReportModal from './AiReportModal';
 import RealtimeTrendingSidebar from './RealtimeTrendingSidebar';
 import CompanyBrandLogo from './CompanyBrandLogo';
 import { useAlert } from '@/context/AlertContext';
+import { resolveOriginUrl } from '@/lib/originUrlHelper';
 
 interface MoaJobFeedSectionProps {
   onOpenAuthModal?: () => void;
@@ -117,6 +118,7 @@ export default function MoaJobFeedSection({
             deadlineText: dbJob.deadline_text || '상시채용',
             deadlineDateStr: dbJob.deadline_at ? new Date(dbJob.deadline_at).toLocaleDateString('ko-KR') : undefined,
             deadlineDaysLeft: typeof dbJob.deadline_days_left === 'number' ? dbJob.deadline_days_left : 10,
+            originUrl: resolveOriginUrl({ companyName: dbJob.company_name, title: dbJob.title, originUrl: dbJob.origin_url }),
             collectedSources: ['direct'],
             sourceSummaryText: dbJob.is_claimed ? '🏢 공식 채용 연동' : '원티드·사람인 통합 수집',
             sourceType: dbJob.is_claimed ? 'DIRECT_HIRE' : 'CRAWLED',
@@ -1021,7 +1023,7 @@ export default function MoaJobFeedSection({
 
                   {!isDirectHire && (
                     <a
-                      href={job.originUrl || '#'}
+                      href={resolveOriginUrl(job)}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-3 py-2 rounded-xl text-xs font-semibold text-slate-600 hover:text-slate-900 hover:bg-slate-100 inline-flex items-center gap-1.5 transition-colors border border-slate-200/70"

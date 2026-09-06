@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { X, Sparkles, CheckCircle2, FileText, Send, Zap, ShieldCheck, AlertTriangle } from 'lucide-react';
 import { JobPosting, UserResumeProfile } from '../types/job';
+import { resolveOriginUrl } from '@/lib/originUrlHelper';
 
 interface AiReportModalProps {
   isOpen: boolean;
@@ -116,7 +117,7 @@ export default function AiReportModal({
             닫기
           </button>
           <a
-            href={job.originUrl || '#'}
+            href={resolveOriginUrl(job)}
             target="_blank"
             rel="noopener noreferrer"
             className="px-5 py-2.5 bg-[#3182F6] hover:bg-blue-600 text-white text-xs font-bold rounded-xl shadow-xs inline-flex items-center gap-1.5 transition-all"

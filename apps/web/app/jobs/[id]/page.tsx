@@ -9,6 +9,7 @@ import {
   Sparkles, Share2, Bookmark
 } from 'lucide-react';
 import CompanyBrandLogo from '@/components/CompanyBrandLogo';
+import { resolveOriginUrl } from '@/lib/originUrlHelper';
 
 interface Props {
   params: { id: string };
@@ -66,7 +67,7 @@ export default function JobDetailPage({ params }: Props) {
   const tags = mockJob.tags || [];
 
   // 출처 조회
-  const primaryOrigin = { source_platform: mockJob.collectedSources?.[0] || 'goodjob', origin_url: mockJob.originUrl || '#' };
+  const primaryOrigin = { source_platform: mockJob.collectedSources?.[0] || 'goodjob', origin_url: resolveOriginUrl(mockJob) };
 
   // 구글 검색 리치 스니펫 (JSON-LD JobPosting 스키마)
   const jsonLd = {
