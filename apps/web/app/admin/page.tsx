@@ -153,6 +153,26 @@ export default function AdminPage() {
     { type: 'TXT', name: '@ (구글 SEO)', content: 'google-site-verification=goodjob-google-seo-verified', proxied: false, status: 'VERIFIED' }
   ]);
   const [isDnsSaving, setIsDnsSaving] = useState(false);
+  const [isCrawling, setIsCrawling] = useState(false);
+
+  // 크롤러 즉시 수집 트리거 (빌드 없이 D1 DB 직접 적재)
+  const handleTriggerCrawler = async () => {
+    setIsCrawling(true);
+    try {
+      const res = await fetch('/api/admin/crawler/trigger', { method: 'POST' });
+      const data = await res.json();
+      if (data.success) {
+        alert(`⚡ [실시간 수집 완료]\n${data.message}\n현재 D1 데이터베이스 총 유효 공고: ${data.totalJobs}건`);
+        fetchStats();
+      } else {
+        alert('크롤러 실행 실패: ' + (data.error || '오류 발생'));
+      }
+    } catch (e: any) {
+      alert('크롤러 실행 중 통신 오류가 발생했습니다.');
+    } finally {
+      setIsCrawling(false);
+    }
+  };
 
   // 접속자 통계 데이터 조회
   const fetchStats = async () => {
@@ -739,13 +759,14 @@ export default function AdminPage() {
 
                   <div className="flex items-center gap-3">
                     <button
-                      onClick={() => {
-                        alert('⚡ [수동 즉시 수집 트리거] 모든 활성 크롤러 파이프라인(Unified Runner)을 즉시 백그라운드에서 실행합니다.');
-                      }}
-                      className="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 active:scale-95 text-white rounded-xl text-xs font-bold transition-all shadow-md inline-flex items-center gap-1.5"
+                      onClick={handleTriggerCrawler}
+                      disabled={isCrawling}
+                      className={`px-4 py-2 rounded-xl text-xs font-bold transition-all shadow-md inline-flex items-center gap-1.5 text-white ${
+                        isCrawling ? 'bg-slate-600 cursor-not-allowed opacity-75' : 'bg-emerald-600 hover:bg-emerald-500 active:scale-95'
+                      }`}
                     >
-                      <Play className="w-3.5 h-3.5 fill-current" />
-                      <span>전체 크롤러 지금 즉시 실행</span>
+                      <Play className={`w-3.5 h-3.5 fill-current ${isCrawling ? 'animate-spin' : ''}`} />
+                      <span>{isCrawling ? '실시간 수집 및 D1 적재 중...' : '전체 크롤러 지금 즉시 실행'}</span>
                     </button>
                   </div>
                 </div>
